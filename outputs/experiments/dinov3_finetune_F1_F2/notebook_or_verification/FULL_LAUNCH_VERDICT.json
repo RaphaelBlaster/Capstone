@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "verdict": "PASS_FULL_LAUNCH_ARTIFACT",
+  "scope": "immutable prepared full notebook and embedded source only; actual full execution remains unverified",
+  "notebook_sha256": "30885af0d676666adc2a93eebe0fd9af2b1ba79e66c432a3fcdbfc3061957005",
+  "package_sha256": "18756d12b22828abf4266cbc47012aea4875f13ab39025b03ce6f4f719dab8a0",
+  "config_sha256": "088bf02959b8a11f43144f7b05a241dfcac13936d4196192b79826a0909090ba",
+  "trainer_sha256": "60a8b97d5c3b222b7d7cb5f0f3a971a454d0897e0042ef1f2d61297fc037563f",
+  "independent_resume_verdict": "PASS_GPU_RESUME",
+  "gpu_fp8_verified_from_green": true,
+  "mode": "full",
+  "epochs": 20,
+  "folds": [
+    0,
+    1
+  ],
+  "arms": [
+    "F1",
+    "F2"
+  ],
+  "F3_enabled": false,
+  "embedded_package_exact_green": true,
+  "package_member_hashes_valid": true,
+  "outer_code_exact_template_transformation": true,
+  "private_offline_rtx_pro6000_requested": true,
+  "preflight_guards_present": true,
+  "user_authorization_exact_package": true,
+  "actual_full_training_launched": false,
+  "remaining_dispatch_preconditions": [
+    "external dispatcher must enforce fresh account quota and active-job scan before one write",
+    "accepted Kaggle source/settings must be read back against this immutable notebook and metadata",
+    "saved run must verify actual RTX FP8, checkpoints, and predictions before score claims"
+  ],
+  "dispatcher_sha256": "62abbf895f9e0104f556c77edc9af1b4a2fbc9bdf151310389b83d292d81c228",
+  "dispatcher_static_checks": {
+    "single_write_guard": true,
+    "account_lock": true,
+    "fresh_quota_twice": true,
+    "zero_reserved": true,
+    "minimum_10800_seconds": true,
+    "baseline_recent_complete": true,
+    "owned_inventory_refresh": true,
+    "new_restart_state_check": true,
+    "green_source_versions": true,
+    "existing_kernel_block": true,
+    "prewrite_receipt_and_no_retry": true,
+    "saved_readback_source_hardware_private_offline": true
+  },
+  "dispatch_path_static_review": "PASS"
+}

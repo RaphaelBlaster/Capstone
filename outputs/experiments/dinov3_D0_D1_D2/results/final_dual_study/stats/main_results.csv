@@ -1,0 +1,6 @@
+branch,arm,global_weighted_r2_raw,images,date_groups,folds,seeds,metric_parity_error,scope
+jepa,control,0.54891175438196926,105,9,"0,1",1,0,reused_development
+jepa,shuffle,0.5567129773256263,105,9,"0,1",1,0,reused_development
+dinov3,D0,0.76591245007605091,105,9,"0,1",1,0,reused_development
+dinov3,D1,0.77988137525708101,105,9,"0,1",1,0,reused_development
+dinov3,D2,0.7800650684336633,105,9,"0,1",1,0,reused_development

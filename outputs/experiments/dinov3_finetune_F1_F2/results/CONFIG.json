@@ -1,0 +1,15 @@
+{
+  "epochs": 20,
+  "batch_size": 2,
+  "accumulate": 8,
+  "head_lr": 3e-05,
+  "backbone_lr": 2e-06,
+  "head_weight_decay": 0.01,
+  "backbone_weight_decay": 0.0,
+  "l2sp_coefficient": 1000000.0,
+  "clip_norm": 1.0,
+  "seed": 42,
+  "endpoint": "fixed_final_epoch",
+  "input_size": 512,
+  "augmentation": "identity_matches_executed_D2"
+}

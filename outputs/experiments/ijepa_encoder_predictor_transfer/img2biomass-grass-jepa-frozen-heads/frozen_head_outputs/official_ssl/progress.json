@@ -1,0 +1,35 @@
+{
+  "status": "completed_steps",
+  "step": 2400,
+  "requested_steps": 2400,
+  "unique_grass_images": 30663,
+  "unique_images_trained": 30663,
+  "sample_exposures": 153315,
+  "equivalent_corpus_passes": 5.0,
+  "signature": {
+    "model": "official_ijepa_vith14",
+    "revision": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+    "initial_sha256": "2dbfad65ef9fc869ff9bcba6222dfc65efa580de17365cde100a83138f1038cd",
+    "corpus_sha256": "080e5b83117c7a4121e15c135d022f41c9ae62d937a38bbf7a0ec657a1d96ce2",
+    "images": 30663,
+    "size": 224,
+    "last_blocks": 8,
+    "steps": 2400,
+    "batch_size": 16,
+    "accumulate": 4,
+    "seed": 42,
+    "encoder_lr": 1e-05,
+    "predictor_lr": 0.0001,
+    "weight_decay": 0.04,
+    "precision": "fp8",
+    "tiny": false
+  },
+  "export_sha256": {
+    "foundation.pt": "9408aa171eb9df267fbec6e72dfe9a08e4a7e873aa2cfe4750574076f39d38df",
+    "adapted.pt": "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d"
+  },
+  "seconds_this_session": 1400.1900267229998,
+  "last_loss": 0.13661645352840424,
+  "foundation_export": "foundation.pt",
+  "adapted_export": "adapted.pt"
+}

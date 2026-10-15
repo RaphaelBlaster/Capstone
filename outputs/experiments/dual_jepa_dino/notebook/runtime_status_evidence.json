@@ -1,0 +1,10 @@
+{
+  "checked_ist": "2026-10-10T10:54:09.492322+05:30",
+  "kaggle_version": 2,
+  "kaggle_status": "RUNNING",
+  "actual_rtx_pro_6000_blackwell_seen": true,
+  "fp8_forward_backward_passed": true,
+  "runtime_smoke_budget_gate_passed": true,
+  "full_experiment_optimizer_step_count": "not_exposed_in_available_logs",
+  "scientific_results": "pending"
+}

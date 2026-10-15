@@ -1,0 +1,2 @@
+epoch,D2_training_loss,l2sp,validation_global_r2,optimizer_steps,elapsed_seconds
+1,0.03533868177328259,5.421005224576225e-12,0.8904282194493414,2,2.5263470029999837

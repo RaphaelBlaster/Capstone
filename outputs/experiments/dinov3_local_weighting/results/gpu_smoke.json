@@ -1,0 +1,189 @@
+{
+  "D1": {
+    "signature": {
+      "table_sha256": "ae41f25d4b2107f2d1813565811bd879e7967520c850f8a57cc7054a6ddf67b2",
+      "features_sha256": "07bc9ee900dff778f6607f6484cc2a7eb2953b0fd0d9f7005edfdc55f19e70eb",
+      "code_sha256": "e0568bb7bf2c4dc00d0c88ff268552fe419758b96e215b6175e0d75bf97fdc99",
+      "origin": {
+        "source_version": 2,
+        "input_lock": {
+          "source": "meghmayur1186/img2biomass-final-dual-jepa-dino/2",
+          "inputs": {
+            "dinov3/features.pt": "c0834e984ff4ce6a70eed1293b184ed4734554f4c26553574e39bf02c04264f6",
+            "dinov3/cache_manifest.json": "39dc89d95f1e7c3b0b6e668df076aba8e0daf9556a163affd1e6d4b30d8d5c58",
+            "provenance/folds.csv": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+            "dinov3/fold_0/D1/metrics.json": "228a671f0b0a4c6b8e41bdc6c42f3069bc389023604178d244c2728d78b74483",
+            "dinov3/fold_1/D1/metrics.json": "52a5ff3114ef4b3f03837a89b9f7708243ff4bc18c42763c75b1f48987cab1fd"
+          }
+        },
+        "experiment": "D3 learned normalized pooling versus D1 uniform pooling; no consistency regularizer"
+      },
+      "fold": 0,
+      "arm": "D1",
+      "epochs": 2,
+      "swa_last": 1,
+      "batch_size": 2,
+      "lr": 0.0003,
+      "weight_decay": 0.01,
+      "seed": 42,
+      "selection": "fixed_final_swa",
+      "images": [
+        "train/ID1011485656.jpg",
+        "train/ID1012260530.jpg",
+        "train/ID1062837331.jpg",
+        "train/ID1098771283.jpg"
+      ],
+      "precision": {
+        "requested": "fp8",
+        "active": "fp8_linear_bf16_other",
+        "float8_layers": 1,
+        "master_weights": "FP32",
+        "conversion": "idempotent"
+      }
+    },
+    "complete": true,
+    "completed_epochs": 2,
+    "swa_count": 1,
+    "optimizer_steps": 2,
+    "global_weighted_r2_raw": 0.26418256276104213,
+    "per_target": {
+      "r2": [
+        -0.08736523752190462,
+        -0.2996020529202515,
+        -0.28256634577238665,
+        -0.12098186325641022,
+        -0.0754405311127847
+      ],
+      "mae": [
+        17.496706591796872,
+        5.671932735443115,
+        5.663745834350587,
+        23.160502426147463,
+        17.488521121215825
+      ],
+      "rmse": [
+        18.224926718791238,
+        6.386855044509283,
+        6.5707908611726795,
+        24.647503745043473,
+        18.33160680808955
+      ],
+      "bias": [
+        -5.10031492614746,
+        2.9361703636169443,
+        -3.3312573699951162,
+        -8.431522296142578,
+        -5.49540145568848
+      ]
+    },
+    "metric_parity_error": 0.0,
+    "training_images": 2,
+    "validation_images": 2,
+    "parameters": 197635,
+    "scale_training_only": 18.16336441040039,
+    "elapsed_seconds": 0.3590831150002032,
+    "precision": {
+      "requested": "fp8",
+      "active": "fp8_linear_bf16_other",
+      "float8_layers": 1,
+      "master_weights": "FP32",
+      "conversion": "idempotent"
+    },
+    "head_sha256": "2f9aca190f57f623a534345fa4216fe8593f859c072ab82a52e44152a5d5100a",
+    "initial_state_sha256": "ce18c2df735e77634dbec177d82f8ea72169ecb76ac0d62966cc9e73e655469b"
+  },
+  "D3": {
+    "signature": {
+      "table_sha256": "ae41f25d4b2107f2d1813565811bd879e7967520c850f8a57cc7054a6ddf67b2",
+      "features_sha256": "07bc9ee900dff778f6607f6484cc2a7eb2953b0fd0d9f7005edfdc55f19e70eb",
+      "code_sha256": "e0568bb7bf2c4dc00d0c88ff268552fe419758b96e215b6175e0d75bf97fdc99",
+      "origin": {
+        "source_version": 2,
+        "input_lock": {
+          "source": "meghmayur1186/img2biomass-final-dual-jepa-dino/2",
+          "inputs": {
+            "dinov3/features.pt": "c0834e984ff4ce6a70eed1293b184ed4734554f4c26553574e39bf02c04264f6",
+            "dinov3/cache_manifest.json": "39dc89d95f1e7c3b0b6e668df076aba8e0daf9556a163affd1e6d4b30d8d5c58",
+            "provenance/folds.csv": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+            "dinov3/fold_0/D1/metrics.json": "228a671f0b0a4c6b8e41bdc6c42f3069bc389023604178d244c2728d78b74483",
+            "dinov3/fold_1/D1/metrics.json": "52a5ff3114ef4b3f03837a89b9f7708243ff4bc18c42763c75b1f48987cab1fd"
+          }
+        },
+        "experiment": "D3 learned normalized pooling versus D1 uniform pooling; no consistency regularizer"
+      },
+      "fold": 0,
+      "arm": "D3",
+      "epochs": 2,
+      "swa_last": 1,
+      "batch_size": 2,
+      "lr": 0.0003,
+      "weight_decay": 0.01,
+      "seed": 42,
+      "selection": "fixed_final_swa",
+      "images": [
+        "train/ID1011485656.jpg",
+        "train/ID1012260530.jpg",
+        "train/ID1062837331.jpg",
+        "train/ID1098771283.jpg"
+      ],
+      "precision": {
+        "requested": "fp8",
+        "active": "fp8_linear_bf16_other",
+        "float8_layers": 2,
+        "master_weights": "FP32",
+        "conversion": "idempotent"
+      }
+    },
+    "complete": true,
+    "completed_epochs": 2,
+    "swa_count": 1,
+    "optimizer_steps": 2,
+    "global_weighted_r2_raw": 0.26416883624609244,
+    "per_target": {
+      "r2": [
+        -0.0873855534741244,
+        -0.29954175818894063,
+        -0.2825891174973638,
+        -0.12099544858785935,
+        -0.07546739286047768
+      ],
+      "mae": [
+        17.496910201263425,
+        5.671946086883545,
+        5.66360230636597,
+        23.16056346130371,
+        17.488566897583006
+      ],
+      "rmse": [
+        18.225096972077914,
+        6.386706884472659,
+        6.570849192493596,
+        24.647653097813684,
+        18.331835744933493
+      ],
+      "bias": [
+        -5.10022480392456,
+        2.935822272491456,
+        -3.331616428375243,
+        -8.431791232299807,
+        -5.496019436645504
+      ]
+    },
+    "metric_parity_error": 0.0,
+    "training_images": 2,
+    "validation_images": 2,
+    "parameters": 296454,
+    "scale_training_only": 18.16336441040039,
+    "elapsed_seconds": 0.04106144599995787,
+    "precision": {
+      "requested": "fp8",
+      "active": "fp8_linear_bf16_other",
+      "float8_layers": 2,
+      "master_weights": "FP32",
+      "conversion": "idempotent"
+    },
+    "head_sha256": "700e74b5039442c5916fa238e195bab23ebf1427af27bc0a8babc8f90392f93e",
+    "initial_state_sha256": "6ce698e6d9a46c317798e011beaba9c8010ad7f56dfe3440fde5020f4fb59172",
+    "weights_max_deviation_from_uniform": 2.866378054022789e-05
+  }
+}

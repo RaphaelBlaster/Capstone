@@ -1,0 +1,8 @@
+{
+  "quota_budget_lower_bound": 24000.0,
+  "contract": "DUAL-JEPA-DINO-2026-10-09-r1",
+  "mode": "full",
+  "notebook_sha256": "49f94bb3756cfba9c998a3db5abd2dfc8965de7882dabf62c413d42b52a7eeb6",
+  "embedded_package_sha256": "aaa068529274f262a9a0fc5b48c2313261696d8b314feec7497a63862c9a14d0",
+  "source_code_sha256": "6cb55ba481064aec95be5f16d866146599a67d13ecfe6d9950ca6c5f2a84ac6e"
+}

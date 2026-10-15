@@ -1,0 +1,68 @@
+{
+  "original_notebook": {
+    "path": "/workspace/Img2BioMass/outputs/downloads_2026_10_09/capstone_v20.ipynb",
+    "sha256": "4d2f7ef85d89c26fff489e6848063927262662f74ff053d1839f16784f93a355",
+    "status": "present"
+  },
+  "adapted": {
+    "path": "/workspace/Img2BioMass/outputs/block_shuffle_preflight/verified_source_v2/adapted.pt",
+    "sha256": "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d",
+    "status": "present"
+  },
+  "folds": {
+    "path": "/workspace/Img2BioMass/outputs/status_review_2026_10_09/img2biomass-grass-jepa-frozen-heads/frozen_head_outputs/prepared/folds.csv",
+    "sha256": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+    "status": "present"
+  },
+  "external_manifest": {
+    "path": "/workspace/Img2BioMass/outputs/status_review_2026_10_09/img2biomass-grass-jepa-frozen-heads/frozen_head_outputs/prepared/external.json",
+    "sha256": "f3de96eba431465bdb151f36cc1f6bdd3b4c90b65c295461da891929cefc713b",
+    "status": "present"
+  },
+  "dino": {
+    "path": "/workspace/Img2BioMass/outputs/final_dual_study/offline/dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth",
+    "status": "strict_authentic_B16_CPU512_verified",
+    "sha256": "73cec8be7427c8655ceced13ce62f6e20a1fa90d1b4d4a550df17a1144081a7c",
+    "source_revision": "6876159a11b4df116f30f667f8c9888617df0751"
+  },
+  "git": {
+    "commit": "8b5a0b82e38264890a129115cb421dc535f22346",
+    "dirty": [
+      " M CURRENT_STATUS.md",
+      " M KANBAN.json",
+      " M KANBAN.md",
+      " M biomass_jepa/data.py",
+      " M biomass_jepa/official_heads.py",
+      " M notebooks/kaggle_fp8_jepa.ipynb",
+      "?? biomass_jepa/block_shuffle.py",
+      "?? biomass_jepa/block_shuffle_report.py",
+      "?? biomass_jepa/supervised_shuffle.py",
+      "?? biomass_jepa/supervised_shuffle_report.py",
+      "?? docs/",
+      "?? paper/block_shuffle_archive.md",
+      "?? paper/block_shuffle_code_review.md",
+      "?? paper/block_shuffle_protocol.md",
+      "?? paper/block_shuffle_result.json",
+      "?? paper/block_shuffle_supplied_spec.md",
+      "?? paper/supervised_shuffle_protocol.md",
+      "?? tests/test_block_shuffle.py",
+      "?? tests/test_block_shuffle_dispatch.py",
+      "?? tests/test_block_shuffle_heads.py",
+      "?? tests/test_block_shuffle_notebook.py",
+      "?? tests/test_block_shuffle_report.py",
+      "?? tests/test_supervised_shuffle.py",
+      "?? tests/test_supervised_shuffle_notebook.py",
+      "?? tests/test_supervised_shuffle_report.py",
+      "?? tools/archive_block_shuffle_github.py",
+      "?? tools/build_block_shuffle_experiment.py",
+      "?? tools/build_supervised_shuffle_experiment.py",
+      "?? tools/run_block_shuffle_experiment.py"
+    ]
+  },
+  "runtime_inputs": {
+    "adapted": "/kaggle/input/notebooks/meghmayur1186/img2biomass-grass-jepa-frozen-heads/frozen_head_outputs/official_ssl/adapted.pt",
+    "folds": "/kaggle/input/notebooks/meghmayur1186/img2biomass-grass-jepa-frozen-heads/frozen_head_outputs/prepared/folds.csv",
+    "images": "/kaggle/input/datasets/dheerajkannaujiya/csiro",
+    "dino": "/kaggle/input/datasets/robiulislamistaken/dinov3-vitb16/dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth"
+  }
+}

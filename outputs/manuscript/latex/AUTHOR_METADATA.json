@@ -1,0 +1,22 @@
+{
+  "order": [
+    "Chandrakala G Raju",
+    "Megh Mayur M R",
+    "Mohd. Viquaruddin Anas",
+    "Karthik N H"
+  ],
+  "department": "Department of Information Science and Engineering",
+  "department_source": "Explicit user instruction for all four authors",
+  "institution": "B.M.S. College of Engineering",
+  "faculty_profile": "https://bmsce.ac.in/home/facultyProfile/151/Dr-Chandrakala-G-Raju",
+  "faculty_name_email_source": "Official profile successfully fetched HTTP200 11 October2026",
+  "first_author_email": "chandrakalagraju.ise@bmsce.ac.in",
+  "other_emails_source": "Explicit user-supplied addresses",
+  "corresponding_author": "Chandrakala G Raju",
+  "honorific": "Dr. omitted from journal author byline; published name used",
+  "profile_sha256": "bd67b625c39062eb672d4ddd1304e46dfdfeea616bd5dd72da50babdea362b9c",
+  "corresponding_email": "chandrakalagraju.ise@bmsce.ac.in",
+  "corresponding_source": "Explicit user selection",
+  "corresponding_orcid": "0000-0002-5577-0024",
+  "orcid_source": "Public ORCID record verified by project lead 12 October 2026; record links the same BMSCE faculty profile"
+}

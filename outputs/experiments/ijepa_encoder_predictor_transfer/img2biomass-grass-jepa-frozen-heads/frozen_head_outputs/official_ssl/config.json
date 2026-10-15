@@ -1,0 +1,40 @@
+{
+  "signature": {
+    "model": "official_ijepa_vith14",
+    "revision": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+    "initial_sha256": "2dbfad65ef9fc869ff9bcba6222dfc65efa580de17365cde100a83138f1038cd",
+    "corpus_sha256": "080e5b83117c7a4121e15c135d022f41c9ae62d937a38bbf7a0ec657a1d96ce2",
+    "images": 30663,
+    "size": 224,
+    "last_blocks": 8,
+    "steps": 2400,
+    "batch_size": 16,
+    "accumulate": 4,
+    "seed": 42,
+    "encoder_lr": 1e-05,
+    "predictor_lr": 0.0001,
+    "weight_decay": 0.04,
+    "precision": "fp8",
+    "tiny": false
+  },
+  "precision": {
+    "requested": "fp8",
+    "active": "fp8_linear_bf16_other",
+    "float8_layers": 178,
+    "teacher": "bf16 autocast; FP32 master weights"
+  },
+  "official_source_epoch": 299,
+  "actual_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "encoder_trainable_block_indices": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "masking": "Official per-image four-target multi-block collator; strict context exclusion.",
+  "resume_limit": "Committed batch order and optimizer/RNG preserved; worker augmentation draws may differ."
+}

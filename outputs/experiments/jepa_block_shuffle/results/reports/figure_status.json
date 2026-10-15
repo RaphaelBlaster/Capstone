@@ -1,0 +1,23 @@
+{
+  "figure_01_architecture": {
+    "status": "rendered"
+  },
+  "figure_02_examples": {
+    "status": "rendered"
+  },
+  "figure_03_paired_effects": {
+    "status": "rendered"
+  },
+  "figure_04_per_target_scatter": {
+    "status": "rendered"
+  },
+  "figure_05_residuals": {
+    "status": "rendered"
+  },
+  "figure_06_learning_curves": {
+    "status": "rendered"
+  },
+  "supplementary_group_sizes": {
+    "status": "rendered"
+  }
+}

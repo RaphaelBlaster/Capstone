@@ -1,0 +1,28 @@
+{
+  "status": "PASS_DESCRIPTIVE_CPU_DIAGNOSTICS",
+  "date_ist": "2026-10-10T13:45:55.941491+05:30",
+  "python": "3.12.14",
+  "torch": "2.11.0+cpu",
+  "numpy": "2.3.5",
+  "sample_matches_seed42": true,
+  "three_original_hashes_verified": true,
+  "head_predictor_signature_match": true,
+  "hidden_gradients_exactly_zero": true,
+  "hidden_occlusion_exactly_unchanged": true,
+  "all_five_target_gradients_nonzero": true,
+  "gdm_gradient_equals_green_plus_clover": true,
+  "training": false,
+  "gpu_dispatched": false,
+  "max_precision_difference_g": 1.7586402893066406,
+  "files": {
+    "outputs/jepa_xai_3/ID567744300_explanation.png": "07456d8a6def8fca0f254f69fa63e3cfa357f5e177ae3c11dfed56063fde3fba",
+    "outputs/jepa_xai_3/ID1103883611_explanation.png": "e652b4a156f74e3dd2f211a77a691255f1b22d3e61715e91d6e79cdfe6711d22",
+    "outputs/jepa_xai_3/ID1211362607_explanation.png": "2da324034abfe00a1c74a939b1604c81e7885efd8878bd2e3c72d8a9b1c0c549",
+    "outputs/jepa_xai_3/ID1103883611_attributions.npz": "7a8639fb4cfa993688963ad83f8195fcfcbe4e39614c83b96faaaa127dba4c87",
+    "outputs/jepa_xai_3/ID567744300_attributions.npz": "c2fffe74e33030224bf277b577428abfd7ae7f903814482554c3b44b71e91279",
+    "outputs/jepa_xai_3/ID1211362607_attributions.npz": "fb9cf0939031a640c2de95fd549a258682032c6ddf26e502301ef30283a739fd",
+    "outputs/jepa_xai_3/source_data.csv": "c3e40d82587550d33ccc7c88e920f91774e8a5628de2962ce98679123879cc16",
+    "outputs/jepa_xai_3/results.json": "f92b5cd11190efe06e32942b82f1921483775ea8efdf83783afc8d263b0fdd4e",
+    "tools/explain_jepa_predictor.py": "19109e4d39490dec2e7c9d66241bf842e8310aa8582a5ab6e9b95713e9de92c5"
+  }
+}

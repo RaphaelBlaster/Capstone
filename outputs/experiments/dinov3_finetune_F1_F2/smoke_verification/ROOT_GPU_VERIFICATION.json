@@ -1,0 +1,240 @@
+{
+  "verdict": "NO_GO_FULL_TRAINING",
+  "reason": "Strict GPU interrupted/resumed parity failed; root independently reproduced saved parameter/prediction differences. Cause not established.",
+  "full_training_launched": false,
+  "F3_enabled": false,
+  "checkpoint_telemetry_hashes_verified": 9,
+  "checks": [
+    {
+      "name": "outputs/dino_finetune/smoke_results/dino_finetune_gpu_smoke/fold_0/F1/selected.pt",
+      "passed": true
+    },
+    {
+      "name": "outputs/dino_finetune/smoke_results/dino_finetune_gpu_smoke/fold_0/F1/latest.pt",
+      "passed": true
+    },
+    {
+      "name": "outputs/dino_finetune/smoke_results/dino_finetune_gpu_smoke/fold_0/F2/selected.pt",
+      "passed": true
+    },
+    {
+      "name": "outputs/dino_finetune/smoke_results/dino_finetune_gpu_smoke/fold_0/F2/latest.pt",
+      "passed": true
+    },
+    {
+      "name": "outputs/dino_finetune/smoke_results/dino_finetune_gpu_smoke/fold_1/F1/selected.pt",
+      "passed": true
+    },
+    {
+      "name": "outputs/dino_finetune/smoke_results/dino_finetune_gpu_smoke/fold_1/F1/latest.pt",
+      "passed": true
+    },
+    {
+      "name": "outputs/dino_finetune/smoke_results/dino_finetune_gpu_smoke/fold_1/F2/selected.pt",
+      "passed": true
+    },
+    {
+      "name": "outputs/dino_finetune/smoke_results/dino_finetune_gpu_smoke/fold_1/F2/latest.pt",
+      "passed": true
+    }
+  ],
+  "arms": [
+    {
+      "fold": 0,
+      "arm": "F1",
+      "updates": 2,
+      "actual_changed_backbone_names": [],
+      "head_tensors_changed": 4,
+      "unchanged_other_parameter_hashes": true,
+      "independent_metric_error": 0.0,
+      "peak_allocated_bytes": 583071744,
+      "peak_reserved_bytes": 744488960,
+      "seconds_per_update_including_saves": 1.6364542654999923
+    },
+    {
+      "fold": 0,
+      "arm": "F2",
+      "updates": 2,
+      "actual_changed_backbone_names": [
+        "blocks.10.norm1.weight",
+        "blocks.10.norm1.bias",
+        "blocks.10.attn.qkv.weight",
+        "blocks.10.attn.proj.weight",
+        "blocks.10.attn.proj.bias",
+        "blocks.10.ls1.gamma",
+        "blocks.10.norm2.weight",
+        "blocks.10.norm2.bias",
+        "blocks.10.mlp.fc1.weight",
+        "blocks.10.mlp.fc1.bias",
+        "blocks.10.mlp.fc2.weight",
+        "blocks.10.mlp.fc2.bias",
+        "blocks.10.ls2.gamma",
+        "blocks.11.norm1.weight",
+        "blocks.11.norm1.bias",
+        "blocks.11.attn.qkv.weight",
+        "blocks.11.attn.proj.weight",
+        "blocks.11.attn.proj.bias",
+        "blocks.11.ls1.gamma",
+        "blocks.11.norm2.weight",
+        "blocks.11.norm2.bias",
+        "blocks.11.mlp.fc1.weight",
+        "blocks.11.mlp.fc1.bias",
+        "blocks.11.mlp.fc2.weight",
+        "blocks.11.mlp.fc2.bias",
+        "blocks.11.ls2.gamma",
+        "norm.weight",
+        "norm.bias"
+      ],
+      "head_tensors_changed": 4,
+      "unchanged_other_parameter_hashes": true,
+      "independent_metric_error": 0.0,
+      "peak_allocated_bytes": 1066982912,
+      "peak_reserved_bytes": 1203765248,
+      "seconds_per_update_including_saves": 1.7902952109999433
+    },
+    {
+      "fold": 1,
+      "arm": "F1",
+      "updates": 2,
+      "actual_changed_backbone_names": [],
+      "head_tensors_changed": 4,
+      "unchanged_other_parameter_hashes": true,
+      "independent_metric_error": 2.220446049250313e-16,
+      "peak_allocated_bytes": 583727104,
+      "peak_reserved_bytes": 744488960,
+      "seconds_per_update_including_saves": 1.5072367479999684
+    },
+    {
+      "fold": 1,
+      "arm": "F2",
+      "updates": 2,
+      "actual_changed_backbone_names": [
+        "blocks.10.norm1.weight",
+        "blocks.10.norm1.bias",
+        "blocks.10.attn.qkv.weight",
+        "blocks.10.attn.proj.weight",
+        "blocks.10.attn.proj.bias",
+        "blocks.10.ls1.gamma",
+        "blocks.10.norm2.weight",
+        "blocks.10.norm2.bias",
+        "blocks.10.mlp.fc1.weight",
+        "blocks.10.mlp.fc1.bias",
+        "blocks.10.mlp.fc2.weight",
+        "blocks.10.mlp.fc2.bias",
+        "blocks.10.ls2.gamma",
+        "blocks.11.norm1.weight",
+        "blocks.11.norm1.bias",
+        "blocks.11.attn.qkv.weight",
+        "blocks.11.attn.proj.weight",
+        "blocks.11.attn.proj.bias",
+        "blocks.11.ls1.gamma",
+        "blocks.11.norm2.weight",
+        "blocks.11.norm2.bias",
+        "blocks.11.mlp.fc1.weight",
+        "blocks.11.mlp.fc1.bias",
+        "blocks.11.mlp.fc2.weight",
+        "blocks.11.mlp.fc2.bias",
+        "blocks.11.ls2.gamma",
+        "norm.weight",
+        "norm.bias"
+      ],
+      "head_tensors_changed": 4,
+      "unchanged_other_parameter_hashes": true,
+      "independent_metric_error": 0.0,
+      "peak_allocated_bytes": 1066982912,
+      "peak_reserved_bytes": 1203765248,
+      "seconds_per_update_including_saves": 1.7887590034999903
+    }
+  ],
+  "starting_parity": [
+    {
+      "fold": 0,
+      "cached_head_max_abs_prediction_difference_g": 1.4210854715202004e-14,
+      "reencoded_start_max_abs_prediction_difference_g": 1.4210854715202004e-14,
+      "patch_grid_max_abs_difference": 0.0,
+      "same_original_encoding_batch_pairs": true,
+      "heldout_reencoded_images": [
+        "train/ID1062837331.jpg",
+        "train/ID1098771283.jpg"
+      ],
+      "cached_head_all_validation_images": 49,
+      "saved_D2_fold_R2": 0.7817661904848945,
+      "replayed_D2_fold_R2": 0.7817661904848945,
+      "R2_absolute_difference": 0.0,
+      "predeclared_cached_head_tolerance_g": 0.01,
+      "predeclared_reencoded_tolerance_g": 1.0,
+      "passes": true,
+      "precision": {
+        "backbone": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 48,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "head": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 1,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "masked_bias": "exact_zero_frozen_buffers_preserved"
+      }
+    },
+    {
+      "fold": 1,
+      "cached_head_max_abs_prediction_difference_g": 1.4210854715202004e-14,
+      "reencoded_start_max_abs_prediction_difference_g": 1.4210854715202004e-14,
+      "patch_grid_max_abs_difference": 0.0,
+      "same_original_encoding_batch_pairs": true,
+      "heldout_reencoded_images": [
+        "train/ID1035947949.jpg",
+        "train/ID1103883611.jpg"
+      ],
+      "cached_head_all_validation_images": 56,
+      "saved_D2_fold_R2": 0.7729438215627755,
+      "replayed_D2_fold_R2": 0.7729438215627755,
+      "R2_absolute_difference": 0.0,
+      "predeclared_cached_head_tolerance_g": 0.01,
+      "predeclared_reencoded_tolerance_g": 1.0,
+      "passes": true,
+      "precision": {
+        "backbone": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 48,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "head": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 1,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "masked_bias": "exact_zero_frozen_buffers_preserved"
+      }
+    }
+  ],
+  "resume_parameter_differences": {
+    "backbone_delta": 3.956258296966553e-06,
+    "head": 2.1241605281829834e-05
+  },
+  "resume_prediction_max_abs_difference_g": 0.1434478759765625,
+  "resource": {
+    "peak_allocated_bytes": 1066982912,
+    "peak_reserved_bytes": 1203765248,
+    "full_1560_update_seconds_estimate_including_saves": 2623.1781761699585,
+    "conservative_estimate_seconds_20percent_plus1800": 4947.81381140395,
+    "estimate_is_not_guarantee": true
+  },
+  "quota_after": {
+    "remaining_seconds": 104989.455,
+    "reserved_seconds": 0.0,
+    "utc": "2026-10-10T13:10:41.996319+00:00"
+  },
+  "failed_run_global_inventory": "FILES_SHA256.json not emitted because smoke stopped at resume gate. Individual selected/latest hashes match saved telemetry; local inventory separately recorded.",
+  "no_new_scientific_score": true
+}

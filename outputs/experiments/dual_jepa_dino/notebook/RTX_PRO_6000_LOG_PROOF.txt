@@ -1,0 +1,14 @@
+Kaggle full notebook Version 2
+meghmayur1186/img2biomass-final-dual-jepa-dino
+Actual stdout around runtime second 100.83, captured 10 October 2026 around 10:53 AM IST.
+
+{
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "fp8_forward_backward": "passed",
+  "requested": "fp8",
+  "active": "fp8_linear_bf16_other",
+  "float8_layers": 2,
+  "teacher": "bf16 autocast; FP32 master weights"
+}

@@ -1,0 +1,33 @@
+{
+  "notebook_sha256": "30885af0d676666adc2a93eebe0fd9af2b1ba79e66c432a3fcdbfc3061957005",
+  "package_sha256": "18756d12b22828abf4266cbc47012aea4875f13ab39025b03ce6f4f719dab8a0",
+  "trainer_sha256": "60a8b97d5c3b222b7d7cb5f0f3a971a454d0897e0042ef1f2d61297fc037563f",
+  "mode": "full",
+  "config": {
+    "epochs": 20,
+    "batch_size": 2,
+    "accumulate": 8,
+    "head_lr": 3e-05,
+    "backbone_lr": 2e-06,
+    "head_weight_decay": 0.01,
+    "backbone_weight_decay": 0.0,
+    "l2sp_coefficient": 1000000.0,
+    "clip_norm": 1.0,
+    "seed": 42,
+    "endpoint": "fixed_final_epoch",
+    "input_size": 512,
+    "augmentation": "identity_matches_executed_D2"
+  },
+  "folds": [
+    0,
+    1
+  ],
+  "arms": [
+    "F1",
+    "F2"
+  ],
+  "F3_enabled": false,
+  "execution_cap_seconds": 10800,
+  "estimated_budget_with_margin_seconds": 5604.395956704,
+  "independent_resume_verdict": "PASS_GPU_RESUME"
+}

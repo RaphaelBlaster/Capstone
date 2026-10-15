@@ -1,0 +1,20 @@
+{
+  "kernel": "meghmayur1186/img2biomass-dino-local-weighting",
+  "expected_version": 1,
+  "notebook_sha256": "bd889c27f4f248eaaa37fb90dadd7d39957a68120566d5e6d67cd980e489a8e9",
+  "package_sha256": "86f51ffe133585593fa285e4625aa412d44225cd5b01d72fc7c8b05d77dbb46b",
+  "quota": {
+    "remaining_seconds": 105160.563,
+    "reserved_seconds": 0.0
+  },
+  "checked_utc": "2026-10-10T06:40:18.288547+00:00",
+  "status": "submitted_exact_readback_verified",
+  "automatic_retries": false,
+  "ack": {
+    "ref": "/code/meghmayur1186/img2biomass-dino-local-weighting",
+    "version": 1,
+    "id": 137985504,
+    "error_present": false
+  },
+  "kernel_id": 137985504
+}

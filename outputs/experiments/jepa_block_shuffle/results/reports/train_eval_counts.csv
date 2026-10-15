@@ -1,0 +1,4 @@
+fold,train_original_images,eval_original_images,train_date_groups,eval_date_groups,overlapping_groups
+0,308,49,24,4,0
+1,301,56,23,5,0
+2,295,62,23,5,0

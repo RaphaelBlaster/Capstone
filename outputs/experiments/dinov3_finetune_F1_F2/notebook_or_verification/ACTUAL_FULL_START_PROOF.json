@@ -1,0 +1,16 @@
+{
+  "verified_at_IST": "2026-10-10T19:37:04.602568+05:30",
+  "kernel": "meghmayur1186/img2biomass-dino-finetune-f1-f2",
+  "version": 1,
+  "actual_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "fp8_forward_backward": "passed",
+  "actual_optimizer_progress": {
+    "fold": 0,
+    "arm": "F1",
+    "updates": 63,
+    "total": 400
+  },
+  "F3_enabled": false,
+  "score": "pending",
+  "raw_log": "watch/live_execution.log"
+}

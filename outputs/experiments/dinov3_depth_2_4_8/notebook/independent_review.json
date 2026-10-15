@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "verdict": "PASS_STATIC_CPU_CONDITIONAL_GPU",
+  "depths": [
+    2,
+    4,
+    8
+  ],
+  "package_sha256": "53606b7faf6cd4a42669600c1c5c3c7e2f8fca507cde4e213af16e4e0dda37de",
+  "reviewed_placeholder_notebook_sha256": "1429b505c04a7e7ebe0204b7f2339321c0167fb981d9cc4beb44e4b02dbde072",
+  "trainer_sha256": "1ee4d7ee1ce4e1a995ef818e9e06ff73eefb3fcdff0b1aa91dbeda615a3fc984",
+  "orchestrator_sha256": "1a5990946d50674c0c538e11b0dea5c1a0daffbfdecd60e5bdaafe8862e9673a",
+  "reviewer": "independent /root/depth_verifier",
+  "tests": {
+    "command": "python -m pytest tests/test_dino_finetune.py tests/test_dino_depth.py -q",
+    "passed": 21,
+    "failed": 0,
+    "seconds": 4.81
+  },
+  "gpu_fp8_verified": false,
+  "full_training_allowed_only_after_runtime_gate": true,
+  "F3_enabled": false,
+  "no_added_convolution": true,
+  "finalized_outer_notebook_review_pending": false,
+  "limits": [
+    "New depth4/8 actual GPU gradient/update/resume evidence pending; old PASS_GPU_RESUME not transferred.",
+    "Fixed mean-normalized L2-SP changes per-parameter anchor strength with trainable depth; explicitly disclosed.",
+    "RTX/quota/state preflight and saved-source readback are coordinator responsibilities."
+  ],
+  "dispatcher_sha256": "d8b18c8256b17ec4fe0fc7c4040b1b6485e0c04c50e3002cd59ac3a7f6e8949b",
+  "notebook_sha256": "7236b44b0b7a503e964d33bc1e8dc037a8b29d34cc50e68c2db8986eb0dcc610"
+}

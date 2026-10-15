@@ -1,0 +1,57 @@
+{
+  "global_weighted_r2_raw": 0.5860069535175549,
+  "weighted_mean_target_r2_raw": 0.41333504679303856,
+  "weighted_mean_target_r2_log1p": 0.5051444906262947,
+  "per_target_r2_raw": {
+    "Dry_Green_g": 0.4640547805876707,
+    "Dry_Dead_g": 0.09643958165028621,
+    "Dry_Clover_g": 0.3282746535141273,
+    "GDM_g": 0.4681857228293864,
+    "Dry_Total_g": 0.46164200130390565
+  },
+  "per_target_rmse_g": {
+    "Dry_Green_g": 24.063074829437,
+    "Dry_Dead_g": 13.305455454727342,
+    "Dry_Clover_g": 10.656623348486344,
+    "GDM_g": 22.638151447522194,
+    "Dry_Total_g": 25.761642319162508
+  },
+  "status": "completed_heads",
+  "folds": [
+    0,
+    1
+  ],
+  "predicted_images": 105,
+  "expected_images": 357,
+  "complete_oof": false,
+  "signature": {
+    "feature_manifest_sha256": "a311fd3162ec2de73f37165525d4cd79846c0bef007d5a101e342df6886e9d4f",
+    "fold_table_sha256": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+    "folds": [
+      0,
+      1
+    ],
+    "seed": 42,
+    "epochs": 200,
+    "swa_last_epochs": 40,
+    "width": 512,
+    "dropout": 0.2,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "batch_size": 32,
+    "precision": "fp8",
+    "tiny": false,
+    "objective": "raw_global_weighted_mse_one_training_scale",
+    "selection": "fixed_final_swa_endpoint_not_best_validation_epoch"
+  },
+  "group_bootstrap": {
+    "interval": [
+      0.4910067725557186,
+      0.6771414142554044
+    ],
+    "groups": 9,
+    "draws": 1000,
+    "scope": "Group resampling of fixed OOF predictions; excludes training-seed variability."
+  },
+  "limits": "Repeated development folds; one seed; fixed endpoint. No leaderboard or acceptance claim."
+}

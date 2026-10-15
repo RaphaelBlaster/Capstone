@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    "One original field\n2000 \u00d7 1000 pixels",
+    "Two nonoverlapping\n1000 \u00d7 1000 halves",
+    "Training only: control /\n4\u00d74 / 10\u00d710 permutation\np = 0.35; then 224\u00b2 + quarter-turn",
+    "Frozen grass-adapted\nI-JEPA ViT-H/14 encoder",
+    "Two mean view features\nSame gated regression head",
+    "Green / Dead / Clover\nGDM = Green + Clover\nTotal = GDM + Dead",
+    "Validation / inference\nOriginal unshuffled halves\nIdentity orientation"
+  ],
+  "training_shuffle_probability": 0.35,
+  "validation_shuffle": false
+}

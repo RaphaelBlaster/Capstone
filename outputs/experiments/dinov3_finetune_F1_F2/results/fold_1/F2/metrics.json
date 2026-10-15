@@ -1,0 +1,1058 @@
+{
+  "complete": true,
+  "signature": {
+    "config": {
+      "epochs": 20,
+      "batch_size": 2,
+      "accumulate": 8,
+      "head_lr": 3e-05,
+      "backbone_lr": 2e-06,
+      "head_weight_decay": 0.01,
+      "backbone_weight_decay": 0.0,
+      "l2sp_coefficient": 1000000.0,
+      "clip_norm": 1.0,
+      "seed": 42,
+      "endpoint": "fixed_final_epoch",
+      "input_size": 512,
+      "augmentation": "identity_matches_executed_D2"
+    },
+    "origin": {
+      "repository": "https://github.com/facebookresearch/dinov3",
+      "revision": "6876159a11b4df116f30f667f8c9888617df0751",
+      "license": "DINOv3 License Agreement; LICENSE",
+      "model": "dinov3_vitb16",
+      "checkpoint_sha256": "73cec8be7427c8655ceced13ce62f6e20a1fa90d1b4d4a550df17a1144081a7c",
+      "source_files": {
+        "LICENSE.md": "25d122eb8f5b880fd23c736fb6ea8018ee45c12237e00b8a86d14c653904999e",
+        "dinov3/__init__.py": "cfcd49b9d41705ef9bd6ce61bccc38e8ab8fa52fa365de48c10a7d7e1710b631",
+        "dinov3/checkpointer/__init__.py": "2d44449d0cdd2b7c803582def39b61bec1e55bf610a92bc3b072a7a2eddea877",
+        "dinov3/checkpointer/checkpointer.py": "21d9840fb2bfcb217738a0843ccc72c87cfc518957ff18038e3350640ee3cade",
+        "dinov3/configs/__init__.py": "3e43ad228d86c0be1cf711a1527c40c9f351a5910cfc250a341e18e000183493",
+        "dinov3/configs/config.py": "bed862291a153e9008bd33cd4ee84235b8b169804a2552aca45460e992d5dd13",
+        "dinov3/configs/train/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/configs/train/multidist_tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/data/__init__.py": "d802fa917898098dfeff0d6baf9360620c1e3ab1b856413be0e3d86a993d77ec",
+        "dinov3/data/adapters.py": "104068a78e6055a3198ee58f0658950d7a081ce8a79514e924d856f0e59ffad2",
+        "dinov3/data/augmentations.py": "ed056cb708e00dbc989bb9c8fc59839536bed17263cc297634e7accaeca3be3e",
+        "dinov3/data/collate.py": "49c0f80d055c8e66d4da64f5a3235a45ec3727323dc13d85b752549e4ed2a2a6",
+        "dinov3/data/datasets/__init__.py": "4c7ce1ec121aff57a9c274296ebd9c59a0c087b46acabad0ed54927d11171719",
+        "dinov3/data/datasets/ade20k.py": "c1e010b3420b62b811a943a539a9df07a23867b391a54cf4f48faf0d8f2b61cf",
+        "dinov3/data/datasets/coco_captions.py": "9f602a8bc537db35a99d5c252df64bc9b2c1db606f49b73eb0e7cf163d107eeb",
+        "dinov3/data/datasets/decoders.py": "7a7fc3ed86488c4e5be720be59545a40480ae647499a471c6c3178867aa01222",
+        "dinov3/data/datasets/extended.py": "b23cbf6245a7cf8c24ce85197aad9edc5123fba5e16a45d672f77a82109b8983",
+        "dinov3/data/datasets/image_net.py": "65720c18947dcf142985a77c333103083b8319930f78315e7535ea72614b0ba3",
+        "dinov3/data/datasets/image_net_22k.py": "928e8e84e64098e29801ff5e138ea8ff54bb9f126cb1ad5e30dfdf38e5a8ac51",
+        "dinov3/data/datasets/nyu.py": "bee8d10d28e74d2b7bfb1dd6b404ea2081c1f418071772c82933b92191204329",
+        "dinov3/data/loaders.py": "66d1e0125d6a26f96ce19417bce34b9adfc61841c22879d90883536c1a808545",
+        "dinov3/data/masking.py": "40f37aa4b4a7b7ac94ebf57000bdce50e24fd8771feb1edca7d8ec40bc5f01b2",
+        "dinov3/data/meta_loaders.py": "b6301d9381c92a5462a3a4228340a64c660f9e38defcbaf70fc0f9977a2c0b63",
+        "dinov3/data/samplers.py": "f51e00c1534badb4c0bd3c09258d03eca50111c6a965a011f35c94184673054c",
+        "dinov3/data/transforms.py": "fe8de416012616da78c7191e3975c622171cd3c14d26bbbb3eb20c2645bb3840",
+        "dinov3/distributed/__init__.py": "d17e0f68fa38f506ae19347c2b4fc99d1b1cdc7159bebf9a8ed8f863116e58a1",
+        "dinov3/distributed/torch_distributed_primitives.py": "cde664c2bde4021778284b45018561e219d0ef6c93b8d652b9d596fbea689be9",
+        "dinov3/distributed/torch_distributed_wrapper.py": "6dd47e7e8044c98b37ad0d00dc1a2f5732389ae38e779207ec794da35a4e5d52",
+        "dinov3/env/__init__.py": "924c241f9301b704ffe064c796966a801dfffae7cd9d2bd072710f2a8fbc7b74",
+        "dinov3/eval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/accumulators.py": "311aa6a4ba713fa8edd263e95f0d48f5891595c2e525ebc7a2f08a706e122412",
+        "dinov3/eval/data.py": "97d264cc012d2f52d7102155215dfd9a0c8399c238aa8cb84219b2d384046f90",
+        "dinov3/eval/depth/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/depth/checkpoint_utils.py": "5ea2c430908d0901ce55fdbeea710c5287c8f8cdf50019ff946d6a42162466dc",
+        "dinov3/eval/depth/config.py": "3ece55fdcbe91d71494d43915cbc5ccded37b1227920d91649de0b5ed0e91fb0",
+        "dinov3/eval/depth/configs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/depth/data.py": "1d876684c2108a20440abc89e40a2fc9dba369b065a788575ad4a7b8e66e4b50",
+        "dinov3/eval/depth/datasets/__init__.py": "94df78b000730b9534e7f575731bf4d1668eba5fa6ef693f57dd25dafc3572ce",
+        "dinov3/eval/depth/datasets/datasets_utils.py": "065ca6ceee936fa37e41a4cf93cd588b937806d8606d23b5d471168da9bbb967",
+        "dinov3/eval/depth/eval.py": "758d2b189d61e154c62b6f874672316a5a5c36a07d84cfa122cefe0d9a9f1d64",
+        "dinov3/eval/depth/loss.py": "aac9df1ede31dabaef0c7ec9bed09a8b79fa1e2bc0b19fdb69bfc200d57de853",
+        "dinov3/eval/depth/metrics.py": "5d0160e4bec9ccec7512fafbbbc28aca76521b8a6ca914a740131c4e2631f056",
+        "dinov3/eval/depth/models/__init__.py": "c567603ba4a3b0fc3625cfa7483392b41de3564b252ec861d85087edab6cb553",
+        "dinov3/eval/depth/models/dpt_head.py": "efb245b7faa319e8c9ec2320bce8bacb848d7e69d59992275f11531839153f21",
+        "dinov3/eval/depth/models/embed.py": "975b1add76ecf7516dc46e147e5d7e9c7a4ccb0fc0be6eea27501ebae818fb14",
+        "dinov3/eval/depth/models/encoder.py": "6ec3fc75ab5ec958388a630cc86a6bc5995aa884113c0a0fbb5d2583f5c262d5",
+        "dinov3/eval/depth/models/linear_head.py": "04e032a861ea918d2020731b573a05613803a5c24bbb3f8af738eeb09d2ce348",
+        "dinov3/eval/depth/run.py": "5bc5e5a58ee84c9547641fa5d054306c8819c69b370736e517b0db7a3d7289f4",
+        "dinov3/eval/depth/schedulers.py": "5d3cf9b827552b60f1aec7608a89022a5f12ab3e337c3745c4f8028cb53e3951",
+        "dinov3/eval/depth/train.py": "533fd16b9f87f5e00db7d2c222c32906b14ab236ac7ace148a03c499cb0efdf9",
+        "dinov3/eval/depth/transforms.py": "5061d83c4be205d860a375784ea95470e49947d638ec2c997473308ac159c1c2",
+        "dinov3/eval/depth/utils.py": "056d6ff47f768449a0292db5daf60a00b4626970c65fdaed0eb88e90f6ab7b7c",
+        "dinov3/eval/depth/visualization_utils.py": "52861fd1685083387848f17eb63fa5283bbc2d87c5d729b14528fe7727e37cd8",
+        "dinov3/eval/detection/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/detection/config.py": "b70dcd89651d668ab107fd92203d166dccddbfc002e3afd1e57407daf3a50fa9",
+        "dinov3/eval/detection/models/__init__.py": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db",
+        "dinov3/eval/detection/models/backbone.py": "e739d35f02af46fed6afd8f824e47060bd4d09b73228460bf0063ad8bb974edc",
+        "dinov3/eval/detection/models/detr.py": "4e568f73d6cab0d90668163fcb6bbc5b088a4f4bd046be38929daba93a404d23",
+        "dinov3/eval/detection/models/global_ape_decoder.py": "96be28c2e99e67ede9472bb29cba68109f513a6e6aed482066d8f001ac2f1b84",
+        "dinov3/eval/detection/models/global_rpe_decomp_decoder.py": "f4c77a15572b6d030b6662cad73cf80b3d4fb94ff449301ef20761d3183caffc",
+        "dinov3/eval/detection/models/position_encoding.py": "f885b7bfd40df50cb012c8038979042ff2f5c427a5f6bbe36028e84735132d4a",
+        "dinov3/eval/detection/models/transformer.py": "9f9f83a54396f1acc1fa1ff9b66ddc54fe4990ab15f586f9382a31a599a4e0a3",
+        "dinov3/eval/detection/models/transformer_encoder.py": "907ac6ed7cca47ef5e7fb04089d644422c31cd30226cdaa59d21279f7668ca73",
+        "dinov3/eval/detection/models/utils.py": "039d5d96267cd6a3201f38846781155b3de106eda63253d6b059de7b74e79952",
+        "dinov3/eval/detection/models/windows.py": "fc1a62a3bafdab4345b6c3232a978d03aef0e72ea1101c7da52ef6eca231e30d",
+        "dinov3/eval/detection/util/__init__.py": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db",
+        "dinov3/eval/detection/util/box_ops.py": "09a4981ed1a031c0163d9190c166b125d5546982b8467d2e5a388edeb708edf9",
+        "dinov3/eval/detection/util/misc.py": "fd815910b8dd23f0df3364fa08e194c07e97a1582ae5305b3b575f5d99a92360",
+        "dinov3/eval/helpers.py": "becd0e2de601b45f597a27f2ebfef4adf0a03086f98f67127910a8a7077c2445",
+        "dinov3/eval/knn.py": "44e282054c07e7ad0201e0ff6dc8102470dfb41a94a0b2174af7cb71daa5694b",
+        "dinov3/eval/linear.py": "6a3cfb9ab133e3a386cd0f0c7769fc9d378d7d4a5522d3437e8dfa3114b08b6c",
+        "dinov3/eval/log_regression.py": "d2924997552714392ed26cfc752d9e83c94bdd3fb267ac97e65d10c4aa7a2ed4",
+        "dinov3/eval/metrics/__init__.py": "5eac7657f2782bf9aeba5f2e0a02d29c20440fdb6e41372c4c0b4b7cdfcd3cfc",
+        "dinov3/eval/metrics/classification.py": "7cdf1830dfea572d91269f58d4b44908150a689f3df24b8630b44f9ce1606618",
+        "dinov3/eval/metrics/imagenet_c.py": "0eba26615a0257edcde85ce93e52b3f2959c0416ce678cf9037145cd347feae3",
+        "dinov3/eval/results.py": "f3fc969dde4f8622b84e2da251a2044b3f86f5dd4bfe54bd2d4347675ae013ec",
+        "dinov3/eval/segmentation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/segmentation/config.py": "8add85ef68c1f299daa062ff1291af09713057f4e4c0a4179df9d0c056b46c5f",
+        "dinov3/eval/segmentation/configs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/segmentation/eval.py": "37908b3264518fe504f795785ca1747401ddba237daab59e37e59d222c738d32",
+        "dinov3/eval/segmentation/inference.py": "f9cb07c34398f8ff1ff6dcf95d30f00a0048ffc76931c932f3eb9389aad2eb07",
+        "dinov3/eval/segmentation/loss.py": "82c0e39b29decef34f679f1d48db8699378e4de63c1e47ca5c967ae889a64d18",
+        "dinov3/eval/segmentation/metrics.py": "ac91cb3e8ecc7fa51ce398cd2e742572a1a926a282690bd9cd1877d84c8d7b0c",
+        "dinov3/eval/segmentation/models/__init__.py": "3f27793f35fd2ea8009b6eb1c48e4fa3dfa50dcf97496bba74ed6e425b5f8889",
+        "dinov3/eval/segmentation/models/backbone/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/segmentation/models/backbone/dinov3_adapter.py": "20922fc0b3e7526920525d25dd7207119e7e6aee6626668f747458e9a91bf827",
+        "dinov3/eval/segmentation/models/heads/__init__.py": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db",
+        "dinov3/eval/segmentation/models/heads/linear_head.py": "82d69b2a46fd5f13b128f35e05c3b8f66d303727935e1660a5448a3d95d83590",
+        "dinov3/eval/segmentation/models/heads/mask2former_head.py": "b7b177f9dc1d77cf98404f60d50d288a76f8eec06ac54eceb0a99392ac8c5733",
+        "dinov3/eval/segmentation/models/heads/mask2former_transformer_decoder.py": "c1637e3c873f823f7c2c534b77e7b7b841f0847bb0aa6eed42c04c0f2e71c7dd",
+        "dinov3/eval/segmentation/models/heads/pixel_decoder.py": "ecea2f7b5b0ef0078ff80fda8a1cdf0a149df744680f2301d715c4ab141f96f9",
+        "dinov3/eval/segmentation/models/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/segmentation/models/utils/batch_norm.py": "ead32bdbdf8163625d2810fd315b0613d2890052e20a57f75a115a3850d5ee6b",
+        "dinov3/eval/segmentation/models/utils/ms_deform_attn.py": "54be948b54bce71f881ba1347e1eeb4143f626dab1a921f134d8cd7b9792d465",
+        "dinov3/eval/segmentation/models/utils/ops/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/segmentation/models/utils/ops/functions/__init__.py": "d99e42be9d47c057ba6f9d0c77fd36f823ee2f7aebcce2d34592b83cce4db4fa",
+        "dinov3/eval/segmentation/models/utils/ops/functions/ms_deform_attn_func.py": "0b28e5c0e364b9a3e2c7a2e92b05d835203fa1e8ccfad6218018985888237e21",
+        "dinov3/eval/segmentation/models/utils/ops/modules/__init__.py": "a006f568e2a36e928106a5152cfd39eef97157b6af96861b2a3bb771337f692a",
+        "dinov3/eval/segmentation/models/utils/ops/modules/ms_deform_attn.py": "297e3522826afec3fb93692b68b11f9245263626bc0e37042088bc547a2c3821",
+        "dinov3/eval/segmentation/models/utils/ops/setup.py": "b6d5d2c156b74e07cb56a2f1cef42e4f57ca96599d621bc5a24dba510c4b7984",
+        "dinov3/eval/segmentation/models/utils/ops/src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/segmentation/models/utils/ops/src/cpu/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/segmentation/models/utils/ops/src/cuda/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/segmentation/models/utils/ops/test.py": "08c1605c7987a77504e789afb42619f376b37476bad7e7b813c8d3570c05f19e",
+        "dinov3/eval/segmentation/models/utils/position_encoding.py": "a7c1a83ec11f0bbad68c6751fc3a457e8bd0948d6968827611f8a59db7968437",
+        "dinov3/eval/segmentation/models/utils/transformer.py": "42f8c7a6d045dbe95c4d79d3b39080d6a2ccc7bc2c478df649b4d60d81043a86",
+        "dinov3/eval/segmentation/run.py": "27b2226c24f812faa809049ff62a8bd9e6a44f75d51efe819a431c52d9a9673b",
+        "dinov3/eval/segmentation/schedulers.py": "8ff0ed6a6702e1b219a72f5ad50184378588d250b9d91b0d0f663e864f930901",
+        "dinov3/eval/segmentation/train.py": "acb052039193c8d12595b9088c4ce9f4cabaa3fde9790e5831fcaa7e47d02d80",
+        "dinov3/eval/segmentation/transforms.py": "7e44bffbf26291108ba41b305b3c33f5838a283dba21817db77fc91282eb45a1",
+        "dinov3/eval/setup.py": "f5312a7e9a556cbed2ac87b75b4cdc6f8cec38245ec6176449eccfe34810da53",
+        "dinov3/eval/text/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/text/ac_comp_parallelize.py": "939d2a71d35c7135795372f31081d6359d6342a3e0f47c2ad6ca5cfa50e0335c",
+        "dinov3/eval/text/build_dinotxt.py": "c3797ed848ff8a2cdae2ede553197b26acf38d3b140b6d7a43b63735c93065c1",
+        "dinov3/eval/text/clip_loss.py": "b9a15a16a6ab5b734272d7e769baa94c44908b3c3622e6a126556eba29ff0f1e",
+        "dinov3/eval/text/configs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/eval/text/dinotxt_model.py": "04a9c4bbd58294b8193163c1d1a716b2b834a1e00e0d039e7222f9bfdb7af0e2",
+        "dinov3/eval/text/gram_loss.py": "b32fa04dbb0ba76cbed6c0d4cf98c26180f5c5b0567b986b9f73b885253009d1",
+        "dinov3/eval/text/text_tower.py": "c131ee186815f533ee93a402720f8208891718edb8e2f1f9b282559df5446d6a",
+        "dinov3/eval/text/text_transformer.py": "4264fa001ff0062815a0323a107b8d2205f516de790c6775f60cc5daa5e95247",
+        "dinov3/eval/text/tokenizer.py": "4c63dc45da6d2113795b3ca68fd7c27808124f4530d8090888d28fe389ae7f27",
+        "dinov3/eval/text/train_dinotxt.py": "40428860f1ec846be0c4874d34b40c32ff4c37bf096353beff00c31339bc5b91",
+        "dinov3/eval/text/vision_tower.py": "adb2825d99e883126e9903b0a54fbe7ab4920cedccc894d843efd2078c647f85",
+        "dinov3/eval/utils.py": "644ed23a8b3183399af632a4dc13094d4454c5e608fbc9fb870807b2f2a048df",
+        "dinov3/fsdp/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/fsdp/ac_compile_parallelize.py": "1d5ac721becdef6748acb604b6de6afbd820bccdc710013c790700958103c9aa",
+        "dinov3/hub/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/hub/backbones.py": "6c9a18aca0b5fcb1fce439213a94a528e072376a6023718e03dbd9fcfaa10deb",
+        "dinov3/hub/classifiers.py": "2223bb2ca3f1d7a7b94d591e75c968ef588b9538aefa359c6ebd24ff3af2a8ac",
+        "dinov3/hub/depthers.py": "32a8793f0084189c6c8ea74519b0a54d5290a880c68d0ba8f1664fae99066dc6",
+        "dinov3/hub/detectors.py": "243c070fd027f084e8b901d862fc98b0b27748c1ff9c3a32c9f8e7bfe9c4462b",
+        "dinov3/hub/dinotxt.py": "6a97e636ad5ecf18e4b7ec667d2707564fc207f298341024257aa87bc175bf50",
+        "dinov3/hub/segmentors.py": "a6bba5253fb9fb8d059871f89ac7354bdffe516074e357823e6defc2df493a51",
+        "dinov3/hub/utils.py": "24d0e4bd083510bb00677ebd0082dd486a1f9c8b8467f98b7fe6109aefc4712d",
+        "dinov3/layers/__init__.py": "0707ef3e9c20aff594c3817f64a2c8ff34a21bd3b55e7d03471969fd314dde20",
+        "dinov3/layers/attention.py": "dfc21def6ba17d00cba18ea23a8726e7f1dd5a0dc8e43510852c999a173d37a8",
+        "dinov3/layers/block.py": "809a3615ec93019042ab440f31c21d5242186d9e503c67ac0f42a324ceae1950",
+        "dinov3/layers/dino_head.py": "cd7a83f00ac449f962484bad0f2959be477781e57943508428d32ff88f41fe33",
+        "dinov3/layers/ffn_layers.py": "fa2caadb52ff43a7e6888966a00ee07842fed9fd05c68305962cc1577d221fbe",
+        "dinov3/layers/fp8_linear.py": "f5b4d46e8c159e1830bc99968baf9a2e8070f0c46d0dda235eac46cc11c34f47",
+        "dinov3/layers/layer_scale.py": "f9a10ee763a62136f9e814bfe2f2209c2cb501dfdc5573f858ab01ba9a69c23f",
+        "dinov3/layers/patch_embed.py": "c592c7262779c8e1789ed502aee81bdd55eba4607065f8d04ae95eea683d0ef1",
+        "dinov3/layers/rms_norm.py": "8509ffc53f0bbe9e353a8b9e57ca2396795640b4ecc85140c27b17127c971869",
+        "dinov3/layers/rope_position_encoding.py": "af8ea35acb76d18ad4d53b844d5057bf01472a848375c51d70583a87f044efd1",
+        "dinov3/logging/__init__.py": "50d75171a7b1828f669023e675d26227c7570a75e9bc3e7e31edb921abfe120f",
+        "dinov3/logging/helpers.py": "9dec29734a5c88d9b8e1763fff2c738ec1ad2c3a1ead40acb216dcf12a94d5aa",
+        "dinov3/loss/__init__.py": "84e8e7856fc08af844accd51f4588fce0c85c33890f72e88c11bbb3b9c1d6caa",
+        "dinov3/loss/dino_clstoken_loss.py": "2ee114321a3c38b4e9426bb200f3c13de4672e6531a7a3e30c4b399881529166",
+        "dinov3/loss/gram_loss.py": "d4ec062c53cc40f039878fb90f88844ceb15c3685e695640038c6f56988a2256",
+        "dinov3/loss/ibot_patch_loss.py": "bfb9e358aaf872949ce3150c22599f89f7dbdafd0137652b7e1944a9853f40d4",
+        "dinov3/loss/koleo_loss.py": "942ccd42b06105c95c04d62ca2105d9e5bf22987b509c19fb81a645fac5a8cf6",
+        "dinov3/models/__init__.py": "3e993968b5ffe2be00eaea8b16cd52f8d165ac683b9035d3ceb769cffdd72914",
+        "dinov3/models/convnext.py": "ab969325158df58f4b0957f81f77d543392df61611dc0c72e89ba172ecdf0fb9",
+        "dinov3/models/vision_transformer.py": "1af05405e19bc42188f80bfcb204b87ed1ec72af998e0bbd4658a85d7fae93f2",
+        "dinov3/run/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/run/init.py": "dc28d4f4a0fdb4886af9a3194dcddf7807e9523df0ca58ead5563bb3f4e442b4",
+        "dinov3/run/submit.py": "2233b810f5ebb640d528b0dc7e491557073f35c2e20d2cd39cdf214684d7019c",
+        "dinov3/thirdparty/CLIP/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/thirdparty/CLIP/clip/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/thirdparty/CLIP/clip/simple_tokenizer.py": "b03605a8e83952e3202659351cb0d695b0c11927089bb6bf3d0379f5ac1144c7",
+        "dinov3/thirdparty/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dinov3/train/__init__.py": "a6040401fdef80c38b7bed37e43c657dc908dfefe481244c99f65eb622e42dd1",
+        "dinov3/train/cosine_lr_scheduler.py": "671d3a7c16fcc7b73a6ff76d702664ccfe141895d89bc9d0137bee6a3ce4b02c",
+        "dinov3/train/multidist_meta_arch.py": "34f04732ad1d9150e120f3eab52b3711883d5bf8e4048bab83e0dc0816073c8c",
+        "dinov3/train/param_groups.py": "b3d638888c03a63b7bc585c2f886ca4cedb6ba24f4e9511bfa3840f97b90716f",
+        "dinov3/train/ssl_meta_arch.py": "1b11d7f9f94e6292c3be141ac50ebd10d7357103cb63ce4965b69e3da4ff0781",
+        "dinov3/train/train.py": "1f979df26be1f1a7344d5a75716a95470b86b3fdd0294a5c69abe48a85ec576e",
+        "dinov3/utils/__init__.py": "83e6ec1f0cea862f18ae111560e2eadf2fff1873e3fdd7d358dee8d32d0ade8d",
+        "dinov3/utils/cluster.py": "d1a003ad571ad0f69e1b1a495ada8d079068fbed27ec929cb6b12a4eb1afa82b",
+        "dinov3/utils/custom_callable.py": "4e3508a7e2fb419aae447e4a17049c5aef4603e42bce548ac3b317749c24d1c3",
+        "dinov3/utils/dtype.py": "0c53f5cc155ea7e9899bc611493193fef9b985f23cb7d990401e22c363ac4419",
+        "dinov3/utils/utils.py": "d6fe7fe621b2ae3db89e3af588fbee0c78afe2130f4548dff87c94cbd734fe40",
+        "hubconf.py": "b36bf0b0502127fb938b6f3424c6e20b48206ee361422aae777e87e20006ba24",
+        "setup.py": "e74de8dec4582c1fcbb691f02ff3fb795106a0927c6df87c8cb196c808be8c19"
+      },
+      "dim": 768,
+      "patch_size": 16,
+      "register_tokens": 4,
+      "resolution": 512,
+      "spatial_patch_tokens": 1024,
+      "frozen": true,
+      "strict_state_load": true,
+      "D2_head_sha256": "f98a98c75a8ef871de5d86ff20862a916767c76d622b0b35dc5bb9a7878e58dd",
+      "embedded_package_sha256": "18756d12b22828abf4266cbc47012aea4875f13ab39025b03ce6f4f719dab8a0"
+    },
+    "fold": 1,
+    "arm": "F2",
+    "schedule_sha256": "a66ed152b13879c63dc69d122cac4ff37f5c51b3a29aff0816f561ed33305c8d",
+    "table_sha256": "0a0b32400a3a10c0e6ab303fbd65e3303a08495e92709e0009f3a874c81aef6b",
+    "initial_head_sha256": "e601b2ded49b83aee24f87c32c534f4a32da6b6dcfe89b3c09c86d6deed993d6",
+    "initial_backbone_sha256": "bea62497b8971348da0ebac8c4ddc4e95e25755e854cb60d37ce07d65e4dc087",
+    "code_sha256": "60a8b97d5c3b222b7d7cb5f0f3a971a454d0897e0042ef1f2d61297fc037563f",
+    "precision": {
+      "backbone": {
+        "requested": "fp8",
+        "active": "fp8_linear_bf16_other",
+        "float8_layers": 48,
+        "master_weights": "FP32",
+        "conversion": "idempotent"
+      },
+      "head": {
+        "requested": "fp8",
+        "active": "fp8_linear_bf16_other",
+        "float8_layers": 1,
+        "master_weights": "FP32",
+        "conversion": "idempotent"
+      },
+      "masked_bias": "exact_zero_frozen_buffers_preserved"
+    }
+  },
+  "optimizer_steps": 380,
+  "updated_backbone_names": [
+    "blocks.10.attn.proj.bias",
+    "blocks.10.attn.proj.weight",
+    "blocks.10.attn.qkv.weight",
+    "blocks.10.ls1.gamma",
+    "blocks.10.ls2.gamma",
+    "blocks.10.mlp.fc1.bias",
+    "blocks.10.mlp.fc1.weight",
+    "blocks.10.mlp.fc2.bias",
+    "blocks.10.mlp.fc2.weight",
+    "blocks.10.norm1.bias",
+    "blocks.10.norm1.weight",
+    "blocks.10.norm2.bias",
+    "blocks.10.norm2.weight",
+    "blocks.11.attn.proj.bias",
+    "blocks.11.attn.proj.weight",
+    "blocks.11.attn.qkv.weight",
+    "blocks.11.ls1.gamma",
+    "blocks.11.ls2.gamma",
+    "blocks.11.mlp.fc1.bias",
+    "blocks.11.mlp.fc1.weight",
+    "blocks.11.mlp.fc2.bias",
+    "blocks.11.mlp.fc2.weight",
+    "blocks.11.norm1.bias",
+    "blocks.11.norm1.weight",
+    "blocks.11.norm2.bias",
+    "blocks.11.norm2.weight",
+    "norm.bias",
+    "norm.weight"
+  ],
+  "gradient_max_abs": {
+    "blocks.10.norm1.weight": 0.3430705964565277,
+    "blocks.10.norm1.bias": 0.12242980301380157,
+    "blocks.10.attn.qkv.weight": 0.20416304469108582,
+    "blocks.10.attn.proj.weight": 0.06280550360679626,
+    "blocks.10.attn.proj.bias": 0.03248622268438339,
+    "blocks.10.ls1.gamma": 0.026693644002079964,
+    "blocks.10.norm2.weight": 0.17176377773284912,
+    "blocks.10.norm2.bias": 0.052115458995103836,
+    "blocks.10.mlp.fc1.weight": 0.2576849162578583,
+    "blocks.10.mlp.fc1.bias": 0.05845201388001442,
+    "blocks.10.mlp.fc2.weight": 0.15154480934143066,
+    "blocks.10.mlp.fc2.bias": 0.09313981235027313,
+    "blocks.10.ls2.gamma": 0.028796685859560966,
+    "blocks.11.norm1.weight": 0.2121884822845459,
+    "blocks.11.norm1.bias": 0.13160409033298492,
+    "blocks.11.attn.qkv.weight": 0.37066760659217834,
+    "blocks.11.attn.proj.weight": 0.07976578921079636,
+    "blocks.11.attn.proj.bias": 0.0345388762652874,
+    "blocks.11.ls1.gamma": 0.013828540220856667,
+    "blocks.11.norm2.weight": 0.20686465501785278,
+    "blocks.11.norm2.bias": 0.025529980659484863,
+    "blocks.11.mlp.fc1.weight": 0.06301969289779663,
+    "blocks.11.mlp.fc1.bias": 0.020332975313067436,
+    "blocks.11.mlp.fc2.weight": 0.10903949290513992,
+    "blocks.11.mlp.fc2.bias": 0.01612098515033722,
+    "blocks.11.ls2.gamma": 0.0063623362220823765,
+    "norm.weight": 0.11468280851840973,
+    "norm.bias": 0.15452741086483002
+  },
+  "head_changed": true,
+  "frozen_unchanged": true,
+  "parameter_hashes": {
+    "cls_token": {
+      "initial": "6ec2446cb8793dfab7ad5b93292636142a52b40441f84a4fe3d0438a049f1b94",
+      "final": "6ec2446cb8793dfab7ad5b93292636142a52b40441f84a4fe3d0438a049f1b94"
+    },
+    "storage_tokens": {
+      "initial": "32022ea5a8f76eb151d6ca566342c732499f96ca74476a1cfe5de20ba5fcb1ec",
+      "final": "32022ea5a8f76eb151d6ca566342c732499f96ca74476a1cfe5de20ba5fcb1ec"
+    },
+    "mask_token": {
+      "initial": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+      "final": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    "patch_embed.proj.weight": {
+      "initial": "f0a45d8db252d14ea554840ae5992afba16cfe1e9a64f0d7eb9995336e27f2c4",
+      "final": "f0a45d8db252d14ea554840ae5992afba16cfe1e9a64f0d7eb9995336e27f2c4"
+    },
+    "patch_embed.proj.bias": {
+      "initial": "2e047bfcea15699edc476c3465a801d27ec341cb6f9dec9541b8c9dd1a4fc488",
+      "final": "2e047bfcea15699edc476c3465a801d27ec341cb6f9dec9541b8c9dd1a4fc488"
+    },
+    "blocks.0.norm1.weight": {
+      "initial": "944c0f5559b9480357a0455e3e2a04edb7c094f2243336522dd674d4abad0c3e",
+      "final": "944c0f5559b9480357a0455e3e2a04edb7c094f2243336522dd674d4abad0c3e"
+    },
+    "blocks.0.norm1.bias": {
+      "initial": "1de10355d6817ddfe1c7b43efd7333478f37d986e3866a381f24fb1e6800c571",
+      "final": "1de10355d6817ddfe1c7b43efd7333478f37d986e3866a381f24fb1e6800c571"
+    },
+    "blocks.0.attn.qkv.weight": {
+      "initial": "e220ea34dcc08f1a205a764958206b315d242f64f53d03e96e413480e4b133c6",
+      "final": "e220ea34dcc08f1a205a764958206b315d242f64f53d03e96e413480e4b133c6"
+    },
+    "blocks.0.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.0.attn.proj.weight": {
+      "initial": "1bca336b10280b84d3eea71a13dcaa2bb0c7e8a9c3c6f71075bff13a810bb820",
+      "final": "1bca336b10280b84d3eea71a13dcaa2bb0c7e8a9c3c6f71075bff13a810bb820"
+    },
+    "blocks.0.attn.proj.bias": {
+      "initial": "f1e6ca76f9a8a8522a590b32140e4b62fdc3b7acad533e67e68d6d709f7274a8",
+      "final": "f1e6ca76f9a8a8522a590b32140e4b62fdc3b7acad533e67e68d6d709f7274a8"
+    },
+    "blocks.0.ls1.gamma": {
+      "initial": "a867dd22d56ec91684be96a6e851da4ad729bf98858add732cffaad134780c5c",
+      "final": "a867dd22d56ec91684be96a6e851da4ad729bf98858add732cffaad134780c5c"
+    },
+    "blocks.0.norm2.weight": {
+      "initial": "459db4de3bd417c495a9eb0a8c723ebe91b7e826407d99e4cac14308da35b4b0",
+      "final": "459db4de3bd417c495a9eb0a8c723ebe91b7e826407d99e4cac14308da35b4b0"
+    },
+    "blocks.0.norm2.bias": {
+      "initial": "d458db6310b830d81b9016e09efc46b3186a305a07180698b7c8af982a1529ea",
+      "final": "d458db6310b830d81b9016e09efc46b3186a305a07180698b7c8af982a1529ea"
+    },
+    "blocks.0.mlp.fc1.weight": {
+      "initial": "18f74a7f32bd23e308ff8f9338f5cfa9b2c0c06453ff346ecba805c3e11c214b",
+      "final": "18f74a7f32bd23e308ff8f9338f5cfa9b2c0c06453ff346ecba805c3e11c214b"
+    },
+    "blocks.0.mlp.fc1.bias": {
+      "initial": "c9b49174a17e7e1e429797b36a8cd6ad14c1847101f8f6bdcc6a6b377bb7a571",
+      "final": "c9b49174a17e7e1e429797b36a8cd6ad14c1847101f8f6bdcc6a6b377bb7a571"
+    },
+    "blocks.0.mlp.fc2.weight": {
+      "initial": "53033e4eb0e9afaa230a7b6936850cf7b674403b77708ca10d112bb7d11fe47a",
+      "final": "53033e4eb0e9afaa230a7b6936850cf7b674403b77708ca10d112bb7d11fe47a"
+    },
+    "blocks.0.mlp.fc2.bias": {
+      "initial": "cba34dd7dd61b7921511744da986924b0864f991a30f0916b4aa68d1ba29267f",
+      "final": "cba34dd7dd61b7921511744da986924b0864f991a30f0916b4aa68d1ba29267f"
+    },
+    "blocks.0.ls2.gamma": {
+      "initial": "b645b039117792ad9ae79039d30d9c85e7f305d6c78a1ee91e8f68456fc5a1e9",
+      "final": "b645b039117792ad9ae79039d30d9c85e7f305d6c78a1ee91e8f68456fc5a1e9"
+    },
+    "blocks.1.norm1.weight": {
+      "initial": "1a9f6cab65333cfd001d81fd7cf1ec02001cf8f2e6d9babbee524b91f22de20f",
+      "final": "1a9f6cab65333cfd001d81fd7cf1ec02001cf8f2e6d9babbee524b91f22de20f"
+    },
+    "blocks.1.norm1.bias": {
+      "initial": "643f2ca4467fa00008e66866e0fc5ed6a47b34b9f028b8c2658f176d3115ac51",
+      "final": "643f2ca4467fa00008e66866e0fc5ed6a47b34b9f028b8c2658f176d3115ac51"
+    },
+    "blocks.1.attn.qkv.weight": {
+      "initial": "0daba7fa83f8c3d6c0955f3b3db0be3e4c6985341630c1dd66a86969dad4e600",
+      "final": "0daba7fa83f8c3d6c0955f3b3db0be3e4c6985341630c1dd66a86969dad4e600"
+    },
+    "blocks.1.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.1.attn.proj.weight": {
+      "initial": "66871f234153e396ddd4b54ed3b3ce30ca4df58135f0373c58cc7e16fca4599e",
+      "final": "66871f234153e396ddd4b54ed3b3ce30ca4df58135f0373c58cc7e16fca4599e"
+    },
+    "blocks.1.attn.proj.bias": {
+      "initial": "9d68bff6226372ad425f3a0a400a4297cec519d39c2411895b181290377f3edc",
+      "final": "9d68bff6226372ad425f3a0a400a4297cec519d39c2411895b181290377f3edc"
+    },
+    "blocks.1.ls1.gamma": {
+      "initial": "50ac0a91524b7439b9e7bc3cd93260241b21f24e2039c7ccb84e8f426e2c2d2d",
+      "final": "50ac0a91524b7439b9e7bc3cd93260241b21f24e2039c7ccb84e8f426e2c2d2d"
+    },
+    "blocks.1.norm2.weight": {
+      "initial": "5583c27447b0e15ddda1c033d60f603d49c06ffe44dd455c727304774cc36302",
+      "final": "5583c27447b0e15ddda1c033d60f603d49c06ffe44dd455c727304774cc36302"
+    },
+    "blocks.1.norm2.bias": {
+      "initial": "a67584a4fc9b28e335a020a23fb8ce117164ad939750f2cd291e3c545b09d74e",
+      "final": "a67584a4fc9b28e335a020a23fb8ce117164ad939750f2cd291e3c545b09d74e"
+    },
+    "blocks.1.mlp.fc1.weight": {
+      "initial": "4332b814eabfe2735db4c0655789545d711d65f566a1946764d420bff2af8b8a",
+      "final": "4332b814eabfe2735db4c0655789545d711d65f566a1946764d420bff2af8b8a"
+    },
+    "blocks.1.mlp.fc1.bias": {
+      "initial": "7d2e7e770b9c44f283a875e0bc1b05cb29bb77a8d5979b118ddf4bb33d0cf1c3",
+      "final": "7d2e7e770b9c44f283a875e0bc1b05cb29bb77a8d5979b118ddf4bb33d0cf1c3"
+    },
+    "blocks.1.mlp.fc2.weight": {
+      "initial": "127cd1ea38bcd8284a8efb0ba5a9af84e4878cf0ec5bb311308eee6f7899426d",
+      "final": "127cd1ea38bcd8284a8efb0ba5a9af84e4878cf0ec5bb311308eee6f7899426d"
+    },
+    "blocks.1.mlp.fc2.bias": {
+      "initial": "b60983a14abe0f3e94d67512129d251d85cac2a92d590488b77629a255c827e8",
+      "final": "b60983a14abe0f3e94d67512129d251d85cac2a92d590488b77629a255c827e8"
+    },
+    "blocks.1.ls2.gamma": {
+      "initial": "ebc5fd485c0055a9a97096e24d211ebeb3c530564de7fa6ea939e183834712e1",
+      "final": "ebc5fd485c0055a9a97096e24d211ebeb3c530564de7fa6ea939e183834712e1"
+    },
+    "blocks.2.norm1.weight": {
+      "initial": "06ec9514c1d735c3a46f48e4f90776e096f34e33d75b67189ffd5267d0a804a0",
+      "final": "06ec9514c1d735c3a46f48e4f90776e096f34e33d75b67189ffd5267d0a804a0"
+    },
+    "blocks.2.norm1.bias": {
+      "initial": "772241f46c8f5bbf43f14cdcda77e56d30a5353fb29670a32aa1db0fd2641992",
+      "final": "772241f46c8f5bbf43f14cdcda77e56d30a5353fb29670a32aa1db0fd2641992"
+    },
+    "blocks.2.attn.qkv.weight": {
+      "initial": "de1f03f33e629c019ee3cf3d8f3130b58f1a1089a3d977290c6b767a93e8a581",
+      "final": "de1f03f33e629c019ee3cf3d8f3130b58f1a1089a3d977290c6b767a93e8a581"
+    },
+    "blocks.2.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.2.attn.proj.weight": {
+      "initial": "e696fc93632a7ba722bae679a5ba084192f5eb9813e0c6f50a2b18e43423c7ca",
+      "final": "e696fc93632a7ba722bae679a5ba084192f5eb9813e0c6f50a2b18e43423c7ca"
+    },
+    "blocks.2.attn.proj.bias": {
+      "initial": "6132c3f54765a0e95cca2c71f3a7aff57703358f6804b0cee92bf3ff70701d5b",
+      "final": "6132c3f54765a0e95cca2c71f3a7aff57703358f6804b0cee92bf3ff70701d5b"
+    },
+    "blocks.2.ls1.gamma": {
+      "initial": "b47d120fc99dccb0017449949358a9cb388d0c04131440c56d1d1fe756999d38",
+      "final": "b47d120fc99dccb0017449949358a9cb388d0c04131440c56d1d1fe756999d38"
+    },
+    "blocks.2.norm2.weight": {
+      "initial": "f35a0f166836c8b3db7fa0449ed2f4183338ef5ac9b4bf5777acc742f5a15f80",
+      "final": "f35a0f166836c8b3db7fa0449ed2f4183338ef5ac9b4bf5777acc742f5a15f80"
+    },
+    "blocks.2.norm2.bias": {
+      "initial": "8815ad3536d4b0a9804729d8925eb086424893a3e919d46cfd7924dc72abe393",
+      "final": "8815ad3536d4b0a9804729d8925eb086424893a3e919d46cfd7924dc72abe393"
+    },
+    "blocks.2.mlp.fc1.weight": {
+      "initial": "11075c1541f7f157693685edd55e9768bd751e001148737922c265d54455be5f",
+      "final": "11075c1541f7f157693685edd55e9768bd751e001148737922c265d54455be5f"
+    },
+    "blocks.2.mlp.fc1.bias": {
+      "initial": "167b54928d27e887466c48b85e8a6aa3022cf60e7e7d1086809bd3d491443738",
+      "final": "167b54928d27e887466c48b85e8a6aa3022cf60e7e7d1086809bd3d491443738"
+    },
+    "blocks.2.mlp.fc2.weight": {
+      "initial": "44b0d5af795464d97e10111ecebb61b9cfda0dd226d21e66607eae747562fe80",
+      "final": "44b0d5af795464d97e10111ecebb61b9cfda0dd226d21e66607eae747562fe80"
+    },
+    "blocks.2.mlp.fc2.bias": {
+      "initial": "20cbc39f401891c5e29d0a7856a9576f34df037663c98a9fbec09c698650411c",
+      "final": "20cbc39f401891c5e29d0a7856a9576f34df037663c98a9fbec09c698650411c"
+    },
+    "blocks.2.ls2.gamma": {
+      "initial": "8c31c160f9829e2ac696d899ffe698d579e077226eb61555f84a06665345df86",
+      "final": "8c31c160f9829e2ac696d899ffe698d579e077226eb61555f84a06665345df86"
+    },
+    "blocks.3.norm1.weight": {
+      "initial": "e8821fc0bb8b3e248988b99a45fdcb510dbccdac7a1d28356fc58399abb8dad5",
+      "final": "e8821fc0bb8b3e248988b99a45fdcb510dbccdac7a1d28356fc58399abb8dad5"
+    },
+    "blocks.3.norm1.bias": {
+      "initial": "bc2bf7cee2c0f817b84dca889fc40a18bcad5a8a57dfd71841dbe5edb8d091a8",
+      "final": "bc2bf7cee2c0f817b84dca889fc40a18bcad5a8a57dfd71841dbe5edb8d091a8"
+    },
+    "blocks.3.attn.qkv.weight": {
+      "initial": "e5627b06b5bd4ab310248a41c821443fae6a0decb09c84e96d2c274ece43e2c9",
+      "final": "e5627b06b5bd4ab310248a41c821443fae6a0decb09c84e96d2c274ece43e2c9"
+    },
+    "blocks.3.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.3.attn.proj.weight": {
+      "initial": "10aff3b24e3c2408c169016bfbb1e07264543a663b80c0a4f174cda88cc5d555",
+      "final": "10aff3b24e3c2408c169016bfbb1e07264543a663b80c0a4f174cda88cc5d555"
+    },
+    "blocks.3.attn.proj.bias": {
+      "initial": "09c2ee6d19b90c611e245e28af1cb1d92681d52686855c978ce7f363e3b6e409",
+      "final": "09c2ee6d19b90c611e245e28af1cb1d92681d52686855c978ce7f363e3b6e409"
+    },
+    "blocks.3.ls1.gamma": {
+      "initial": "927bae0005c2dbf96f46ea3d4c5bc665439ca33e681bf409f9f044350077f143",
+      "final": "927bae0005c2dbf96f46ea3d4c5bc665439ca33e681bf409f9f044350077f143"
+    },
+    "blocks.3.norm2.weight": {
+      "initial": "dc93bfc9ff96b67fc97979b53118c34087012730c7104e1127ccca6c7d911e55",
+      "final": "dc93bfc9ff96b67fc97979b53118c34087012730c7104e1127ccca6c7d911e55"
+    },
+    "blocks.3.norm2.bias": {
+      "initial": "99a31ad55fd96a4272535ce1e09dad0cc4d03628d217838fa127e22ade9b7cbd",
+      "final": "99a31ad55fd96a4272535ce1e09dad0cc4d03628d217838fa127e22ade9b7cbd"
+    },
+    "blocks.3.mlp.fc1.weight": {
+      "initial": "ff8fe30047119ced5fdbe3bf4f2546c4df43793a95b72fd6f1a2e458a9389689",
+      "final": "ff8fe30047119ced5fdbe3bf4f2546c4df43793a95b72fd6f1a2e458a9389689"
+    },
+    "blocks.3.mlp.fc1.bias": {
+      "initial": "8e0202cc6e1a38d3d721dff4b54bf8adfcf1e3aa60bd6127412d6b8171c5855e",
+      "final": "8e0202cc6e1a38d3d721dff4b54bf8adfcf1e3aa60bd6127412d6b8171c5855e"
+    },
+    "blocks.3.mlp.fc2.weight": {
+      "initial": "a06a1134a76b9c669175c5f2b068d87f1cb817487ee11e0ecbc1d323ed18fe7c",
+      "final": "a06a1134a76b9c669175c5f2b068d87f1cb817487ee11e0ecbc1d323ed18fe7c"
+    },
+    "blocks.3.mlp.fc2.bias": {
+      "initial": "12d73b826bb232f4fe234375370b0d0f792862f81e84eb5349af444b1d3b7ea4",
+      "final": "12d73b826bb232f4fe234375370b0d0f792862f81e84eb5349af444b1d3b7ea4"
+    },
+    "blocks.3.ls2.gamma": {
+      "initial": "e50cafb4de8846f8653ad9067bac64cf9202ec932831f523ccfb22c266f1a33b",
+      "final": "e50cafb4de8846f8653ad9067bac64cf9202ec932831f523ccfb22c266f1a33b"
+    },
+    "blocks.4.norm1.weight": {
+      "initial": "86ef6820e5c2b76bacab8eb7a7a9f63fe5134acb559abc703983bd0de0ee0d9a",
+      "final": "86ef6820e5c2b76bacab8eb7a7a9f63fe5134acb559abc703983bd0de0ee0d9a"
+    },
+    "blocks.4.norm1.bias": {
+      "initial": "72e8794fa418a417bbba022ee6f6aec261c9ca1e84862f87f6d373a61703efc7",
+      "final": "72e8794fa418a417bbba022ee6f6aec261c9ca1e84862f87f6d373a61703efc7"
+    },
+    "blocks.4.attn.qkv.weight": {
+      "initial": "b30ba634b55fdd4955cbea7e695d2a89fe68ccb13e8374834e8c9aa3969d50fa",
+      "final": "b30ba634b55fdd4955cbea7e695d2a89fe68ccb13e8374834e8c9aa3969d50fa"
+    },
+    "blocks.4.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.4.attn.proj.weight": {
+      "initial": "29247feb792fd0b0b5e1711c820b76dd612cdba750e29d21c588fc598f2475bd",
+      "final": "29247feb792fd0b0b5e1711c820b76dd612cdba750e29d21c588fc598f2475bd"
+    },
+    "blocks.4.attn.proj.bias": {
+      "initial": "f73a894570360de1e335bbe259425d2d9b2a72f6530cf986eefc5a156ab64fbd",
+      "final": "f73a894570360de1e335bbe259425d2d9b2a72f6530cf986eefc5a156ab64fbd"
+    },
+    "blocks.4.ls1.gamma": {
+      "initial": "ff3989133dd6342a209db586fcf4a0f553afd61c12cc7b145d22963bc90a7b25",
+      "final": "ff3989133dd6342a209db586fcf4a0f553afd61c12cc7b145d22963bc90a7b25"
+    },
+    "blocks.4.norm2.weight": {
+      "initial": "7fd72ab49856b7840ce3bbf0a4c2743cc4fdabfc66414d32bf679a6dd64fb67d",
+      "final": "7fd72ab49856b7840ce3bbf0a4c2743cc4fdabfc66414d32bf679a6dd64fb67d"
+    },
+    "blocks.4.norm2.bias": {
+      "initial": "0fdb12d05a0eab379abf902223bf40cf0efcbd1001acea1ddd08594f6a69b0eb",
+      "final": "0fdb12d05a0eab379abf902223bf40cf0efcbd1001acea1ddd08594f6a69b0eb"
+    },
+    "blocks.4.mlp.fc1.weight": {
+      "initial": "96c7204d1ca4206e36da5bef62ead02cbc4c7819946174c001a011f3bbef0291",
+      "final": "96c7204d1ca4206e36da5bef62ead02cbc4c7819946174c001a011f3bbef0291"
+    },
+    "blocks.4.mlp.fc1.bias": {
+      "initial": "ff47c7f68c7c6906570c69e191a34d025518df8ae55998069fa005a60a6adc97",
+      "final": "ff47c7f68c7c6906570c69e191a34d025518df8ae55998069fa005a60a6adc97"
+    },
+    "blocks.4.mlp.fc2.weight": {
+      "initial": "b0fb686f2d7b276df207974c0cb3c9bcc7219ef5b90cce03f52b2d49b9efc4d4",
+      "final": "b0fb686f2d7b276df207974c0cb3c9bcc7219ef5b90cce03f52b2d49b9efc4d4"
+    },
+    "blocks.4.mlp.fc2.bias": {
+      "initial": "6b439672bbdd8ce153ec4d987727acdeaa95903315ccb9684d75aa52bd43bd38",
+      "final": "6b439672bbdd8ce153ec4d987727acdeaa95903315ccb9684d75aa52bd43bd38"
+    },
+    "blocks.4.ls2.gamma": {
+      "initial": "5618a65a867c261337633ac6ca4bdba0d63d0f72e8e4c2f83c3090cc26fba893",
+      "final": "5618a65a867c261337633ac6ca4bdba0d63d0f72e8e4c2f83c3090cc26fba893"
+    },
+    "blocks.5.norm1.weight": {
+      "initial": "0604cf87071fc7c39b8cc67c6446334e0b90c5fb3d48160d46126a9fffc173c8",
+      "final": "0604cf87071fc7c39b8cc67c6446334e0b90c5fb3d48160d46126a9fffc173c8"
+    },
+    "blocks.5.norm1.bias": {
+      "initial": "4297315a7e8d91cd3ca280ff83174f908ebd73b5f8e789ff62a33547b626cf58",
+      "final": "4297315a7e8d91cd3ca280ff83174f908ebd73b5f8e789ff62a33547b626cf58"
+    },
+    "blocks.5.attn.qkv.weight": {
+      "initial": "bc80904fdf7bca68995b93f4ed7e2eb65e096c6ba1f8f637e390caa2c65f8fd0",
+      "final": "bc80904fdf7bca68995b93f4ed7e2eb65e096c6ba1f8f637e390caa2c65f8fd0"
+    },
+    "blocks.5.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.5.attn.proj.weight": {
+      "initial": "ad52b20285a71323beb8c9154f6052d4b610446f86c3a9beebc484998c177503",
+      "final": "ad52b20285a71323beb8c9154f6052d4b610446f86c3a9beebc484998c177503"
+    },
+    "blocks.5.attn.proj.bias": {
+      "initial": "53ba8e7de7e31ac13e76146bdd5072a65293e8c89238bc7257ab90f45ba02c1f",
+      "final": "53ba8e7de7e31ac13e76146bdd5072a65293e8c89238bc7257ab90f45ba02c1f"
+    },
+    "blocks.5.ls1.gamma": {
+      "initial": "4f7c088028db5919ad810bc85eb88f5156e94ac4fc37873ccddaa887b790d24d",
+      "final": "4f7c088028db5919ad810bc85eb88f5156e94ac4fc37873ccddaa887b790d24d"
+    },
+    "blocks.5.norm2.weight": {
+      "initial": "45d0210ace94cd19e53a38411aee56c20c6a12b7737f4edb33118c9866fe9a47",
+      "final": "45d0210ace94cd19e53a38411aee56c20c6a12b7737f4edb33118c9866fe9a47"
+    },
+    "blocks.5.norm2.bias": {
+      "initial": "7e3bdd206a6270ae6c030d9b129a0d8f12ff6394b576a0666f2522972f8b7890",
+      "final": "7e3bdd206a6270ae6c030d9b129a0d8f12ff6394b576a0666f2522972f8b7890"
+    },
+    "blocks.5.mlp.fc1.weight": {
+      "initial": "5b73f71193aba235c0efbc9f8ba4cd4679c121a9f40ac03f30ce134789984ae6",
+      "final": "5b73f71193aba235c0efbc9f8ba4cd4679c121a9f40ac03f30ce134789984ae6"
+    },
+    "blocks.5.mlp.fc1.bias": {
+      "initial": "b57c98b19885344229a72e52498fd1f76c6fe61ab97e97a9f7f01f37cee18530",
+      "final": "b57c98b19885344229a72e52498fd1f76c6fe61ab97e97a9f7f01f37cee18530"
+    },
+    "blocks.5.mlp.fc2.weight": {
+      "initial": "7471bf69edbd2bc1ba72c529362fd92e6a90143d0f591849616b4d9b7aff0fe2",
+      "final": "7471bf69edbd2bc1ba72c529362fd92e6a90143d0f591849616b4d9b7aff0fe2"
+    },
+    "blocks.5.mlp.fc2.bias": {
+      "initial": "7480865bf4bcd604e5652526a74695c3be9eaa8ae4d96e15507e34166ded4fa0",
+      "final": "7480865bf4bcd604e5652526a74695c3be9eaa8ae4d96e15507e34166ded4fa0"
+    },
+    "blocks.5.ls2.gamma": {
+      "initial": "bb3b846835a969c547f7d795f7609a0e1c221ffadb5249fa6b36f71e0e116859",
+      "final": "bb3b846835a969c547f7d795f7609a0e1c221ffadb5249fa6b36f71e0e116859"
+    },
+    "blocks.6.norm1.weight": {
+      "initial": "d38e21edb8b798de6fd77ac6b41bae135db52681ede17adbca70a1d7e74ff33f",
+      "final": "d38e21edb8b798de6fd77ac6b41bae135db52681ede17adbca70a1d7e74ff33f"
+    },
+    "blocks.6.norm1.bias": {
+      "initial": "cdf65cb938fccb0784701b3e6d2807c203e41ff0951e6a9e49b7990275f84687",
+      "final": "cdf65cb938fccb0784701b3e6d2807c203e41ff0951e6a9e49b7990275f84687"
+    },
+    "blocks.6.attn.qkv.weight": {
+      "initial": "b75f211d2138f06a72233ba0b1914ed2574e81268886a380b6b0e25aec9304e4",
+      "final": "b75f211d2138f06a72233ba0b1914ed2574e81268886a380b6b0e25aec9304e4"
+    },
+    "blocks.6.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.6.attn.proj.weight": {
+      "initial": "4e328bafc9fa17af50a08c0d4a1049bc5558bb5cbfcd60f92bab8eec17f9515f",
+      "final": "4e328bafc9fa17af50a08c0d4a1049bc5558bb5cbfcd60f92bab8eec17f9515f"
+    },
+    "blocks.6.attn.proj.bias": {
+      "initial": "505a657b531ddbdf7290861c0a2dd82eebb340258ff7e4bf31517a049beca3de",
+      "final": "505a657b531ddbdf7290861c0a2dd82eebb340258ff7e4bf31517a049beca3de"
+    },
+    "blocks.6.ls1.gamma": {
+      "initial": "51f6e1ae0cac0a3b0316403709007fedc4c320083ab4280d1560b79374812c43",
+      "final": "51f6e1ae0cac0a3b0316403709007fedc4c320083ab4280d1560b79374812c43"
+    },
+    "blocks.6.norm2.weight": {
+      "initial": "d664ea7875f787178946667c7a01296a27e4365b9d62873e7d55622c832e111d",
+      "final": "d664ea7875f787178946667c7a01296a27e4365b9d62873e7d55622c832e111d"
+    },
+    "blocks.6.norm2.bias": {
+      "initial": "74dc2133d1cd11630b949d93313a2e2a3019134a45fdc93ba3d666944c8bbc08",
+      "final": "74dc2133d1cd11630b949d93313a2e2a3019134a45fdc93ba3d666944c8bbc08"
+    },
+    "blocks.6.mlp.fc1.weight": {
+      "initial": "91e4feb93eb6b5c9720fb0f3932bed5e390b9576c6b3c00aa993d0ef6f82575f",
+      "final": "91e4feb93eb6b5c9720fb0f3932bed5e390b9576c6b3c00aa993d0ef6f82575f"
+    },
+    "blocks.6.mlp.fc1.bias": {
+      "initial": "ee55569ff6be9fb92fed04d8a23f1f0490221510e762895bb1758183b42753d2",
+      "final": "ee55569ff6be9fb92fed04d8a23f1f0490221510e762895bb1758183b42753d2"
+    },
+    "blocks.6.mlp.fc2.weight": {
+      "initial": "33220d40f4a274f366e9ca2f40af74c7c8cdd76c06692103bc6c69df60043b07",
+      "final": "33220d40f4a274f366e9ca2f40af74c7c8cdd76c06692103bc6c69df60043b07"
+    },
+    "blocks.6.mlp.fc2.bias": {
+      "initial": "3fbc2bbb1137c74e5405d23ba241ed5916b583881e423627886849fd2f546f1d",
+      "final": "3fbc2bbb1137c74e5405d23ba241ed5916b583881e423627886849fd2f546f1d"
+    },
+    "blocks.6.ls2.gamma": {
+      "initial": "edf79b83447e1e0f619113da77d395cc8919dfb9ed6ce3518758fd28aa165b5d",
+      "final": "edf79b83447e1e0f619113da77d395cc8919dfb9ed6ce3518758fd28aa165b5d"
+    },
+    "blocks.7.norm1.weight": {
+      "initial": "a1fe8bdc32b92d0be4113eb3122b0d8e3204555a069989bba5b839605412f187",
+      "final": "a1fe8bdc32b92d0be4113eb3122b0d8e3204555a069989bba5b839605412f187"
+    },
+    "blocks.7.norm1.bias": {
+      "initial": "df4788bd3c3fe630790601cd88f1907ce95cb566e86f800be7a4e1ba8be910ad",
+      "final": "df4788bd3c3fe630790601cd88f1907ce95cb566e86f800be7a4e1ba8be910ad"
+    },
+    "blocks.7.attn.qkv.weight": {
+      "initial": "fb5b4357247c394ff8af90a2aa2da7369a08f23a0f9627bbd8451efc35538aa5",
+      "final": "fb5b4357247c394ff8af90a2aa2da7369a08f23a0f9627bbd8451efc35538aa5"
+    },
+    "blocks.7.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.7.attn.proj.weight": {
+      "initial": "e2ba8be1d04b8b00704c90e2c352ab8a7735be597171d3a5c2ef47186207f8b3",
+      "final": "e2ba8be1d04b8b00704c90e2c352ab8a7735be597171d3a5c2ef47186207f8b3"
+    },
+    "blocks.7.attn.proj.bias": {
+      "initial": "921fb710266bb3cffa93dabf9386805cffb69c96a64538224b643d9d78476801",
+      "final": "921fb710266bb3cffa93dabf9386805cffb69c96a64538224b643d9d78476801"
+    },
+    "blocks.7.ls1.gamma": {
+      "initial": "08a365043bbca8d07d7165982fe648ab481114196208487d54667e99f3ff0e29",
+      "final": "08a365043bbca8d07d7165982fe648ab481114196208487d54667e99f3ff0e29"
+    },
+    "blocks.7.norm2.weight": {
+      "initial": "d7b27ee97d21e40e3236e08ba6dfdf030b63d1dcc2a149619e02daab552b49f9",
+      "final": "d7b27ee97d21e40e3236e08ba6dfdf030b63d1dcc2a149619e02daab552b49f9"
+    },
+    "blocks.7.norm2.bias": {
+      "initial": "0156d8575d0126c78a3401597323311df519345fc60d4602e3962362e0c2cae9",
+      "final": "0156d8575d0126c78a3401597323311df519345fc60d4602e3962362e0c2cae9"
+    },
+    "blocks.7.mlp.fc1.weight": {
+      "initial": "4d6ece39f3939db9440710f17514b193d3b92a6ec347debe13aae8f7f3f32614",
+      "final": "4d6ece39f3939db9440710f17514b193d3b92a6ec347debe13aae8f7f3f32614"
+    },
+    "blocks.7.mlp.fc1.bias": {
+      "initial": "3a695883d93ccf31eee1651a5d08b68673081158399262dd4989dbad8d7f7667",
+      "final": "3a695883d93ccf31eee1651a5d08b68673081158399262dd4989dbad8d7f7667"
+    },
+    "blocks.7.mlp.fc2.weight": {
+      "initial": "ca89ab613eb771c14ff44bb7d305df7011a21f6f1e2ce4bde12a73e660e9b7a8",
+      "final": "ca89ab613eb771c14ff44bb7d305df7011a21f6f1e2ce4bde12a73e660e9b7a8"
+    },
+    "blocks.7.mlp.fc2.bias": {
+      "initial": "416df031ec99e1873895cd61aaf77609631ba2383bfabc2f75113ca2051cca4f",
+      "final": "416df031ec99e1873895cd61aaf77609631ba2383bfabc2f75113ca2051cca4f"
+    },
+    "blocks.7.ls2.gamma": {
+      "initial": "d06de6c79929994dd46ac4f4dd383c95c9d5f98bdf76b13d7eaef1c072c35f66",
+      "final": "d06de6c79929994dd46ac4f4dd383c95c9d5f98bdf76b13d7eaef1c072c35f66"
+    },
+    "blocks.8.norm1.weight": {
+      "initial": "772faa0ad0bb3a3033ed6a4f5fe777d05e11e67d6fc2db9ab18c14970420f977",
+      "final": "772faa0ad0bb3a3033ed6a4f5fe777d05e11e67d6fc2db9ab18c14970420f977"
+    },
+    "blocks.8.norm1.bias": {
+      "initial": "d1916e07ce16bd5e26a385145d3faed7c5af5d96a2d6a0a7a9f3b4ac84fd45ab",
+      "final": "d1916e07ce16bd5e26a385145d3faed7c5af5d96a2d6a0a7a9f3b4ac84fd45ab"
+    },
+    "blocks.8.attn.qkv.weight": {
+      "initial": "e9989b889d1ada1ae02a461e99bc7626664afc6efc81a28e5b9edac244cdba45",
+      "final": "e9989b889d1ada1ae02a461e99bc7626664afc6efc81a28e5b9edac244cdba45"
+    },
+    "blocks.8.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.8.attn.proj.weight": {
+      "initial": "7ece4842a69398e9db787607d5557fc189bad8cfb32598a3e06ddfc4cb5594e7",
+      "final": "7ece4842a69398e9db787607d5557fc189bad8cfb32598a3e06ddfc4cb5594e7"
+    },
+    "blocks.8.attn.proj.bias": {
+      "initial": "728808ad5ed56d2e6bc2ce49ff04bf51159b8edd7c0f6ccca556fce64c186531",
+      "final": "728808ad5ed56d2e6bc2ce49ff04bf51159b8edd7c0f6ccca556fce64c186531"
+    },
+    "blocks.8.ls1.gamma": {
+      "initial": "fecb4271ee3d4383ab46fd095809737d09c4edd3d73341b62177efa0cd4261c4",
+      "final": "fecb4271ee3d4383ab46fd095809737d09c4edd3d73341b62177efa0cd4261c4"
+    },
+    "blocks.8.norm2.weight": {
+      "initial": "b9316a98b001a728e53c5e2f86d791880a26e7676a674fa16fa3ad2fe9960765",
+      "final": "b9316a98b001a728e53c5e2f86d791880a26e7676a674fa16fa3ad2fe9960765"
+    },
+    "blocks.8.norm2.bias": {
+      "initial": "874f1f94c8ebc946909e0ef08ed8af45dcf63ec9eaec3d840a74adcc3ee11622",
+      "final": "874f1f94c8ebc946909e0ef08ed8af45dcf63ec9eaec3d840a74adcc3ee11622"
+    },
+    "blocks.8.mlp.fc1.weight": {
+      "initial": "b5eb16e1abc8f1e29cca1f4b1ff3d10f54bc61b47093271e8c1a3c1614755e69",
+      "final": "b5eb16e1abc8f1e29cca1f4b1ff3d10f54bc61b47093271e8c1a3c1614755e69"
+    },
+    "blocks.8.mlp.fc1.bias": {
+      "initial": "cb6d9ec4e489fd9e3eb1f8ac81ebde1918c26e604b34f881dc78cbe9cb04dd95",
+      "final": "cb6d9ec4e489fd9e3eb1f8ac81ebde1918c26e604b34f881dc78cbe9cb04dd95"
+    },
+    "blocks.8.mlp.fc2.weight": {
+      "initial": "b8c1f84f420d774e9acb6f9b00f1f4276c659f0e4147709fceee4ff2a8e4a99b",
+      "final": "b8c1f84f420d774e9acb6f9b00f1f4276c659f0e4147709fceee4ff2a8e4a99b"
+    },
+    "blocks.8.mlp.fc2.bias": {
+      "initial": "e70b0abf2bf581171869fe7d28def0c03d0be6bef9400db413f6b4904f0c6cbd",
+      "final": "e70b0abf2bf581171869fe7d28def0c03d0be6bef9400db413f6b4904f0c6cbd"
+    },
+    "blocks.8.ls2.gamma": {
+      "initial": "751f7a2e04f8c3b1d9c29c65a8e9610aaf9444a062b51666069c0ae8402ca8c4",
+      "final": "751f7a2e04f8c3b1d9c29c65a8e9610aaf9444a062b51666069c0ae8402ca8c4"
+    },
+    "blocks.9.norm1.weight": {
+      "initial": "cdb5d83ad0b13f553bbe9735470a8784ab69f5132d3de9081d9f0c5f440a3381",
+      "final": "cdb5d83ad0b13f553bbe9735470a8784ab69f5132d3de9081d9f0c5f440a3381"
+    },
+    "blocks.9.norm1.bias": {
+      "initial": "ea7bd7fa5d0befdfa432d85bb88696b1a9af0cfd02361c98bfffa648601960be",
+      "final": "ea7bd7fa5d0befdfa432d85bb88696b1a9af0cfd02361c98bfffa648601960be"
+    },
+    "blocks.9.attn.qkv.weight": {
+      "initial": "99fdf6faf858f30c4eb44340f18aa2c379d5c99700c68e9eb32e21dd09fc30af",
+      "final": "99fdf6faf858f30c4eb44340f18aa2c379d5c99700c68e9eb32e21dd09fc30af"
+    },
+    "blocks.9.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.9.attn.proj.weight": {
+      "initial": "e67f37f528da95b656429e010a58d560b1594ceda12a5b6c8919dc6039518139",
+      "final": "e67f37f528da95b656429e010a58d560b1594ceda12a5b6c8919dc6039518139"
+    },
+    "blocks.9.attn.proj.bias": {
+      "initial": "09238c673fbbd64236652498d51babd88003a1f548786d94a576f31ae70d473c",
+      "final": "09238c673fbbd64236652498d51babd88003a1f548786d94a576f31ae70d473c"
+    },
+    "blocks.9.ls1.gamma": {
+      "initial": "059632bce6e5733dc3aa6ee03a805e30f597ae0ae17e80d9ae43f33d8af60559",
+      "final": "059632bce6e5733dc3aa6ee03a805e30f597ae0ae17e80d9ae43f33d8af60559"
+    },
+    "blocks.9.norm2.weight": {
+      "initial": "0978d743618b0cc05a454dea492c8372f11cf5063df780186cdb8a6ae15c80f8",
+      "final": "0978d743618b0cc05a454dea492c8372f11cf5063df780186cdb8a6ae15c80f8"
+    },
+    "blocks.9.norm2.bias": {
+      "initial": "9411c1467559e5419f85831d105ca40ca1b022ad4213ae42a04ffba09e453229",
+      "final": "9411c1467559e5419f85831d105ca40ca1b022ad4213ae42a04ffba09e453229"
+    },
+    "blocks.9.mlp.fc1.weight": {
+      "initial": "90edcff64147029b8fdfd687397d40bdd93fc7051e4ce9403d4a7a7609061475",
+      "final": "90edcff64147029b8fdfd687397d40bdd93fc7051e4ce9403d4a7a7609061475"
+    },
+    "blocks.9.mlp.fc1.bias": {
+      "initial": "04013ce1001591d0998d260e0d9d01a06001aea79aaef523cf563ca7ec4484b6",
+      "final": "04013ce1001591d0998d260e0d9d01a06001aea79aaef523cf563ca7ec4484b6"
+    },
+    "blocks.9.mlp.fc2.weight": {
+      "initial": "7a048e46ccfd60d07bf8dcc9b205321587b796bffeaa04e36d2db4074c83d431",
+      "final": "7a048e46ccfd60d07bf8dcc9b205321587b796bffeaa04e36d2db4074c83d431"
+    },
+    "blocks.9.mlp.fc2.bias": {
+      "initial": "98f625f8ce4cb002c4ba7b9d2bd8b6da70d8097e1645b729ac469d2d7df647d3",
+      "final": "98f625f8ce4cb002c4ba7b9d2bd8b6da70d8097e1645b729ac469d2d7df647d3"
+    },
+    "blocks.9.ls2.gamma": {
+      "initial": "f8edc28e1ad1434ecf3a16e92caf260e0a78447662832ca9a9f821390602d42c",
+      "final": "f8edc28e1ad1434ecf3a16e92caf260e0a78447662832ca9a9f821390602d42c"
+    },
+    "blocks.10.norm1.weight": {
+      "initial": "1019510ba365c3da8650641a247af7e476e65ef90e72ad1fb1e3ba8e010dd23a",
+      "final": "6f70155e20abcc3e8fc3df66eba3ce922eeb4f0db1a864e80c55142115c87777"
+    },
+    "blocks.10.norm1.bias": {
+      "initial": "6af9afdae3b7d8701afb2d87077bf2842a030d2aefb36c9db911d946a3dcd142",
+      "final": "1b877937ee9d4d8cc55b8820a8e81b33d5fd6d91266a5044d9d85ddff5bb763f"
+    },
+    "blocks.10.attn.qkv.weight": {
+      "initial": "584f25ef2ccfa702e6a88f19ac4f69aa8d9f0a48572905e4d5f99cc79bdf7368",
+      "final": "173cdb253f05a48df160169c5b2488459000e8c972614d37ee283ec8c9c15e23"
+    },
+    "blocks.10.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.10.attn.proj.weight": {
+      "initial": "5ba19e7305ebaec74a5a530d49b765480195fcacc9c9e4d7eb38d562a1aaf9fc",
+      "final": "eae395e603ba255c26b1cbe75f844c78bc027424ab0532f67f8f5d5c7ad2e0e0"
+    },
+    "blocks.10.attn.proj.bias": {
+      "initial": "75656e06333444f716907f32018f1ed33272cec068f88e5ce83e0c706c1f66ae",
+      "final": "c92092bd2c1fedbbc6535c6b5fa10890416a62e0990d3972924f5cb82c107686"
+    },
+    "blocks.10.ls1.gamma": {
+      "initial": "5c3c9b348da7039e78c6087174085ad3d1e73ad84dab546f597074dd6c84aa39",
+      "final": "c70fef9ab6f78eec75d342e92e442602633c6097506121a8ad80f8d930a49e91"
+    },
+    "blocks.10.norm2.weight": {
+      "initial": "7453db86d6c34a1e6fb2062cf65a59c5b0b63bc12d7239447688191759bef3a2",
+      "final": "2b6444741fdd1416114948270564fb5efe7fe82d911e20776665314d9c3253aa"
+    },
+    "blocks.10.norm2.bias": {
+      "initial": "6ae27d870a9b748b0bcfac4067f381b755dbfa9fb2c59cced205e13ba7ec2213",
+      "final": "c21ff9d342f274b25d0e3a7caf3f581b9d2881f24d3efeac0095c322d531cdeb"
+    },
+    "blocks.10.mlp.fc1.weight": {
+      "initial": "a856981cdfc6c4b077dbce355e038bfc26a5378b0d2f28a3c6005d74c124bb4e",
+      "final": "6fe13e85c288f601e723d90b1fce029478f22c8c83f7d67cf28505c7c814bbf8"
+    },
+    "blocks.10.mlp.fc1.bias": {
+      "initial": "cb54cce2e4d4fd485f47182ce752dcbe164ab20faaf3c948aa950da367b15312",
+      "final": "ce71f63fbcbbd144092d57709e72e43975de28662d6a765aac16948c9a204010"
+    },
+    "blocks.10.mlp.fc2.weight": {
+      "initial": "0276516dc667312ec1dad931309f1a23511ac022af448c90460da49506a945d6",
+      "final": "387535908d3e71c51a23c72570f4ea0ce49ebb4d6f035eae164c6792894b823e"
+    },
+    "blocks.10.mlp.fc2.bias": {
+      "initial": "800da503dc51cb9489950d8f23d5f0cfc11a70049d199cf47d112c470cbd8c67",
+      "final": "3562ee191c5b49212a01516a46b2410f0d626ac3e9082bb29154c070acf9432c"
+    },
+    "blocks.10.ls2.gamma": {
+      "initial": "104d55ad3436aa77ebf27889fa17e4ce68b44dff95a7f802d17beeb7be4b1e4e",
+      "final": "a4fc7b6e96113ad412df991cd0bb6d32acc8b4e63b005f7054b5a06a739e08ab"
+    },
+    "blocks.11.norm1.weight": {
+      "initial": "dffc854a5c06f9de64b1867beef56dfeb8c3229b7bc456f4c0959a87f14466e0",
+      "final": "e5089f774174a2f4765632277ba8a30a106bc865fdf7722ff6ef447453a7174a"
+    },
+    "blocks.11.norm1.bias": {
+      "initial": "ff6595f749f3f5aacbf72bcac77b3a1b32c0b2b188d36d60decbe38d8b8ecc65",
+      "final": "88e1545dd8657e136ada7ce9f55b8c93a4efde762211589dd41b5edf24a9b84f"
+    },
+    "blocks.11.attn.qkv.weight": {
+      "initial": "49fde11951975ba4fa37586e0701df8d82e477ab61718f0ba53a986badd927bd",
+      "final": "5e2fc47416754a0d1cee3c1909afa3401d4cae201fe7a97e18a3db7059f08948"
+    },
+    "blocks.11.attn.qkv.bias": {
+      "initial": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+      "final": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae"
+    },
+    "blocks.11.attn.proj.weight": {
+      "initial": "dbc13da2396a17099ba0d5722b92cd0fb2cab46393c1e8101562217bed286d8e",
+      "final": "625ec71cc227b729673db609113ad36926ef76fe1f30a23e3a77de20ec2f8523"
+    },
+    "blocks.11.attn.proj.bias": {
+      "initial": "2b5485a9f2b2b29533d70b216695c0c14438e7d16a69870bda361cc9911b68cf",
+      "final": "7c1bdf7bc0f0d79303fde622f7611b6a32f74e470e16ece763c826f4ac4d92bd"
+    },
+    "blocks.11.ls1.gamma": {
+      "initial": "87cddd1f631e1c928799666edc17f392b65d21b991e729ab8bdffa38fca0648d",
+      "final": "7798249351c72e83bf75aecd24822e1cd44d3865fd48b8e68952d9141da7197f"
+    },
+    "blocks.11.norm2.weight": {
+      "initial": "3512858a58ea3dbf7cb7d5119ac3199e590934e4862d1c8534c44041b5dc8f78",
+      "final": "3a1df286ea54372206ad49f01b906836ab2d305d9409f4207c742739f36bea0d"
+    },
+    "blocks.11.norm2.bias": {
+      "initial": "813efcd9e74e2f39ff5937e7940d9c985190c043efd38f8dc0be25e8e289ebf6",
+      "final": "44f50545adca58f6397134c3e144e7e0064b431ca5c8d55c9cdb429eb1e26942"
+    },
+    "blocks.11.mlp.fc1.weight": {
+      "initial": "c010b184e4b33d772cfc9afc7f07549a2ad561c45b5e5926b66148c4247cdb25",
+      "final": "1966b3a33d46440ccba0bdc620abf75911a6c10e79ec64dd63f8809ceb4aa715"
+    },
+    "blocks.11.mlp.fc1.bias": {
+      "initial": "e62d9ca5d0ffa9f8991a39a2a74391169c3179bb38efcc4023f6b7dc876a47d1",
+      "final": "8995e68bcce5fceaf17d5cf463d3919fa553a29b56991c3f85a0813eb004f471"
+    },
+    "blocks.11.mlp.fc2.weight": {
+      "initial": "9c5c5e2396f3edec7001bd380d2da98868c659eb4cee7fbcea83704751ff32fb",
+      "final": "81f72a43aabd429788087d1711b7cc1d8f6dab8bd6927b338fbf5ff57bc276dc"
+    },
+    "blocks.11.mlp.fc2.bias": {
+      "initial": "de7b8f8cd654dc99a7e6c8bc92d9c81d153f7d7b3a5bf3467bdc439307636bce",
+      "final": "132a07ef674bfe3395ecd0a79aa4bff565d6bc9a52a54adc63686a2b0af2589b"
+    },
+    "blocks.11.ls2.gamma": {
+      "initial": "aab42ac4f80a508d90b0fbcd89253f18b92190ef4492203daaf85bd7d3b82347",
+      "final": "cc95b40819d6b071b559505b242c46389f09b3c81e4b9ad7955cc27aabb2adc1"
+    },
+    "norm.weight": {
+      "initial": "848d4f8c3617c2b9d2f9d84aa32bd0f7635b8e51c729898f84514971a03008b9",
+      "final": "6137ac6e355f766e04502822da8370dc8190d0fc58684410815427e8ec9bda87"
+    },
+    "norm.bias": {
+      "initial": "69640b2b8355876ca06acf39de7ba88150bd69f2509b979267e2ae75a3ef187f",
+      "final": "fec677841756b579da38932324f627c48b11916aa598b4c8b5aca38794d2f193"
+    }
+  },
+  "schedule_sha256": "a66ed152b13879c63dc69d122cac4ff37f5c51b3a29aff0816f561ed33305c8d",
+  "initial_head_sha256": "e601b2ded49b83aee24f87c32c534f4a32da6b6dcfe89b3c09c86d6deed993d6",
+  "final_backbone_sha256": "a048d2a9693d8739faa04a4f634099a2ec45953be501bfe184868759a888a073",
+  "head_sha256": "1f5b857815732c25fedb3d328c7ed9eaff00473ec0065baaaef584e89ade3ba1",
+  "selected_file_sha256": "147fbb6449157e6e3075f05411406064968036446ee38ba64e54c0e4c56d339e",
+  "global_weighted_r2_raw": 0.7677170525576347,
+  "per_target": {
+    "r2": [
+      0.7759350469780522,
+      0.04402139556703587,
+      -0.9808974448254453,
+      0.7326866747984853,
+      0.689028794098879
+    ],
+    "mae": [
+      10.470677725608008,
+      9.285704238847321,
+      3.9427024924925393,
+      12.042965283625465,
+      13.587066426440648
+    ],
+    "rmse": [
+      15.829678067310454,
+      13.640151419459524,
+      5.265681262365586,
+      16.459140395518713,
+      18.599880286398047
+    ],
+    "bias": [
+      -5.485733327177591,
+      0.2391541287183761,
+      3.8882948070662358,
+      -1.5974437452724988,
+      -1.3582913533074519
+    ]
+  },
+  "metric_parity_error": 0.0,
+  "training_images": 301,
+  "validation_images": 56,
+  "elapsed_seconds": 463.2455331670001,
+  "precision": {
+    "backbone": {
+      "requested": "fp8",
+      "active": "fp8_linear_bf16_other",
+      "float8_layers": 48,
+      "master_weights": "FP32",
+      "conversion": "idempotent"
+    },
+    "head": {
+      "requested": "fp8",
+      "active": "fp8_linear_bf16_other",
+      "float8_layers": 1,
+      "master_weights": "FP32",
+      "conversion": "idempotent"
+    },
+    "masked_bias": "exact_zero_frozen_buffers_preserved"
+  }
+}

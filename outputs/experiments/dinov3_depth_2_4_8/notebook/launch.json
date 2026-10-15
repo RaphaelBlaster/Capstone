@@ -1,0 +1,32 @@
+{
+  "kernel": "meghmayur1186/img2biomass-dino-depth-2-4-8",
+  "expected_version": 1,
+  "notebook_sha256": "7236b44b0b7a503e964d33bc1e8dc037a8b29d34cc50e68c2db8986eb0dcc610",
+  "package_sha256": "53606b7faf6cd4a42669600c1c5c3c7e2f8fca507cde4e213af16e4e0dda37de",
+  "quota": {
+    "remaining_seconds": 97896.138,
+    "reserved_seconds": 0.0
+  },
+  "checked_utc": "2026-10-11T07:01:26.331336+00:00",
+  "status": "submitted_exact_readback_verified",
+  "depths": [
+    2,
+    4,
+    8
+  ],
+  "folds": [
+    0,
+    1
+  ],
+  "epochs": 20,
+  "automatic_retries": false,
+  "conditional_full_on_runtime_gates": true,
+  "F3_enabled": false,
+  "ack": {
+    "ref": "/code/meghmayur1186/img2biomass-dino-depth-2-4-8",
+    "version": 1,
+    "id": 138134869,
+    "error_present": false
+  },
+  "kernel_id": 138134869
+}

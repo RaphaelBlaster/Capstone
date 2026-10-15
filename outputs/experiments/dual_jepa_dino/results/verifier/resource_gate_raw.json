@@ -1,0 +1,16 @@
+{
+  "estimated_seconds": 5797.665537082113,
+  "margin20_percent_seconds": 6957.198644498535,
+  "remaining_quota_snapshot_seconds": 24000.0,
+  "session_cap_seconds": 21600,
+  "passes": true,
+  "timing": {
+    "j_optimizer_update_seconds_max": 2.369271427000058,
+    "j_cache_original_allfour_rotations_seconds": 0.169449572750068,
+    "dino_cache_image_seconds": 0.0625128639999275,
+    "dino_head_update_seconds_max": 0.006130239999947662
+  },
+  "disk_free_bytes": 20179521536,
+  "gpu_peak_bytes": 7503024640,
+  "full_training_not_launched": true
+}

@@ -1,0 +1,64 @@
+{
+  "global_weighted_r2_raw": 0.583541424117658,
+  "weighted_mean_target_r2_raw": 0.4016743206165361,
+  "weighted_mean_target_r2_log1p": 0.5251786151130725,
+  "per_target_r2_raw": {
+    "Dry_Green_g": 0.479835115791565,
+    "Dry_Dead_g": 0.1292150551223359,
+    "Dry_Clover_g": 0.26313933012484503,
+    "GDM_g": 0.45420638970640204,
+    "Dry_Total_g": 0.4472281851427621
+  },
+  "per_target_rmse_g": {
+    "Dry_Green_g": 22.015654048618945,
+    "Dry_Dead_g": 11.795851964420159,
+    "Dry_Clover_g": 10.028719170934298,
+    "GDM_g": 21.10294136138719,
+    "Dry_Total_g": 24.150176190959936
+  },
+  "status": "completed_heads",
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "predicted_images": 167,
+  "expected_images": 357,
+  "complete_oof": false,
+  "signature": {
+    "feature_manifest_sha256": "3bcf657e2e5936ccdfd4d00c6c9f55a159bfcdd544875b7c857615a38602ca74",
+    "head_code_sha256": "1d75ac2d9ab0c909dd42ec35c94b627a72b71809c244c0f8cf6615dc9df2cc07",
+    "fold_table_sha256": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+    "folds": [
+      0,
+      1,
+      2
+    ],
+    "seed": 42,
+    "epochs": 200,
+    "swa_last_epochs": 40,
+    "width": 512,
+    "dropout": 0.2,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "batch_size": 32,
+    "precision": "fp8",
+    "tiny": false,
+    "objective": "raw_global_weighted_mse_one_training_scale",
+    "selection": "fixed_final_swa_endpoint_not_best_validation_epoch",
+    "shuffle_manifest_sha256": "3788a0f255a380d88ac9306705114347f62cd7954360cf311b94b58fd2906cbe",
+    "shuffle_grid": 4,
+    "shuffle_probability": 0.35,
+    "shuffle_rng_version": "private_per_fold_v1"
+  },
+  "group_bootstrap": {
+    "interval": [
+      0.49527277509706896,
+      0.6789096171265634
+    ],
+    "groups": 14,
+    "draws": 1000,
+    "scope": "Group resampling of fixed OOF predictions; excludes training-seed variability."
+  },
+  "limits": "Repeated development folds; one seed; fixed endpoint. No leaderboard or acceptance claim."
+}

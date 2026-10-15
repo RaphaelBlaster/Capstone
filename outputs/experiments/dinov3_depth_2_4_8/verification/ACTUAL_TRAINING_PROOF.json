@@ -1,0 +1,93 @@
+{
+  "hardware_lines": [
+    "ACTUAL GPU: NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  ],
+  "all_depth_release_pass": true,
+  "depth_gpu_checks": [
+    {
+      "depth": 2,
+      "exact_resume": true,
+      "frozen_unchanged": true,
+      "trainable_parameters": 14175744,
+      "smoke_uninterrupted_seconds": 4.416393962000001,
+      "peak_allocated_bytes": 1114332160,
+      "full_updates": 780,
+      "conservative_full_seconds": 2583.5904677700005,
+      "precision": {
+        "backbone": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 48,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "head": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 1,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "masked_bias": "exact_zero_frozen_buffers_preserved"
+      }
+    },
+    {
+      "depth": 4,
+      "exact_resume": true,
+      "frozen_unchanged": true,
+      "trainable_parameters": 28349952,
+      "smoke_uninterrupted_seconds": 4.614811609000014,
+      "peak_allocated_bytes": 1633520640,
+      "full_updates": 780,
+      "conservative_full_seconds": 2699.6647912650083,
+      "precision": {
+        "backbone": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 48,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "head": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 1,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "masked_bias": "exact_zero_frozen_buffers_preserved"
+      }
+    },
+    {
+      "depth": 8,
+      "exact_resume": true,
+      "frozen_unchanged": true,
+      "trainable_parameters": 56698368,
+      "smoke_uninterrupted_seconds": 5.618074309000008,
+      "peak_allocated_bytes": 2676169728,
+      "full_updates": 780,
+      "conservative_full_seconds": 3286.573470765005,
+      "precision": {
+        "backbone": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 48,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "head": {
+          "requested": "fp8",
+          "active": "fp8_linear_bf16_other",
+          "float8_layers": 1,
+          "master_weights": "FP32",
+          "conversion": "idempotent"
+        },
+        "masked_bias": "exact_zero_frozen_buffers_preserved"
+      }
+    }
+  ],
+  "total_conservative_full_seconds": 8569.828729800014,
+  "latest_full_progress": [
+    "fold0 F2 optimizer updates:  22%|\u00e2\u0096\u0088\u00e2\u0096\u0088\u00e2\u0096\u008f       | 89/400 [01:41<05:37,  1.08s/it, L2SP=1.66e-10, loss=0.04517]"
+  ]
+}

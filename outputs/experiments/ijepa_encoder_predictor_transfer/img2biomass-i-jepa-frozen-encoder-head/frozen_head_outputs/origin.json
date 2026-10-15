@@ -1,0 +1,16 @@
+{
+  "source_kernel": "meghmayur1186/img2biomass-ijepa-frozen-encoder-head/1",
+  "original_source_sha256": "2dbfad65ef9fc869ff9bcba6222dfc65efa580de17365cde100a83138f1038cd",
+  "folds": [
+    0,
+    1
+  ],
+  "precision": "fp8",
+  "encoder_frozen": true,
+  "augmentation_degrees": [
+    0,
+    90,
+    180,
+    270
+  ]
+}

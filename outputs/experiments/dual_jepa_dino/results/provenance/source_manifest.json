@@ -1,0 +1,7 @@
+{
+  "contract": "DUAL-JEPA-DINO-2026-10-09-r1",
+  "embedded_package_sha256": "aaa068529274f262a9a0fc5b48c2313261696d8b314feec7497a63862c9a14d0",
+  "package_code_sha256": "6cb55ba481064aec95be5f16d866146599a67d13ecfe6d9950ca6c5f2a84ac6e",
+  "baseline_commit": "0c5942cc4850d295615163971130fe8102d322ab",
+  "mode": "full"
+}

@@ -1,0 +1,30 @@
+{
+  "images": 357,
+  "groups": 28,
+  "group_column": "Sampling_Date",
+  "group_limit": "Sampling_Date groups are acquisition-date proxies; not verified true site/plot identifiers.",
+  "fold_images": {
+    "0": 49,
+    "1": 56,
+    "2": 62,
+    "3": 40,
+    "4": 65,
+    "5": 85
+  },
+  "targets": [
+    "Dry_Green_g",
+    "Dry_Dead_g",
+    "Dry_Clover_g",
+    "GDM_g",
+    "Dry_Total_g"
+  ],
+  "units": "grams per labelled CSIRO quadrat",
+  "target_identity_audit": {
+    "total_identity_discrepancies": 1,
+    "max_abs_total_residual_g": 0.30879999999999974
+  },
+  "external_unique_images": 0,
+  "dedupe_scope": "Exact file SHA256, not perceptual/re-encoding deduplication.",
+  "ssl_protocol": "External directories only; no CSIRO train/validation/test pixels.",
+  "csv_sha256": "1a6b4c019c3a2386c7626b4002f1b2923d402341fb2a89132f66c57815c5f0e0"
+}

@@ -1,0 +1,30 @@
+{
+  "best_observed_development_model": "D2: frozen official DINOv3 B16/512 + local contribution head + cross-scale consistency",
+  "best_global_weighted_r2": 0.7800650684336633,
+  "new_weighting_global_weighted_r2": 0.7608191087125595,
+  "uniform_control_global_weighted_r2": 0.779881375257081,
+  "difference_D3_minus_D1": -0.019062266544521478,
+  "paired_date_bootstrap": {
+    "draws": 10000,
+    "lower95": -0.07279355094422288,
+    "upper95": 0.007985241973672513,
+    "seed": 42,
+    "conditional_on_fixed_models": true
+  },
+  "images": 105,
+  "total_photographs": 357,
+  "folds": [
+    0,
+    1
+  ],
+  "date_groups": 9,
+  "seeds": 1,
+  "reused_development": true,
+  "competition_score": null,
+  "new_experiment_independent_P1": "PASS / VALIDATED_EXPLORATORY_NEGATIVE_RESULT",
+  "preservation": "Prior checkpoints retained; new 35 inventory hashes checked without mismatches",
+  "new_experiment_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "new_experiment_precision": "fp8_linear_bf16_other",
+  "interpretation": "No improvement established by learned pooling; no causal explanation of the negative result established.",
+  "independent_P1_evidence": "outputs/dino_weighting/P1_VERDICT.md"
+}

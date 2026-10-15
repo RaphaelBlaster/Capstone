@@ -1,0 +1,566 @@
+{
+  "arms": {
+    "control": {
+      "status": "independently_rescored",
+      "n_original_images": 167,
+      "global_weighted_r2_raw": 0.6163041967317017,
+      "negative_prediction_rate": 0.0,
+      "prediction_sha256": "8d53459e75d8d22e36daa33d16f7dec121107f2602e71470b35f9cda754486b7"
+    },
+    "shuffle_4": {
+      "status": "independently_rescored",
+      "n_original_images": 167,
+      "global_weighted_r2_raw": 0.583541424117658,
+      "negative_prediction_rate": 0.0,
+      "prediction_sha256": "8e88afc51c093497ca643b8985d12f0fb268b937cb198b58f8aa663593518eb9"
+    },
+    "shuffle_10": {
+      "status": "independently_rescored",
+      "n_original_images": 167,
+      "global_weighted_r2_raw": 0.5654594284513113,
+      "negative_prediction_rate": 0.0,
+      "prediction_sha256": "fea086b73c05e6c8716a78ae634afa84e61d4cc530a506ba5f685f52ea4acc31"
+    }
+  },
+  "comparisons": {
+    "shuffle_4_minus_control": {
+      "observed_difference": -0.0327627726140437,
+      "ci95": [
+        -0.07022878288165606,
+        0.020309231040778773
+      ],
+      "independent_date_groups": 14,
+      "draws": 10000,
+      "valid_draws": 10000,
+      "seed": 42,
+      "ci_supports_positive": false,
+      "interpretation": "Positive improvement is not established.",
+      "reason": null,
+      "scope": "Partial development only: reused folds 0/1/2, one training seed; not protected confirmation, full OOF, competition scores or a preregistered study. Paired date-group bootstrap conditions on fixed trained models and excludes training-seed uncertainty and prior model-selection bias. Dates are proxies, not verified sites. Synthetic permutations add no independent biological observations. SSL latent loss cannot establish downstream benefit from more SSL steps."
+    },
+    "shuffle_10_minus_control": {
+      "observed_difference": -0.05084476828039042,
+      "ci95": [
+        -0.1003722289397452,
+        0.013121916344199683
+      ],
+      "independent_date_groups": 14,
+      "draws": 10000,
+      "valid_draws": 10000,
+      "seed": 42,
+      "ci_supports_positive": false,
+      "interpretation": "Positive improvement is not established.",
+      "reason": null,
+      "scope": "Partial development only: reused folds 0/1/2, one training seed; not protected confirmation, full OOF, competition scores or a preregistered study. Paired date-group bootstrap conditions on fixed trained models and excludes training-seed uncertainty and prior model-selection bias. Dates are proxies, not verified sites. Synthetic permutations add no independent biological observations. SSL latent loss cannot establish downstream benefit from more SSL steps."
+    },
+    "shuffle_4_minus_shuffle_10": {
+      "observed_difference": 0.018081995666346717,
+      "ci95": [
+        -0.008003188100204154,
+        0.03817004635466308
+      ],
+      "independent_date_groups": 14,
+      "draws": 10000,
+      "valid_draws": 10000,
+      "seed": 42,
+      "ci_supports_positive": false,
+      "interpretation": "Positive improvement is not established.",
+      "reason": null,
+      "scope": "Partial development only: reused folds 0/1/2, one training seed; not protected confirmation, full OOF, competition scores or a preregistered study. Paired date-group bootstrap conditions on fixed trained models and excludes training-seed uncertainty and prior model-selection bias. Dates are proxies, not verified sites. Synthetic permutations add no independent biological observations. SSL latent loss cannot establish downstream benefit from more SSL steps."
+    }
+  },
+  "limits": "Partial development only: reused folds 0/1/2, one training seed; not protected confirmation, full OOF, competition scores or a preregistered study. Paired date-group bootstrap conditions on fixed trained models and excludes training-seed uncertainty and prior model-selection bias. Dates are proxies, not verified sites. Synthetic permutations add no independent biological observations. SSL latent loss cannot establish downstream benefit from more SSL steps.",
+  "protocol_audit": {
+    "status": "verified",
+    "folds": {
+      "0": {
+        "status": "verified_reported_protocol",
+        "optimizer_steps": {
+          "control": 2000,
+          "shuffle_4": 2000,
+          "shuffle_10": 2000
+        },
+        "matched_lr_log_evidence": true,
+        "tiny_software_smoke": false,
+        "incomplete_epoch_log_arms": []
+      },
+      "1": {
+        "status": "verified_reported_protocol",
+        "optimizer_steps": {
+          "control": 2000,
+          "shuffle_4": 2000,
+          "shuffle_10": 2000
+        },
+        "matched_lr_log_evidence": true,
+        "tiny_software_smoke": false,
+        "incomplete_epoch_log_arms": []
+      },
+      "2": {
+        "status": "verified_reported_protocol",
+        "optimizer_steps": {
+          "control": 2000,
+          "shuffle_4": 2000,
+          "shuffle_10": 2000
+        },
+        "matched_lr_log_evidence": true,
+        "tiny_software_smoke": false,
+        "incomplete_epoch_log_arms": []
+      }
+    },
+    "reported_source_sha256": [
+      "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d"
+    ],
+    "scope": "Checks reported configs/logs and independently matched rows; does not load checkpoint tensors or independently verify remote hardware."
+  },
+  "cohort": {
+    "scope": "partial development only",
+    "authorized_folds": [
+      0,
+      1,
+      2
+    ],
+    "n_original_images": 167,
+    "prepared_original_images": 357,
+    "independent_date_groups": 14,
+    "n_labeled_biological_measurements": 357,
+    "full_oof": false,
+    "training_seeds": 1
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 42
+  },
+  "label_sum_audit": {
+    "total_sum_discrepancies_gt_015g": 0,
+    "max_abs_total_sum_residual_g": 0.00010000000000065512,
+    "max_abs_gdm_sum_residual_g": 0.00010000000000331966,
+    "original_labels_preserved": true
+  },
+  "scientific_results": true,
+  "provenance": {
+    "analysis_datetime_utc": "2026-10-09T16:57:53.714564+00:00",
+    "code_git_sha": null,
+    "report_module_sha256": "b61c07aed1a89b9c7ab7b1e4efc5bb0949c515c0a1340bb07de0bbb0338b3c85",
+    "folds_csv_sha256": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+    "upstream_provenance_status": "present",
+    "upstream": {
+      "checked_ist": "2026-10-09T22:23:15.671943+05:30",
+      "source_kernel": "meghmayur1186/img2biomass-grass-jepa-frozen-heads/2",
+      "source_sha256": "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d",
+      "source_origin": {
+        "source_sha256": "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d",
+        "size": 224,
+        "dim": 1280,
+        "representation": "encoder",
+        "tiny": false,
+        "model": "official_ijepa_vith14",
+        "revision": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+        "grass_steps": 2400,
+        "original_compact_sha256": "2dbfad65ef9fc869ff9bcba6222dfc65efa580de17365cde100a83138f1038cd"
+      },
+      "source_progress": {
+        "status": "completed_steps",
+        "step": 2400,
+        "requested_steps": 2400,
+        "unique_grass_images": 30663,
+        "unique_images_trained": 30663,
+        "sample_exposures": 153315,
+        "equivalent_corpus_passes": 5.0,
+        "signature": {
+          "model": "official_ijepa_vith14",
+          "revision": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+          "initial_sha256": "2dbfad65ef9fc869ff9bcba6222dfc65efa580de17365cde100a83138f1038cd",
+          "corpus_sha256": "080e5b83117c7a4121e15c135d022f41c9ae62d937a38bbf7a0ec657a1d96ce2",
+          "images": 30663,
+          "size": 224,
+          "last_blocks": 8,
+          "steps": 2400,
+          "batch_size": 16,
+          "accumulate": 4,
+          "seed": 42,
+          "encoder_lr": 1e-05,
+          "predictor_lr": 0.0001,
+          "weight_decay": 0.04,
+          "precision": "fp8",
+          "tiny": false
+        },
+        "export_sha256": {
+          "foundation.pt": "9408aa171eb9df267fbec6e72dfe9a08e4a7e873aa2cfe4750574076f39d38df",
+          "adapted.pt": "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d"
+        },
+        "seconds_this_session": 1400.1900267229998,
+        "last_loss": 0.13661645352840424,
+        "foundation_export": "foundation.pt",
+        "adapted_export": "adapted.pt"
+      },
+      "source_fold_sha256": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+      "mapped_fold_sha256": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+      "source_external_manifest_sha256": "f3de96eba431465bdb151f36cc1f6bdd3b4c90b65c295461da891929cefc713b",
+      "exact_ssl_supervised_overlap": 0,
+      "near_duplicate_overlap": "Not ruled out; exact SHA audit only.",
+      "code_base_git_sha": "8b5a0b82e38264890a129115cb421dc535f22346",
+      "bundle_files_sha256": {
+        "biomass_jepa/train.py": "1ca909d9a148fcd187ad0949af88a70070fb4bae06e29381b42724284087fc6d",
+        "biomass_jepa/reconcile.py": "a8509a30cec5496e91978e2c68422c1e070ec65c6776a1126a4ba240e1e3e9ed",
+        "biomass_jepa/official_train.py": "400057ce97283b1030cfedc8f5cb35856ac1f6a13df83045199e8d0a791970ff",
+        "biomass_jepa/models.py": "081f5900bea1028ff1210e824cddcd20e1ae96d8990bf381ea1620ac972ab117",
+        "biomass_jepa/precision_parity.py": "3f804b373994527aa195f982f1b6d2f9ef6d97a11b0f6c58bc07c198fb5865c7",
+        "biomass_jepa/data.py": "72ba0c8a79623179b8434580c9b56f1a5ccac81b4814ffb996b6ade45b3bb761",
+        "biomass_jepa/official_infer.py": "6534793018d18745291b0925fa365fcf84a5c15e7096c8cd5b9b5aef226e7d7c",
+        "biomass_jepa/official_ijepa.py": "ab08cf18c9793b0ab44999b7051af7a8febaef31625f3330b9df9b4866ef2375",
+        "biomass_jepa/block_shuffle_report.py": "b61c07aed1a89b9c7ab7b1e4efc5bb0949c515c0a1340bb07de0bbb0338b3c85",
+        "biomass_jepa/infer.py": "39b67727de1374418268e4b9802987361bb94d39f75d6c6bf6a03d42dbd92a50",
+        "biomass_jepa/block_shuffle.py": "65da676b207e3c7aa1023c78aee38efd5d6c0cd2390086b5f114e29cf3739f06",
+        "biomass_jepa/official_heads.py": "1d75ac2d9ab0c909dd42ec35c94b627a72b71809c244c0f8cf6615dc9df2cc07",
+        "biomass_jepa/check_gpu.py": "ce1c1489e047cf32e5945f7310589043576b30a439d0d160840f70f9064995dc",
+        "biomass_jepa/metrics.py": "311c47df3186a619e8643382d50a38cc8f986dc124d5bf0ff5f98e74594c3dee",
+        "biomass_jepa/__init__.py": "f699ef7072cfe1f7719a89a5a00a66f6f6081729b1e66cc096d4256638fefe23",
+        "biomass_jepa/frozen_infer.py": "c9c2ba752b9918b1ac7ecbbe66ceacf3ab81087832dbafd2c176f0ec0001a095",
+        "tools/install_gpu_deps.py": "918b423b9842448ea37bcfc290f51b572ce1d604ef0df8f64618334fd8a9be27",
+        "biomass_jepa/ijepa_reference/multiblock.py": "a06c593636f81e760bd26b615b2a7a976790dcc027d4b9244f3e8e7a2e5a8804",
+        "biomass_jepa/ijepa_reference/tensors.py": "66cac858005d01e93ad6f481f384a9d75cb1fb8ad2bff0fd7e9a127f384429c0",
+        "biomass_jepa/ijepa_reference/masks.py": "124da04a7513329a14793389d89a98db87498caf7623a10bc772b097c74d97ec",
+        "biomass_jepa/ijepa_reference/vision_transformer.py": "43630403fc144b422520ec37b9026e0f5525a76341b456701c6620e13e4f1286",
+        "biomass_jepa/ijepa_reference/__init__.py": "5242ce23cc5cff793c89bc391bf2eb5371381b6683b57554f31069ab9c5f2cd8"
+      },
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch": "2.11.0+cu128",
+      "cuda": "12.8",
+      "software": {
+        "torchao": "0.17.0",
+        "timm": "1.0.30",
+        "torchvision": "0.26.0+cu128",
+        "numpy": "2.1.3",
+        "pandas": "2.3.3",
+        "scikit-learn": "1.6.1",
+        "Pillow": "12.3.0",
+        "matplotlib": "3.10.0"
+      },
+      "folds": [
+        0,
+        1,
+        2
+      ],
+      "images": 357,
+      "evaluated_images": 167,
+      "complete_oof": false,
+      "competition_score": false,
+      "seed": 42,
+      "shuffle_probability": 0.35,
+      "epochs": 200,
+      "swa_last_epochs": 40,
+      "source_weight_updates": false,
+      "validation_shuffle": false,
+      "limits": "Reused development protocol, date proxies, one seed; not preregistered or protected confirmation."
+    },
+    "checkpoint_hash_scope": "Selected head bytes only; frozen source/cache bytes not loaded or reverified by this analysis.",
+    "artifact_inventory": [
+      {
+        "path": "arms/control/fold_0/config.json",
+        "bytes": 68526,
+        "sha256": "9bc629105e3d4ec7c0a687b675d5235338b3e965b5ed88a078f48205ca05e99a"
+      },
+      {
+        "path": "arms/control/fold_0/metrics.json",
+        "bytes": 1609,
+        "sha256": "75862cee5db4f7badefbe9edca3297e95e86d25d6c89eb2a7a0666b9ca49c811"
+      },
+      {
+        "path": "arms/control/fold_0/predictions.csv",
+        "bytes": 8049,
+        "sha256": "5d2e1d8c120a20c326d6532c82028d5b896ebe4982d779134939082197136051"
+      },
+      {
+        "path": "arms/control/fold_0/selected.pt",
+        "bytes": 3742220,
+        "sha256": "4fe86669d0a75eef77fcb40d97c582029b25d5f48c62caff4c3cd16386eb9f7c"
+      },
+      {
+        "path": "arms/control/fold_0/train_log.jsonl",
+        "bytes": 31827,
+        "sha256": "7b86dcaefd85ada372e7831ec118e09c319199e88713445338220673461e212e"
+      },
+      {
+        "path": "arms/control/fold_1/config.json",
+        "bytes": 68522,
+        "sha256": "3b0e1b1e8686dd676e048b03f1a250304ec72f46b492efeb826e1383d6e6d96e"
+      },
+      {
+        "path": "arms/control/fold_1/metrics.json",
+        "bytes": 1609,
+        "sha256": "e34b8904216ceadbe57ffe573b130b9e767116af07ebc805ef260977eda39d50"
+      },
+      {
+        "path": "arms/control/fold_1/predictions.csv",
+        "bytes": 9107,
+        "sha256": "95fe1aa5cf930ba33fa03e0f661c7667b2bba87191f021736e032a416663acce"
+      },
+      {
+        "path": "arms/control/fold_1/selected.pt",
+        "bytes": 3742220,
+        "sha256": "b75c23d8f4375e0dbc4aa976878b47799dd98b5640f33fbe9264f18c9aa16796"
+      },
+      {
+        "path": "arms/control/fold_1/train_log.jsonl",
+        "bytes": 31812,
+        "sha256": "c8ac92b918911425fcaa612f3b6a1a9aba42648c02970ab8ccb2986ce37add58"
+      },
+      {
+        "path": "arms/control/fold_2/config.json",
+        "bytes": 68522,
+        "sha256": "651063c3c0e06793aa8614b21d2a9d615da8c27454ade10710b74f0e375ab438"
+      },
+      {
+        "path": "arms/control/fold_2/metrics.json",
+        "bytes": 1606,
+        "sha256": "3abb16d7672c5d4f648a990ccb1a5e557e530a95fa81798368d3200d89ad2355"
+      },
+      {
+        "path": "arms/control/fold_2/predictions.csv",
+        "bytes": 9859,
+        "sha256": "bece4a5e2060c80518cd96f95d7718d5cb0ad252ccbefbea48fdad0cf80b97fd"
+      },
+      {
+        "path": "arms/control/fold_2/selected.pt",
+        "bytes": 3742220,
+        "sha256": "a8a1413cdc9243db2cd3ee0e84b2701991717efda87207b632d2c418a1d8379f"
+      },
+      {
+        "path": "arms/control/fold_2/train_log.jsonl",
+        "bytes": 31824,
+        "sha256": "cdef360002f00ea5e174e686cd3549d0d9d2cdb75b51a8292aae8bfbf998c335"
+      },
+      {
+        "path": "arms/control/metrics.json",
+        "bytes": 1778,
+        "sha256": "e4c1cf27fd0ae565063f512c3dcc4f9db8d28081a095b8eddc771203c6f7cd5b"
+      },
+      {
+        "path": "arms/control/oof_predictions.csv",
+        "bytes": 26699,
+        "sha256": "8d53459e75d8d22e36daa33d16f7dec121107f2602e71470b35f9cda754486b7"
+      },
+      {
+        "path": "arms/shuffle_10/fold_0/config.json",
+        "bytes": 68732,
+        "sha256": "96a012a1e220a9603ed92ca04d9db23723fe247d620b2e158f5ac2255a0e41e7"
+      },
+      {
+        "path": "arms/shuffle_10/fold_0/metrics.json",
+        "bytes": 1816,
+        "sha256": "4417752ac4e921b55390136c1b520eaa77bced5483eb8eb66951a29bcff366b6"
+      },
+      {
+        "path": "arms/shuffle_10/fold_0/predictions.csv",
+        "bytes": 8051,
+        "sha256": "7265bd1ad2e9b27430a54da367dd617e32469398d6d101497b5f69c796734381"
+      },
+      {
+        "path": "arms/shuffle_10/fold_0/selected.pt",
+        "bytes": 3742476,
+        "sha256": "39ba9fe2bf8de55b612c12f63154bba161e9eac2cbec1905bc8dce9b1ef58197"
+      },
+      {
+        "path": "arms/shuffle_10/fold_0/train_log.jsonl",
+        "bytes": 31811,
+        "sha256": "d83c93b3faa5ec2ec5c6cf794dc1b86d6914635046536c988e7895d490063a56"
+      },
+      {
+        "path": "arms/shuffle_10/fold_1/config.json",
+        "bytes": 68728,
+        "sha256": "7a9dcb8400d9d71ec72a09f2fcdc737b6e85a81d082f11e6db82623796b5a15f"
+      },
+      {
+        "path": "arms/shuffle_10/fold_1/metrics.json",
+        "bytes": 1818,
+        "sha256": "37bf23ba883637bf10b364803cf8956665063c3b67fed2aa0cb161dcabfb8ad4"
+      },
+      {
+        "path": "arms/shuffle_10/fold_1/predictions.csv",
+        "bytes": 9127,
+        "sha256": "7530530a449a07eb0d0be0896aaae07a3f2ffbce0462b9c115403ba985a18161"
+      },
+      {
+        "path": "arms/shuffle_10/fold_1/selected.pt",
+        "bytes": 3742476,
+        "sha256": "b8130209f1c7ca02c7af89ff92bb3221f6aa720e1d8d744c103e3babb4d42251"
+      },
+      {
+        "path": "arms/shuffle_10/fold_1/train_log.jsonl",
+        "bytes": 31782,
+        "sha256": "2db627eef84d4aae26ea246733d08523c506ea075c3923ef4e1c494b6854de24"
+      },
+      {
+        "path": "arms/shuffle_10/fold_2/config.json",
+        "bytes": 68728,
+        "sha256": "2d2ed40d8009bf59408de8c4ee85694b6007894c7ec055e59d4e9fe3da0f7140"
+      },
+      {
+        "path": "arms/shuffle_10/fold_2/metrics.json",
+        "bytes": 1810,
+        "sha256": "a5823d53afde91bc235431dcf6fb2c65bbebed0631669cd450beb098608e12fd"
+      },
+      {
+        "path": "arms/shuffle_10/fold_2/predictions.csv",
+        "bytes": 9858,
+        "sha256": "979eb16cc10109e45c0cc4b3b7e04870df1b7552097d4c9ed12bf91c6c51e3f2"
+      },
+      {
+        "path": "arms/shuffle_10/fold_2/selected.pt",
+        "bytes": 3742476,
+        "sha256": "20ce4ecc150892312d1f1b469e5fb9da65030b6ed224f39d7d538909437a17aa"
+      },
+      {
+        "path": "arms/shuffle_10/fold_2/train_log.jsonl",
+        "bytes": 31793,
+        "sha256": "a6e02cd65d1233589d92da555bdee2696594a3dbfed340ee1b4ee12b5944a2c5"
+      },
+      {
+        "path": "arms/shuffle_10/metrics.json",
+        "bytes": 1983,
+        "sha256": "f5a272d95554e9216d347884b888d602067b1a4ab174401fd2d3ebe467356ae6"
+      },
+      {
+        "path": "arms/shuffle_10/oof_predictions.csv",
+        "bytes": 26720,
+        "sha256": "fea086b73c05e6c8716a78ae634afa84e61d4cc530a506ba5f685f52ea4acc31"
+      },
+      {
+        "path": "arms/shuffle_4/fold_0/config.json",
+        "bytes": 68731,
+        "sha256": "2fef77e1a4ad03b0b480f4a4ee423654000fdd4f4105e104a988efb2f2bf557d"
+      },
+      {
+        "path": "arms/shuffle_4/fold_0/metrics.json",
+        "bytes": 1812,
+        "sha256": "2c596a64261b63f6ab4b4bd1f8cfc8232c0432d785bb6ba64e2d98a044ea283f"
+      },
+      {
+        "path": "arms/shuffle_4/fold_0/predictions.csv",
+        "bytes": 8078,
+        "sha256": "a0d7743bfbbeb94cab4b0ae7c6a89a1962f956cf71669e68eaf93c9947e49a4d"
+      },
+      {
+        "path": "arms/shuffle_4/fold_0/selected.pt",
+        "bytes": 3742476,
+        "sha256": "a29b5ab4b2c9fe2b8663e56e41eddf494de4d29394e86b9b5eaa7f49931044e8"
+      },
+      {
+        "path": "arms/shuffle_4/fold_0/train_log.jsonl",
+        "bytes": 31818,
+        "sha256": "42d75d260685cc0bd9411977d8ec8c6977aceaddbab6102445ba1aa64953f2ec"
+      },
+      {
+        "path": "arms/shuffle_4/fold_1/config.json",
+        "bytes": 68727,
+        "sha256": "b44bbac2bf4ee02c2d8dc4dc15026621c4aa8c6a4f86074383e3b62f787a5033"
+      },
+      {
+        "path": "arms/shuffle_4/fold_1/metrics.json",
+        "bytes": 1813,
+        "sha256": "76abcc4c8c679ee60e48017f65e4f67f015feb19e7e4ecfdabf673ee17e576de"
+      },
+      {
+        "path": "arms/shuffle_4/fold_1/predictions.csv",
+        "bytes": 9126,
+        "sha256": "689eaa6a080f30ca2cae6f2a1b3cb8d6f349048f51040063201148fbcaa3d2fd"
+      },
+      {
+        "path": "arms/shuffle_4/fold_1/selected.pt",
+        "bytes": 3742476,
+        "sha256": "0e1207e456fa26d2cfdc4098e707434a3076c06fe8bb11f8e38d048126e11391"
+      },
+      {
+        "path": "arms/shuffle_4/fold_1/train_log.jsonl",
+        "bytes": 31816,
+        "sha256": "99fbb7eed2054c1d880eb33442166d6604a2d0272eda26838253893fbf7cb767"
+      },
+      {
+        "path": "arms/shuffle_4/fold_2/config.json",
+        "bytes": 68727,
+        "sha256": "4749eb4121c3272c733d308e778319d1eb3e725f61c915312ef2415bd8745891"
+      },
+      {
+        "path": "arms/shuffle_4/fold_2/metrics.json",
+        "bytes": 1811,
+        "sha256": "0d9a2ca3ea3979933952e25d04c3c380d474abd42d6aa4938a73dc597f485989"
+      },
+      {
+        "path": "arms/shuffle_4/fold_2/predictions.csv",
+        "bytes": 9858,
+        "sha256": "6e9572d4945dfc7a91817c090afe6a8d42dfc6c133864bc0fc81d2a93130158d"
+      },
+      {
+        "path": "arms/shuffle_4/fold_2/selected.pt",
+        "bytes": 3742476,
+        "sha256": "1b275f99bed8f8f4357cff4d172bee9f596d0b057135451bf2acc95238bbc4d8"
+      },
+      {
+        "path": "arms/shuffle_4/fold_2/train_log.jsonl",
+        "bytes": 31817,
+        "sha256": "32ea2b10f7ed0c83d5ee0fd0da8e19aa3631ca5e0900cfd0839eb0ba1a481ae1"
+      },
+      {
+        "path": "arms/shuffle_4/metrics.json",
+        "bytes": 1982,
+        "sha256": "251c66be4d4a7833009dfb73cce6086aa8047fab79c975715e426eeaae21e45a"
+      },
+      {
+        "path": "arms/shuffle_4/oof_predictions.csv",
+        "bytes": 26746,
+        "sha256": "8e88afc51c093497ca643b8985d12f0fb268b937cb198b58f8aa663593518eb9"
+      },
+      {
+        "path": "features/control/manifest.json",
+        "bytes": 57205,
+        "sha256": "3bcf657e2e5936ccdfd4d00c6c9f55a159bfcdd544875b7c857615a38602ca74"
+      },
+      {
+        "path": "features/shuffle_10/manifest.json",
+        "bytes": 57204,
+        "sha256": "7dbf6c49b3a8e8b755bb279dedfc26ba6948d0dd36204e4f2c27b96ecfcb9040"
+      },
+      {
+        "path": "features/shuffle_4/manifest.json",
+        "bytes": 57205,
+        "sha256": "3788a0f255a380d88ac9306705114347f62cd7954360cf311b94b58fd2906cbe"
+      }
+    ]
+  },
+  "figures": {
+    "figure_01_architecture": {
+      "status": "rendered"
+    },
+    "figure_02_examples": {
+      "status": "rendered"
+    },
+    "figure_03_paired_effects": {
+      "status": "rendered"
+    },
+    "figure_04_per_target_scatter": {
+      "status": "rendered"
+    },
+    "figure_05_residuals": {
+      "status": "rendered"
+    },
+    "figure_06_learning_curves": {
+      "status": "rendered"
+    },
+    "supplementary_group_sizes": {
+      "status": "rendered"
+    }
+  },
+  "learning_dynamics": {
+    "head": {
+      "status": "available",
+      "logged_points": 1800
+    },
+    "historical_ssl": {
+      "status": "available",
+      "source_sha256": "baf4acd4cfed5cca9c968a57f5de9aedab42a003a4aa9e2cf4526e090d95e529",
+      "interpretation": "Historical SSL, not new pretraining. Latent loss does not establish downstream R\u00b2 improvement."
+    }
+  },
+  "publication_ready": false,
+  "publication_readiness_note": "Requires coordinator review, verified source/runtime provenance, preserved outputs, licenses and data/code availability statements; figures alone do not establish readiness."
+}

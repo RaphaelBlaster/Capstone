@@ -1,0 +1,193 @@
+{
+  "contract_id": "DUAL-JEPA-DINO-2026-10-09-r1",
+  "phase": "P0 independent static, CPU and completed actual GPU smoke; P1 pending",
+  "source_commit": "0c5942cc4850d295615163971130fe8102d322ab",
+  "hashes": {
+    "v20_notebook": "4d2f7ef85d89c26fff489e6848063927262662f74ff053d1839f16784f93a355",
+    "stage1_adapted": "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d",
+    "dinov3_b16": "73cec8be7427c8655ceced13ce62f6e20a1fa90d1b4d4a550df17a1144081a7c"
+  },
+  "dino_source_revision": "6876159a11b4df116f30f667f8c9888617df0751",
+  "dino_locked_source_files_matched": 174,
+  "fold_audit": {
+    "unique_originals": 357,
+    "fold0": 49,
+    "fold1": 56,
+    "crossfold_dates": 0,
+    "gdm_max_abs_residual_g": 0.0001,
+    "total_max_abs_residual_g": 0.3088,
+    "total_anomaly_id": "train/ID2014192906.jpg"
+  },
+  "independent_jigsaw": {
+    "distinct_nonidentity_permutations": 10,
+    "all_bijective": true,
+    "random_rgb_pixel_multiset_equal": true
+  },
+  "metric_parity": {
+    "global_r2": 0.9857679745210678,
+    "independent_oracle_error": 0.0,
+    "wrong_mean_per_target_r2": -0.08102092822601689
+  },
+  "tested_tensor_shapes": {
+    "dino_input": [
+      1,
+      2,
+      3,
+      512,
+      512
+    ],
+    "dino_patches": [
+      2,
+      1024,
+      768
+    ],
+    "dino_dense": [
+      1,
+      2,
+      8,
+      8,
+      768
+    ]
+  },
+  "actual_gpu_state_hashes": {
+    "J_control": {
+      "encoder_before": "a4037c828a19eb5cc1bbb7421d12ffce637535cd861a23795c30d44e1a1ce492",
+      "encoder_after": "a4037c828a19eb5cc1bbb7421d12ffce637535cd861a23795c30d44e1a1ce492",
+      "teacher_before": "1affd8f80062b48498a8fcfaee540ea659ce0e21155b7f4d23646a653e687f8a",
+      "teacher_after": "1affd8f80062b48498a8fcfaee540ea659ce0e21155b7f4d23646a653e687f8a",
+      "predictor_max_abs_update": 1.9073486328125e-06,
+      "gradient_max_abs": 0.0111846923828125
+    },
+    "J_shuffle": {
+      "encoder_before": "a4037c828a19eb5cc1bbb7421d12ffce637535cd861a23795c30d44e1a1ce492",
+      "encoder_after": "a4037c828a19eb5cc1bbb7421d12ffce637535cd861a23795c30d44e1a1ce492",
+      "teacher_before": "1affd8f80062b48498a8fcfaee540ea659ce0e21155b7f4d23646a653e687f8a",
+      "teacher_after": "1affd8f80062b48498a8fcfaee540ea659ce0e21155b7f4d23646a653e687f8a",
+      "predictor_max_abs_update": 1.9073486328125e-06,
+      "gradient_max_abs": 0.006927490234375
+    }
+  },
+  "dinov3_penalty_value_gradient": {
+    "penalty": 0.0005621053860522807,
+    "gradient_max_abs": 0.0015716552734375,
+    "fine_coarse_max_difference": 0.7388296127319336,
+    "trainable_parameters": 197635,
+    "precision": {
+      "requested": "fp8",
+      "active": "fp8_linear_bf16_other",
+      "float8_layers": 1,
+      "master_weights": "FP32",
+      "conversion": "idempotent"
+    }
+  },
+  "executed_notebook_identity": {
+    "kernel_id": 137914421,
+    "version": 1,
+    "saved_cells_equal_immutable_submitted": true,
+    "notebook_sha256": "16ee247aa7d8782deb2afac8eb5aea653ac8e1da8893413ac08a9e6ecbf1b536",
+    "embedded_package_sha256": "b932853168d9f3f2ed9da2220e646dc441710f052d6feea88916bc1acbf5839b",
+    "model_code_sha256": "6cb55ba481064aec95be5f16d866146599a67d13ecfe6d9950ca6c5f2a84ac6e"
+  },
+  "unresolved": [
+    "Full run, 105-image paired OOF, final checkpoints, figures and independently rescored scientific metrics require P1 verification",
+    "Fresh current quota, zero reservation and owned-job scan must pass immediately before the single full dispatch"
+  ],
+  "overall_verdict": "PASS",
+  "reviewed_smoke_notebook_sha256": "16ee247aa7d8782deb2afac8eb5aea653ac8e1da8893413ac08a9e6ecbf1b536",
+  "reviewed_full_notebook_sha256": "49f94bb3756cfba9c998a3db5abd2dfc8965de7882dabf62c413d42b52a7eeb6",
+  "embedded_package_sha256": "aaa068529274f262a9a0fc5b48c2313261696d8b314feec7497a63862c9a14d0",
+  "embedded_source_mismatches": 0,
+  "cpu_targeted_tests": "38 passed",
+  "stage1_metadata": {
+    "step": 2400,
+    "domain_adaptation_status": "completed_steps",
+    "official_repository_revision": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+    "encoder_state_entries": 389,
+    "predictor_state_entries": 152,
+    "teacher_state_entries": 389
+  },
+  "dino_cpu_validation": "outputs/final_dual_study/provenance/dino_cpu_validation.json",
+  "actual_saved_smoke_notebook_sha256": "16ee247aa7d8782deb2afac8eb5aea653ac8e1da8893413ac08a9e6ecbf1b536",
+  "actual_saved_smoke_embedded_package_sha256": "b932853168d9f3f2ed9da2220e646dc441710f052d6feea88916bc1acbf5839b",
+  "actual_saved_smoke_version": 1,
+  "actual_saved_smoke_kernel_id": 137914421,
+  "actual_saved_smoke_cells_equal_immutable_submitted": true,
+  "actual_saved_smoke_source_mismatches": 0,
+  "prepared_full_embedded_package_sha256": "aaa068529274f262a9a0fc5b48c2313261696d8b314feec7497a63862c9a14d0",
+  "full_vs_saved_smoke_common_package_files_different": 0,
+  "full_vs_saved_smoke_only_added_files": [
+    "contract/SOURCE_BASELINE.json",
+    "contract/original_capstone_v20.ipynb"
+  ],
+  "full_notebook_cells": 14,
+  "full_notebook_all_code_cells_ast_parse": true,
+  "builder_regression_test": "1 passed, 11 deselected",
+  "decision": "READY_FOR_GPU",
+  "feature_code_revision_sha256": "6cb55ba481064aec95be5f16d866146599a67d13ecfe6d9950ca6c5f2a84ac6e",
+  "gpu_smoke_proof_sha256": "85111401a9703f2e7890cdb20749e268047230d38de7db3466d9bb1cfd3a937e",
+  "conservative_resource_gate": {
+    "estimated_seconds": 8444.5512213688,
+    "margin20_percent_seconds": 10133.46146564256,
+    "passes": true,
+    "remaining_quota_snapshot_seconds": 24000,
+    "session_cap_seconds": 21600,
+    "basis": "actual measured separate JEPA/DINO head costs; fixed protocol counts; setup reserve and20%margin",
+    "j_head_update_seconds_max": 0.15874906999988525,
+    "dino_head_update_seconds_max": 0.006402659999821481
+  },
+  "full_gpu_execution": "NOT_SUBMITTED",
+  "p1_validation": "UNVERIFIED",
+  "head_reload_checks": {
+    "control": {
+      "steps": 2,
+      "initial_state_sha256": "c138b92af696507231e11f5386374b4db1b767293105e77efdab275d892b2fcb",
+      "after_state_sha256": "85ad60c63a6114dc808374c8aa0011191de5172995851934a1fc299d4cb0737e",
+      "reload_max_abs_error": 0.0,
+      "prediction_update_max_abs": 0.14653778076171875,
+      "strict_load": true,
+      "updated": true
+    },
+    "shuffle": {
+      "steps": 2,
+      "initial_state_sha256": "c138b92af696507231e11f5386374b4db1b767293105e77efdab275d892b2fcb",
+      "after_state_sha256": "9493c6b19c6c339a513ac8032f1329c6d572d72f50c02db6584b8cac2b32ebdb",
+      "reload_max_abs_error": 0.0,
+      "prediction_update_max_abs": 0.14653778076171875,
+      "strict_load": true,
+      "updated": true
+    },
+    "D0": {
+      "steps": 2,
+      "initial_state_sha256": "84262a240d12d13a91373b532261b9a933b583fa76a1933998fab2cde17f2a2d",
+      "after_state_sha256": "4e04958b9e334339942cd67653c07350ed741bbf419e426ce7affccb4265685c",
+      "reload_max_abs_error": 0.0,
+      "prediction_update_max_abs": 12.35788345336914,
+      "strict_load": true,
+      "updated": true
+    },
+    "D1": {
+      "steps": 2,
+      "initial_state_sha256": "ce18c2df735e77634dbec177d82f8ea72169ecb76ac0d62966cc9e73e655469b",
+      "after_state_sha256": "8a8f43b601eb28baebc64b68a1c640cc1ab3eafdf7e9f8aee82318f08533c2d2",
+      "reload_max_abs_error": 0.0,
+      "prediction_update_max_abs": 3.9515762329101562,
+      "strict_load": true,
+      "updated": true
+    },
+    "D2": {
+      "steps": 2,
+      "initial_state_sha256": "ce18c2df735e77634dbec177d82f8ea72169ecb76ac0d62966cc9e73e655469b",
+      "after_state_sha256": "61d498edf51b1c98a62e362a73cc211b08dab1c72cf1e2aa416016b336bc0b9f",
+      "reload_max_abs_error": 0.0,
+      "prediction_update_max_abs": 3.9513626098632812,
+      "strict_load": true,
+      "updated": true
+    }
+  },
+  "full_notebook_budget_helper_ast_identical_to_dispatcher": true,
+  "full_notebook_manifest_hashes_verified": true,
+  "actual_gpu_precision": "fp8_linear_bf16_other",
+  "gpu_two_step_updates_per_j_arm": 2,
+  "gpu_two_step_updates_per_head": 2,
+  "smoke_status": "smoke_completed_no_full_training"
+}

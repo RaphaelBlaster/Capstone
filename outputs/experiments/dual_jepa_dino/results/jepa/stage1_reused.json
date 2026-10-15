@@ -1,0 +1,6 @@
+{
+  "checkpoint_sha256": "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d",
+  "step": 2400,
+  "unique_ssl_images": 30663,
+  "repeated_training": false
+}

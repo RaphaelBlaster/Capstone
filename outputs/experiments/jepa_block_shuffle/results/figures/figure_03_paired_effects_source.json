@@ -1,0 +1,86 @@
+{
+  "arms": {
+    "control": {
+      "status": "independently_rescored",
+      "n_original_images": 167,
+      "global_weighted_r2_raw": 0.6163041967317017,
+      "negative_prediction_rate": 0.0,
+      "prediction_sha256": "8d53459e75d8d22e36daa33d16f7dec121107f2602e71470b35f9cda754486b7"
+    },
+    "shuffle_4": {
+      "status": "independently_rescored",
+      "n_original_images": 167,
+      "global_weighted_r2_raw": 0.583541424117658,
+      "negative_prediction_rate": 0.0,
+      "prediction_sha256": "8e88afc51c093497ca643b8985d12f0fb268b937cb198b58f8aa663593518eb9"
+    },
+    "shuffle_10": {
+      "status": "independently_rescored",
+      "n_original_images": 167,
+      "global_weighted_r2_raw": 0.5654594284513113,
+      "negative_prediction_rate": 0.0,
+      "prediction_sha256": "fea086b73c05e6c8716a78ae634afa84e61d4cc530a506ba5f685f52ea4acc31"
+    }
+  },
+  "comparisons": {
+    "shuffle_4_minus_control": {
+      "observed_difference": -0.0327627726140437,
+      "ci95": [
+        -0.07022878288165606,
+        0.020309231040778773
+      ],
+      "independent_date_groups": 14,
+      "draws": 10000,
+      "valid_draws": 10000,
+      "seed": 42,
+      "ci_supports_positive": false,
+      "interpretation": "Positive improvement is not established.",
+      "reason": null,
+      "scope": "Partial development only: reused folds 0/1/2, one training seed; not protected confirmation, full OOF, competition scores or a preregistered study. Paired date-group bootstrap conditions on fixed trained models and excludes training-seed uncertainty and prior model-selection bias. Dates are proxies, not verified sites. Synthetic permutations add no independent biological observations. SSL latent loss cannot establish downstream benefit from more SSL steps."
+    },
+    "shuffle_10_minus_control": {
+      "observed_difference": -0.05084476828039042,
+      "ci95": [
+        -0.1003722289397452,
+        0.013121916344199683
+      ],
+      "independent_date_groups": 14,
+      "draws": 10000,
+      "valid_draws": 10000,
+      "seed": 42,
+      "ci_supports_positive": false,
+      "interpretation": "Positive improvement is not established.",
+      "reason": null,
+      "scope": "Partial development only: reused folds 0/1/2, one training seed; not protected confirmation, full OOF, competition scores or a preregistered study. Paired date-group bootstrap conditions on fixed trained models and excludes training-seed uncertainty and prior model-selection bias. Dates are proxies, not verified sites. Synthetic permutations add no independent biological observations. SSL latent loss cannot establish downstream benefit from more SSL steps."
+    },
+    "shuffle_4_minus_shuffle_10": {
+      "observed_difference": 0.018081995666346717,
+      "ci95": [
+        -0.008003188100204154,
+        0.03817004635466308
+      ],
+      "independent_date_groups": 14,
+      "draws": 10000,
+      "valid_draws": 10000,
+      "seed": 42,
+      "ci_supports_positive": false,
+      "interpretation": "Positive improvement is not established.",
+      "reason": null,
+      "scope": "Partial development only: reused folds 0/1/2, one training seed; not protected confirmation, full OOF, competition scores or a preregistered study. Paired date-group bootstrap conditions on fixed trained models and excludes training-seed uncertainty and prior model-selection bias. Dates are proxies, not verified sites. Synthetic permutations add no independent biological observations. SSL latent loss cannot establish downstream benefit from more SSL steps."
+    }
+  },
+  "cohort": {
+    "scope": "partial development only",
+    "authorized_folds": [
+      0,
+      1,
+      2
+    ],
+    "n_original_images": 167,
+    "prepared_original_images": 357,
+    "independent_date_groups": 14,
+    "n_labeled_biological_measurements": 357,
+    "full_oof": false,
+    "training_seeds": 1
+  }
+}

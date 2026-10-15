@@ -1,0 +1,7 @@
+{
+  "actual_photo": "/workspace/Img2BioMass/outputs/jepa_xai_3/images/ID567744300.jpg",
+  "photo_sha256": "a5b75e18fc20655ead91d290614566c2d71c109333539f8b46202ee4991ea490",
+  "main_figure": "Deterministic matplotlib schematic with unchanged source photo pixels, displayed with resize; illustrative masks",
+  "imagegen_output": "Concept only; generative outputs had arrow/label errors and are not used in manuscript",
+  "no_new_experiment": true
+}

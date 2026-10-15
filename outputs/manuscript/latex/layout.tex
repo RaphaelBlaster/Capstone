@@ -1,0 +1,30 @@
+% Compact manuscript layout; publisher class remains byte-for-byte unchanged.
+\usepackage{etoolbox}
+\geometry{reset,a4paper,left=20mm,right=20mm,top=16mm,bottom=16mm,headsep=3mm,footskip=9mm}
+\makeatletter
+\patchcmd{\@maketitle}{\vskip21pt}{\vskip0pt}{}{}
+\patchcmd{\@maketitle}{\vskip20pt}{\vskip6pt}{}{}
+\patchcmd{\@maketitle}{\vskip20pt}{\vskip10pt}{}{}
+\patchcmd{\@maketitle}{\vskip24pt}{\vskip6pt}{}{}
+\patchcmd{\@maketitle}{\vskip24pt}{\vskip6pt}{}{}
+\patchcmd{\@maketitle}{\vskip36pt}{\vskip12pt}{}{}
+\makeatother
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{.9}
+\renewcommand{\bottomfraction}{.8}
+\renewcommand{\textfraction}{.08}
+\renewcommand{\floatpagefraction}{.75}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{14pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\AtBeginDocument{\renewcommand{\Titlefont}{\normalfont\bfseries\fontsize{19}{23}\selectfont\raggedright}}
+\makeatother
+\makeatletter
+\AtBeginDocument{\renewcommand{\bibfont}{\normalfont\fontsize{9}{10.5}\selectfont}\setlength{\bibsep}{2pt}}
+\makeatother

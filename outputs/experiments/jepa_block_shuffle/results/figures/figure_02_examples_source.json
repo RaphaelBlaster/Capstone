@@ -1,0 +1,68 @@
+{
+  "status": {
+    "status": "rendered"
+  },
+  "sources": [
+    {
+      "sample_index": 0,
+      "image_path": "train/ID1011485656.jpg",
+      "image_sha256": "d12c0780e46c1bba6500cb9f9cb88585cf62245aa33de41c02e4c7feba30f16a",
+      "variant": 0,
+      "synthetic_columns": [
+        4,
+        10
+      ],
+      "seeds": {
+        "4": [
+          1712843444767261890,
+          1181684853746307987
+        ],
+        "10": [
+          5352564393526807907,
+          4873654946269057088
+        ]
+      }
+    },
+    {
+      "sample_index": 1,
+      "image_path": "train/ID1012260530.jpg",
+      "image_sha256": "5acf9ed4a0c6398edaf190aebb2dfaf33553549109fdfe88815d814b4a39e40b",
+      "variant": 0,
+      "synthetic_columns": [
+        4,
+        10
+      ],
+      "seeds": {
+        "4": [
+          4602398286588460801,
+          1204054955179638139
+        ],
+        "10": [
+          13870568036858835572,
+          416003904371966037
+        ]
+      }
+    },
+    {
+      "sample_index": 2,
+      "image_path": "train/ID1025234388.jpg",
+      "image_sha256": "70e537363549319508289b26f545680570469bc23fff18ec6ecdcb3fcbe7a68e",
+      "variant": 0,
+      "synthetic_columns": [
+        4,
+        10
+      ],
+      "seeds": {
+        "4": [
+          17311850614915501702,
+          12887383485694117703
+        ],
+        "10": [
+          1579848128954253280,
+          5903915447130587544
+        ]
+      }
+    }
+  ],
+  "caption": "Synthetic rearrangements; no additional labeled field measurements."
+}

@@ -1,0 +1,41 @@
+{
+  "checked_ist": "2026-10-09T20:14:57.669186+05:30",
+  "results": [
+    {
+      "arm": "foundation_encoder",
+      "version": 2,
+      "global_weighted_r2_raw": 0.5464863278799046,
+      "prediction_sha256": "06cca746b6d29fb4e4d6b36c5cec6ade2de76be8aa2b6941976deb5beae82a41",
+      "path": "outputs/status_review_2026_10_09/img2biomass-i-jepa-frozen-encoder-head/frozen_head_outputs/foundation_encoder/oof_predictions.csv"
+    },
+    {
+      "arm": "grass_encoder",
+      "version": 2,
+      "global_weighted_r2_raw": 0.5860069555702525,
+      "prediction_sha256": "a0133ff6dda823d6259d21da0f53ae9e302859b222ef953d110e78e2fed6e6f7",
+      "path": "outputs/status_review_2026_10_09/img2biomass-grass-jepa-frozen-heads/frozen_head_outputs/grass_encoder/oof_predictions.csv"
+    },
+    {
+      "arm": "grass_predictor",
+      "version": 2,
+      "global_weighted_r2_raw": 0.572163632030037,
+      "prediction_sha256": "27cdb6c129994b53f7bf89cb6fd43a568b9f56a55dd24c9ec5ac19d4f0fc74c5",
+      "path": "outputs/status_review_2026_10_09/img2biomass-grass-jepa-frozen-heads/frozen_head_outputs/grass_predictor/oof_predictions.csv"
+    }
+  ],
+  "competition_scores": false,
+  "limits": "105/357 images; two reused date folds; one seed. Not full OOF or protected confirmation. Checkpoint bytes not downloaded in this review.",
+  "groups": 9,
+  "folds": [
+    0,
+    1
+  ],
+  "adapted_encoder_gain": 0.03952062769034792,
+  "encoder_minus_predictor": 0.013843323540215557,
+  "gpu_quota_snapshot": {
+    "allowed_seconds": 108000,
+    "used_seconds": 80408.859423,
+    "reserved_seconds": 0,
+    "remaining_seconds": 27591.140577
+  }
+}

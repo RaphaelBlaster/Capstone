@@ -1,0 +1,10 @@
+{
+  "estimated_seconds": 6378.880289083073,
+  "margin20_percent_seconds": 7654.656346899687,
+  "passes": true,
+  "remaining_quota_snapshot_seconds": 24000.0,
+  "session_cap_seconds": 21600,
+  "basis": "actual measured separate JEPA/DINO head costs; fixed protocol counts; setup reserve and20%margin",
+  "j_head_update_seconds_max": 0.0787820840000677,
+  "dino_head_update_seconds_max": 0.006130239999947662
+}

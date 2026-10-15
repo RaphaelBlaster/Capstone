@@ -1,0 +1,36 @@
+{
+  "measurement_scope": "bounded smoke, not full training",
+  "hardware": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "capability": [
+      12,
+      0
+    ],
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "total_memory_bytes": 101973819392,
+    "nvidia_smi": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 580.178.04"
+  },
+  "measured_arm_times_seconds": {
+    "fold0_F1": 3.2729085309999846,
+    "fold0_F2": 3.5805904219998865,
+    "fold1_F1": 3.014473495999937,
+    "fold1_F2": 3.5775180069999806
+  },
+  "notebook_last_log_elapsed_seconds": 108.060152849,
+  "first_actual_hardware_to_resume_log_seconds": 62.418531942,
+  "peak_allocated_bytes": 1066982912,
+  "peak_reserved_bytes": 1203765248,
+  "remaining_quota_seconds": 104989.455,
+  "reserved_seconds": 0.0,
+  "quota_used_seconds": 108.36999999999534,
+  "conditional_full_cost_estimate": {
+    "peak_allocated_bytes": 1066982912,
+    "peak_reserved_bytes": 1203765248,
+    "full_1560_update_seconds_estimate_including_saves": 2623.1781761699585,
+    "conservative_estimate_seconds_20percent_plus1800": 4947.81381140395,
+    "estimate_is_not_guarantee": true
+  },
+  "full_resource_gate_passed": false,
+  "note": "Harness stopped at resume gate before final resource summary. Actual per-arm peaks/timings saved before failure; conditional cost estimate independently derived from these, not an execution authorization."
+}

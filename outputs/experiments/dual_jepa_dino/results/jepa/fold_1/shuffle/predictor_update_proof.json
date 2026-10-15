@@ -1,0 +1,27 @@
+{
+  "steps": 377,
+  "total_steps": 377,
+  "complete": true,
+  "max_abs_predictor_update": 0.0016690550837665796,
+  "max_abs_gradient": 0.00823211669921875,
+  "encoder_before_sha256": "a4037c828a19eb5cc1bbb7421d12ffce637535cd861a23795c30d44e1a1ce492",
+  "encoder_after_sha256": "a4037c828a19eb5cc1bbb7421d12ffce637535cd861a23795c30d44e1a1ce492",
+  "teacher_before_sha256": "1affd8f80062b48498a8fcfaee540ea659ce0e21155b7f4d23646a653e687f8a",
+  "teacher_after_sha256": "1affd8f80062b48498a8fcfaee540ea659ce0e21155b7f4d23646a653e687f8a",
+  "elapsed_seconds": 561.2645527920004,
+  "measured_optimizer_and_checkpoint_seconds_max": 1.5447185160001027,
+  "precision": {
+    "requested": "fp8",
+    "active": "fp8_linear_bf16_other",
+    "float8_layers": 50,
+    "master_weights": "FP32",
+    "conversion": "idempotent",
+    "student_fp8": {
+      "requested": "fp8",
+      "active": "fp8_linear_bf16_other",
+      "float8_layers": 128,
+      "master_weights": "FP32",
+      "conversion": "idempotent"
+    }
+  }
+}

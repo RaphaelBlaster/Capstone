@@ -1,0 +1,127 @@
+{
+  "status": "PASS_COMPLETION_AND_INDEPENDENT_ARITHMETIC",
+  "models": [
+    {
+      "depth": 2,
+      "independent_global_weighted_r2_raw": 0.7785628064744666,
+      "saved_metric_error": 0.0
+    },
+    {
+      "depth": 4,
+      "independent_global_weighted_r2_raw": 0.7740243041845618,
+      "saved_metric_error": 0.0
+    },
+    {
+      "depth": 8,
+      "independent_global_weighted_r2_raw": 0.7718577869865781,
+      "saved_metric_error": 0.0
+    }
+  ],
+  "paired_image_label_date_fold_identities_equal": true,
+  "images": 105,
+  "date_groups": 9,
+  "folds": [
+    {
+      "depth": 2,
+      "fold": 0,
+      "epochs": 20,
+      "optimizer_steps": 400,
+      "updated_tensors": 28,
+      "frozen_unchanged": true,
+      "elapsed_seconds": 458.755542252,
+      "validation_images": 49,
+      "training_images": 308
+    },
+    {
+      "depth": 2,
+      "fold": 1,
+      "epochs": 20,
+      "optimizer_steps": 380,
+      "updated_tensors": 28,
+      "frozen_unchanged": true,
+      "elapsed_seconds": 455.93036139000014,
+      "validation_images": 56,
+      "training_images": 301
+    },
+    {
+      "depth": 4,
+      "fold": 0,
+      "epochs": 20,
+      "optimizer_steps": 400,
+      "updated_tensors": 54,
+      "frozen_unchanged": true,
+      "elapsed_seconds": 522.138640105,
+      "validation_images": 49,
+      "training_images": 308
+    },
+    {
+      "depth": 4,
+      "fold": 1,
+      "epochs": 20,
+      "optimizer_steps": 380,
+      "updated_tensors": 54,
+      "frozen_unchanged": true,
+      "elapsed_seconds": 521.5922614610004,
+      "validation_images": 56,
+      "training_images": 301
+    },
+    {
+      "depth": 8,
+      "fold": 0,
+      "epochs": 20,
+      "optimizer_steps": 400,
+      "updated_tensors": 106,
+      "frozen_unchanged": true,
+      "elapsed_seconds": 659.7238938759999,
+      "validation_images": 49,
+      "training_images": 308
+    },
+    {
+      "depth": 8,
+      "fold": 1,
+      "epochs": 20,
+      "optimizer_steps": 380,
+      "updated_tensors": 106,
+      "frozen_unchanged": true,
+      "elapsed_seconds": 643.5403909010001,
+      "validation_images": 56,
+      "training_images": 301
+    }
+  ],
+  "six_collected_selected_checkpoint_hashes": {
+    "fold_0/depth_2/selected.pt": "add4f786bfb51e9531d49171e0b39ba58ed8c19698c2bcc9c0b91eaa347e6c94",
+    "fold_1/depth_2/selected.pt": "ed787cce46811ce4cb605136cd99a32d282ec82f312c3c7cb42438a483225463",
+    "fold_0/depth_4/selected.pt": "c859703c4d0dcfcc9ec4efac1f8432a5d80552c2438b6f4204f2d4fe1841be9e",
+    "fold_1/depth_4/selected.pt": "8ee4eb321869157a54ac2bd42210fbd6c3e28b1f3f9a8cb9a4637079b5c3e827",
+    "fold_0/depth_8/selected.pt": "20ccba6c171eb217a993e532f815f5195de7ba80157c3bed3fe3e072d3b852e3",
+    "fold_1/depth_8/selected.pt": "f67220a600ad1659ce8b4ad6834efbf26e808d16c17c7020ef5885a3e315dc52"
+  },
+  "paired_intervals_from_saved_report": {
+    "depth4_minus_depth2": {
+      "difference": -0.004538502289904822,
+      "ci95": [
+        -0.00855615569424952,
+        -0.0007644430808322305
+      ],
+      "effective_draws": 10000,
+      "invalid_draws": 0,
+      "date_groups": 9,
+      "seed": 42,
+      "conditional_reused_development_only": true
+    },
+    "depth8_minus_depth2": {
+      "difference": -0.006705019487888486,
+      "ci95": [
+        -0.011834429991246776,
+        -7.573196549299439e-05
+      ],
+      "effective_draws": 10000,
+      "invalid_draws": 0,
+      "date_groups": 9,
+      "seed": 42,
+      "conditional_reused_development_only": true
+    }
+  },
+  "competition_score": null,
+  "independent_architectural_P1": "not_performed_in_this_status_check"
+}

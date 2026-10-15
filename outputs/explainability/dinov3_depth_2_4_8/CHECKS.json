@@ -1,0 +1,76 @@
+{
+  "depths_available": [
+    2,
+    4,
+    8
+  ],
+  "depth_6_checkpoint_found": false,
+  "cases": [
+    {
+      "image": "ID567744300",
+      "depth": 2,
+      "raw_sha256": "de482d921a2056a84b41674bf4a16b31a1d50163a04dcb846f624dbb00ba9585",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": 9.5367431640625e-07
+    },
+    {
+      "image": "ID567744300",
+      "depth": 4,
+      "raw_sha256": "b800c10b8808a0cdaba0f0c27b50b2011ccc9f36f13154033d82e4f85a146b97",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": -9.5367431640625e-07
+    },
+    {
+      "image": "ID567744300",
+      "depth": 8,
+      "raw_sha256": "6f901ef4aec885861e51ac7a9647b2551483d4d4045e95a8ff0f9cf13aa57713",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": 0.0
+    },
+    {
+      "image": "ID1211362607",
+      "depth": 2,
+      "raw_sha256": "08a398168d2aa015e28748fa440ee7b5db03de1b56e02fe68ad259486ab76377",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": 0.0
+    },
+    {
+      "image": "ID1211362607",
+      "depth": 4,
+      "raw_sha256": "efc3bb499c4d58503fffdc7aeb86f5f428f8d457aee930ecbe860640ccc30405",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": 0.0
+    },
+    {
+      "image": "ID1211362607",
+      "depth": 8,
+      "raw_sha256": "8f4e7e2deb6e5c250f431e9bbbc149c71162abe25643911faa231496e2ce1db7",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": 0.0
+    },
+    {
+      "image": "ID1103883611",
+      "depth": 2,
+      "raw_sha256": "ffada4e4d65600a3dc602d55e9cb543ede26dafe07e1a5798150eb5019916c29",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": 0.0
+    },
+    {
+      "image": "ID1103883611",
+      "depth": 4,
+      "raw_sha256": "b9f50f00a2133772b6e5959db5be5024e3963d2440ebbe6b6576d1c85d5d6c73",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": 0.0
+    },
+    {
+      "image": "ID1103883611",
+      "depth": 8,
+      "raw_sha256": "99b1bbea3e61d451c357c58da558cc20078cf32d651637eed6240b6bc71514fb",
+      "finite_nonzero_heatmap": true,
+      "contribution_sum_error_g": 0.0
+    }
+  ],
+  "precision": "Existing CPU FP32 attributions; original saved predictions FP8/BF16",
+  "display": "99th-percentile normalization separately per heatmap, 0-1 clipped",
+  "limitations": "Input sensitivity and artificial occlusion, not causal explanation or measured spatial biomass."
+}

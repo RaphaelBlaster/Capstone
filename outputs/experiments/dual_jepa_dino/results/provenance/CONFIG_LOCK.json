@@ -1,0 +1,15 @@
+{
+  "contract": "DUAL-JEPA-DINO-2026-10-09-r1",
+  "folds": [
+    0,
+    1
+  ],
+  "epochs": 200,
+  "swa": 40,
+  "j_slots_per_view": 20,
+  "actual_mask_arrays_stored": true,
+  "lambda": 0.1,
+  "mode": "full",
+  "quota_budget_lower_bound": 24000.0,
+  "fresh_authoritative_quota_enforced_by_dispatcher": true
+}

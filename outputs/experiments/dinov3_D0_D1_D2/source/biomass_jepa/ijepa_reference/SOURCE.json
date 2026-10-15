@@ -1,0 +1,32 @@
+{
+  "source": "https://github.com/facebookresearch/ijepa",
+  "revision": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+  "modifications": "Only package-relative import paths in vision_transformer.py; original model and mask logic unchanged.",
+  "files": {
+    "vision_transformer.py": {
+      "upstream_path": "src/models/vision_transformer.py",
+      "upstream_sha256": "69be453a6367460fd0c94588af6531c022a2469ff72e0a793c16fd110dd498c0",
+      "local_sha256": "43630403fc144b422520ec37b9026e0f5525a76341b456701c6620e13e4f1286"
+    },
+    "tensors.py": {
+      "upstream_path": "src/utils/tensors.py",
+      "upstream_sha256": "66cac858005d01e93ad6f481f384a9d75cb1fb8ad2bff0fd7e9a127f384429c0",
+      "local_sha256": "66cac858005d01e93ad6f481f384a9d75cb1fb8ad2bff0fd7e9a127f384429c0"
+    },
+    "masks.py": {
+      "upstream_path": "src/masks/utils.py",
+      "upstream_sha256": "124da04a7513329a14793389d89a98db87498caf7623a10bc772b097c74d97ec",
+      "local_sha256": "124da04a7513329a14793389d89a98db87498caf7623a10bc772b097c74d97ec"
+    },
+    "multiblock.py": {
+      "upstream_path": "src/masks/multiblock.py",
+      "upstream_sha256": "a06c593636f81e760bd26b615b2a7a976790dcc027d4b9244f3e8e7a2e5a8804",
+      "local_sha256": "a06c593636f81e760bd26b615b2a7a976790dcc027d4b9244f3e8e7a2e5a8804"
+    },
+    "LICENSE": {
+      "upstream_path": "LICENSE",
+      "upstream_sha256": "336255dc30193e8e15d689d9481bb05673d89055718f3a96923a7ffb99adbbaf",
+      "local_sha256": "336255dc30193e8e15d689d9481bb05673d89055718f3a96923a7ffb99adbbaf"
+    }
+  }
+}

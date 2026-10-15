@@ -1,0 +1,41 @@
+{
+  "release_name": "Img2BioMass DINOv3 D2 research artifacts",
+  "created_utc": "2026-10-15",
+  "visibility": "private",
+  "scope": "training source, D2 fold-specific regression heads, official DINOv3 backbone, metrics and figures",
+  "official_dinov3_source": "https://github.com/facebookresearch/dinov3",
+  "official_dinov3_revision": "6876159a11b4df116f30f667f8c9888617df0751",
+  "official_backbone_sha256": "73cec8be7427c8655ceced13ce62f6e20a1fa90d1b4d4a550df17a1144081a7c",
+  "d2_development_result": {
+    "global_weighted_r2_raw": 0.7800650684336633,
+    "photographs": 105,
+    "total_photographs": 357,
+    "folds": [
+      0,
+      1
+    ],
+    "date_groups": 9,
+    "seeds": 1,
+    "competition_score": null
+  },
+  "weights": {
+    "dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth": {
+      "source_local_path": "outputs/final_dual_study/offline/dinov3_vitb16_pretrain_lvd1689m-73cec8be.pth",
+      "bytes": 342860279,
+      "sha256": "73cec8be7427c8655ceced13ce62f6e20a1fa90d1b4d4a550df17a1144081a7c",
+      "license": "Meta DINOv3 License; copy supplied"
+    },
+    "D2_fold_0_head_selected.pt": {
+      "source_local_path": "outputs/final_dual_study/full_results/final_dual_study/dinov3/fold_0/D2/head_selected.pt",
+      "bytes": 805830,
+      "sha256": "d587d3bace63c9f74dfb116952f33c9b54c90473d76c965d3194911e2f5a7e4d",
+      "role": "trained regression head only; requires the base DINOv3 ViT-B/16 checkpoint"
+    },
+    "D2_fold_1_head_selected.pt": {
+      "source_local_path": "outputs/final_dual_study/full_results/final_dual_study/dinov3/fold_1/D2/head_selected.pt",
+      "bytes": 805830,
+      "sha256": "f98a98c75a8ef871de5d86ff20862a916767c76d622b0b35dc5bb9a7878e58dd",
+      "role": "trained regression head only; requires the base DINOv3 ViT-B/16 checkpoint"
+    }
+  }
+}

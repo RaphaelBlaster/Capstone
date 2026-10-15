@@ -1,0 +1,17 @@
+{
+  "manuscript_pages": 12,
+  "manuscript_valid_pdf": true,
+  "figure1_page": 4,
+  "supplementary_material_pages": 8,
+  "supplementary_material_valid_pdf": true,
+  "equations_unchanged": true,
+  "score_tables_unchanged": true,
+  "first_reference": "csiro2025image2biomass",
+  "new_experiments": false,
+  "imagegen_concepts_excluded_from_final_figure": true,
+  "sha256": {
+    "revision10_latex.zip": "6b280d7bba98cae3264de32d157ef10ac170a1d6af91cc593c770d17c41b2228",
+    "supplementary_material.pdf": "dba96b4c1d63465a3fe13f78a1f7a2aaad38d2796306284bee2f6897b14bbcb8",
+    "manuscript.pdf": "cd2e2786759d03938dffcd81bd6c89c71bd822c56318bc98143d09894417ba99"
+  }
+}

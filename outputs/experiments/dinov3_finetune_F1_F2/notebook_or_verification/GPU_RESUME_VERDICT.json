@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "verdict": "PASS_GPU_RESUME",
+  "scope": "exact green deterministic FP8 resume-fix package, not a full-run result",
+  "package_sha256": "18756d12b22828abf4266cbc47012aea4875f13ab39025b03ce6f4f719dab8a0",
+  "trainer_sha256": "60a8b97d5c3b222b7d7cb5f0f3a971a454d0897e0042ef1f2d61297fc037563f",
+  "notebook_sha256": "356e75092b909b288558c42acda861c13e7b40e1fddff7ccafde058ec6671d8b",
+  "config_sha256": "088bf02959b8a11f43144f7b05a241dfcac13936d4196192b79826a0909090ba",
+  "config_epochs": 20,
+  "gpu_fp8_verified": true,
+  "saved_kernel_id": 138034916,
+  "saved_version": 3,
+  "saved_cells_equal_submitted": true,
+  "R0_R5_all_pass_exact_zero": true,
+  "independent_checkpoint_model_optimizer_rng_equal": true,
+  "selected_checkpoint_sha256": "dd9e894603f90b32dd02abb5451b8122bf8f6e780588849535b80ef928b8d309",
+  "standalone_fresh_forward_max_abs_g": 7.105427357601002e-15,
+  "red_R5_prediction_max_abs_g": 0.19678878784179688,
+  "green_R5_prediction_max_abs_g": 0,
+  "original_15_checkpoint_files_preserved": true,
+  "source_changes": [
+    "CUBLAS_WORKSPACE_CONFIG set before torch import",
+    "strict deterministic CUDA algorithms enabled inside configure_precision"
+  ],
+  "full_training_launched": false,
+  "F3_enabled": false,
+  "full_launch_artifact_review": "PENDING; stale outputs/dino_finetune/notebook package f390af06 must not be dispatched",
+  "limitations": [
+    "GREEN two-photo validation proves replay on the sampled path, not a 20-epoch outcome or broad generalization.",
+    "Standalone fresh-forward checker shares the dino_finetune.read_views preprocessing function with training; it independently reloads weights but does not provide a separate preprocessing implementation.",
+    "Fresh exact full notebook/source binding and dispatch gates require separate review."
+  ]
+}

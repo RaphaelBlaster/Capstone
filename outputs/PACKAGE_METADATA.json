@@ -1,0 +1,15 @@
+{
+  "package": "Img2BioMass Scientific Reports research release",
+  "created_utc": "2026-10-15",
+  "source_repository": "https://github.com/RaphaelBlaster/Img2BioMass",
+  "source_branch": "research/dino-local-weighting",
+  "visibility": "private",
+  "manuscript_revision": "10",
+  "raw_original_datasets_included": false,
+  "official_dinov3_base_checkpoint_included": false,
+  "large_backbone_checkpoints_included": false,
+  "dino_d0_d1_d2_regression_heads_included": true,
+  "github_release_asset_upload_status": "blocked_http_401_no_asset_uploaded",
+  "base_repository_commit": "cd77d7f9d04c48637e480523a5b1950ef2f0cfdc",
+  "source_snapshot_note": "Working-tree source snapshot captured on 2026-10-15; the exact executed Kaggle notebooks and their embedded package archives are retained under experiments/*/notebook/."
+}

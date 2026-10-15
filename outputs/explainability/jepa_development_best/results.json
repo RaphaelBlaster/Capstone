@@ -1,0 +1,216 @@
+{
+  "selection_reference": "paper/five_target_independent_selection.json: cached_context, .8340391905617833 on105 reused development images",
+  "architecture": "Historical DINOv3-L backbone + JEPA-style latent-predictor context readout; not official I-JEPA H14",
+  "checkpoint_hashes": {
+    "jepa_encoder.pt": "15afb4a9182af16b92b3413e0b530a817e8d9efeb0cb6f3da089d2d31aaceb71",
+    "fold_1_best.pt": "bb63a8e15ce67fc6e5f58cb404972d2b6da775e2851e0a71750090a3915663bf"
+  },
+  "current_fold_table_sha256": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+  "historical_fold_table_sha256_expected": "4ffc3c13d1984f476348feae6504368f0116b8550e1a8f92dd37a300ae7862c0",
+  "historical_heldout_status": "UNVERIFIED: original fold bytes unavailable; saved source/output9 requests404",
+  "targets": [
+    "Dry_Green_g",
+    "Dry_Dead_g",
+    "Dry_Clover_g",
+    "GDM_g",
+    "Dry_Total_g"
+  ],
+  "results": [
+    {
+      "image": "train/ID567744300.jpg",
+      "checkpoint_fold": 1,
+      "historical_heldout_status": "UNVERIFIED",
+      "truth_g": [
+        20.6355,
+        2.1953,
+        0.0,
+        20.6355,
+        22.8308
+      ],
+      "cpu_fp32_prediction_g": [
+        12.468167304992676,
+        7.345462322235107,
+        0.3546501100063324,
+        12.8228178024292,
+        20.16827964782715
+      ],
+      "repeat_max_delta_g": 0.0,
+      "occlusion": {
+        "top_three": {
+          "cell_ids": [
+            17,
+            31,
+            24
+          ],
+          "prediction_g": [
+            11.863983154296875,
+            6.474030017852783,
+            0.31423884630203247,
+            12.178221702575684,
+            18.652252197265625
+          ],
+          "delta_g": [
+            -0.6041841506958008,
+            -0.8714323043823242,
+            -0.04041126370429993,
+            -0.6445960998535156,
+            -1.5160274505615234
+          ]
+        },
+        "random_three": {
+          "cell_ids": [
+            20,
+            2,
+            23
+          ],
+          "prediction_g": [
+            12.757418632507324,
+            7.15202522277832,
+            0.30279669165611267,
+            13.06021499633789,
+            20.21224021911621
+          ],
+          "delta_g": [
+            0.28925132751464844,
+            -0.1934370994567871,
+            -0.05185341835021973,
+            0.2373971939086914,
+            0.0439605712890625
+          ]
+        }
+      },
+      "seconds": 54.032527585000025
+    },
+    {
+      "image": "train/ID1211362607.jpg",
+      "checkpoint_fold": 1,
+      "historical_heldout_status": "UNVERIFIED",
+      "truth_g": [
+        66.5554,
+        1.3446,
+        0.0,
+        66.5554,
+        67.9
+      ],
+      "cpu_fp32_prediction_g": [
+        43.85100173950195,
+        16.253488540649414,
+        0.03582070767879486,
+        43.88682174682617,
+        60.14031219482422
+      ],
+      "repeat_max_delta_g": 0.0,
+      "occlusion": {
+        "top_three": {
+          "cell_ids": [
+            2,
+            18,
+            29
+          ],
+          "prediction_g": [
+            45.493656158447266,
+            14.50419807434082,
+            0.03273821249604225,
+            45.52639389038086,
+            60.03059387207031
+          ],
+          "delta_g": [
+            1.6426544189453125,
+            -1.7492904663085938,
+            -0.0030824951827526093,
+            1.6395721435546875,
+            -0.10971832275390625
+          ]
+        },
+        "random_three": {
+          "cell_ids": [
+            12,
+            20,
+            15
+          ],
+          "prediction_g": [
+            40.319801330566406,
+            14.693585395812988,
+            0.03463180735707283,
+            40.354434967041016,
+            55.04801940917969
+          ],
+          "delta_g": [
+            -3.531200408935547,
+            -1.5599031448364258,
+            -0.0011889003217220306,
+            -3.5323867797851562,
+            -5.092292785644531
+          ]
+        }
+      },
+      "seconds": 54.099206976999994
+    },
+    {
+      "image": "train/ID1103883611.jpg",
+      "checkpoint_fold": 1,
+      "historical_heldout_status": "UNVERIFIED",
+      "truth_g": [
+        82.7834,
+        12.9166,
+        0.0,
+        82.7834,
+        95.7
+      ],
+      "cpu_fp32_prediction_g": [
+        56.70270538330078,
+        19.294845581054688,
+        0.057366106659173965,
+        56.76007080078125,
+        76.05491638183594
+      ],
+      "repeat_max_delta_g": 0.0,
+      "occlusion": {
+        "top_three": {
+          "cell_ids": [
+            23,
+            28,
+            24
+          ],
+          "prediction_g": [
+            55.378604888916016,
+            19.009544372558594,
+            0.05712364614009857,
+            55.43572998046875,
+            74.44527435302734
+          ],
+          "delta_g": [
+            -1.3241004943847656,
+            -0.28530120849609375,
+            -0.00024246051907539368,
+            -1.3243408203125,
+            -1.6096420288085938
+          ]
+        },
+        "random_three": {
+          "cell_ids": [
+            26,
+            3,
+            20
+          ],
+          "prediction_g": [
+            55.84796905517578,
+            17.268875122070312,
+            0.05134449899196625,
+            55.899314880371094,
+            73.1681900024414
+          ],
+          "delta_g": [
+            -0.854736328125,
+            -2.025970458984375,
+            -0.006021607667207718,
+            -0.8607559204101562,
+            -2.8867263793945312
+          ]
+        }
+      },
+      "seconds": 53.42757989799975
+    }
+  ],
+  "limitations": "Three fixed random photographs selected from prior outputs; historical held-out status is unverified because the original fold bytes are unavailable. Descriptive local sensitivity, not causal explanation or measured local biomass. CPU FP32 differs from original GPU FP8. Occlusion is out-of-distribution. No full competition ensemble used."
+}

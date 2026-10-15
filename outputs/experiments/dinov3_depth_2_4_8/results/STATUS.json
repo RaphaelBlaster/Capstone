@@ -1,0 +1,9 @@
+{
+  "status": "completed_pending_independent_rescoring",
+  "depths": [
+    2,
+    4,
+    8
+  ],
+  "F3_enabled": false
+}

@@ -1,0 +1,29 @@
+{
+  "notebook_sha256": "bd889c27f4f248eaaa37fb90dadd7d39957a68120566d5e6d67cd980e489a8e9",
+  "package_sha256": "86f51ffe133585593fa285e4625aa412d44225cd5b01d72fc7c8b05d77dbb46b",
+  "input_lock": {
+    "source": "meghmayur1186/img2biomass-final-dual-jepa-dino/2",
+    "inputs": {
+      "dinov3/features.pt": "c0834e984ff4ce6a70eed1293b184ed4734554f4c26553574e39bf02c04264f6",
+      "dinov3/cache_manifest.json": "39dc89d95f1e7c3b0b6e668df076aba8e0daf9556a163affd1e6d4b30d8d5c58",
+      "provenance/folds.csv": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+      "dinov3/fold_0/D1/metrics.json": "228a671f0b0a4c6b8e41bdc6c42f3069bc389023604178d244c2728d78b74483",
+      "dinov3/fold_1/D1/metrics.json": "52a5ff3114ef4b3f03837a89b9f7708243ff4bc18c42763c75b1f48987cab1fd"
+    }
+  },
+  "kernel": "meghmayur1186/img2biomass-dino-local-weighting",
+  "source": "meghmayur1186/img2biomass-final-dual-jepa-dino/2",
+  "folds": [
+    0,
+    1
+  ],
+  "epochs": 200,
+  "swa": 40,
+  "arms": [
+    "D1",
+    "D3"
+  ],
+  "progress_bars": true,
+  "checkpointing": "each epoch and60sec atomic full optimizer/RNG/SWA",
+  "maximum_session_seconds": 1800
+}

@@ -1,0 +1,12 @@
+{
+  "status": "completed_pending_independent_P1",
+  "contract": "DUAL-JEPA-DINO-2026-10-09-r1",
+  "images": 105,
+  "date_groups": 9,
+  "folds": [
+    0,
+    1
+  ],
+  "competition_score": null,
+  "independent_P1": "pending"
+}

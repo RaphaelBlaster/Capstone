@@ -1,0 +1,102 @@
+{
+  "contract_id": "DUAL-JEPA-DINO-2026-10-09-r1",
+  "phase": "P1",
+  "overall_verdict": "PASS",
+  "decision": "VALIDATED_EXPLORATORY",
+  "executed_version": 2,
+  "executed_kernel_id": 137914421,
+  "submitted_notebook_sha256": "49f94bb3756cfba9c998a3db5abd2dfc8965de7882dabf62c413d42b52a7eeb6",
+  "saved_source_cells_equal_submitted": true,
+  "embedded_package_sha256": "aaa068529274f262a9a0fc5b48c2313261696d8b314feec7497a63862c9a14d0",
+  "model_code_sha256": "6cb55ba481064aec95be5f16d866146599a67d13ecfe6d9950ca6c5f2a84ac6e",
+  "verified_files": 141,
+  "missing_or_bad_file_hashes": 0,
+  "stage1_sha256": "6d2b5d9c83423155b4a948822e846caaa9a6bc6be20e3fab13ca06b8e705f43d",
+  "dinov3_b16_sha256": "73cec8be7427c8655ceced13ce62f6e20a1fa90d1b4d4a550df17a1144081a7c",
+  "image_count": 105,
+  "date_groups": 9,
+  "folds": [
+    0,
+    1
+  ],
+  "seed_count": 1,
+  "full_oof": false,
+  "competition_score": null,
+  "pooled_weighted_r2": {
+    "control": 0.5489117543819692,
+    "shuffle": 0.5567129773256263,
+    "D0": 0.7659124500760509,
+    "D1": 0.779881375257081,
+    "D2": 0.7800650684336633
+  },
+  "independent_paired_date_bootstrap": {
+    "shuffle-control": {
+      "point": 0.00780122294365722,
+      "lower95": -0.026777698727142727,
+      "upper95": 0.04399043135601355,
+      "draws": 10000,
+      "seed": 9801,
+      "contains_zero": true
+    },
+    "D1-D0": {
+      "point": 0.0139689251810302,
+      "lower95": -0.01891792011379785,
+      "upper95": 0.04612842554879848,
+      "draws": 10000,
+      "seed": 9801,
+      "contains_zero": true
+    },
+    "D2-D1": {
+      "point": 0.00018369317658224824,
+      "lower95": -0.00010335509427475614,
+      "upper95": 0.00043205484597359187,
+      "draws": 10000,
+      "seed": 9801,
+      "contains_zero": true
+    }
+  },
+  "all_three_intervals_contain_zero": true,
+  "full_schedule": {
+    "fold0_parents": 308,
+    "fold1_parents": 301,
+    "fold0_slots": 12320,
+    "fold1_slots": 12040,
+    "fold0_updates": 385,
+    "fold1_updates": 377,
+    "materialized_context_and_four_target_arrays": true,
+    "heldout_parent_or_date_intersection": 0
+  },
+  "predictor_heads": {
+    "four_complete_predictor_specializations": true,
+    "frozen_student_and_teacher_before_after_equal": true,
+    "predictor_state_digests_match_specialized_and_latest": true,
+    "all_ten_heads_completed_epochs": 200,
+    "all_ten_heads_swa_count": 40,
+    "selected_heads_equal_latest_swa_tensorwise": true,
+    "all_ten_heads_optimizer_steps": 2000
+  },
+  "feature_cache": {
+    "dino_shape": [
+      1,
+      357,
+      2,
+      8,
+      8,
+      768
+    ],
+    "jepa_shape": [
+      4,
+      357,
+      2,
+      1280
+    ],
+    "all_five_cursor": 357,
+    "all_signatures_match": true
+  },
+  "p1_limitations": [
+    "These are reused development folds 0/1 with one seed, not full OOF, held-out confirmation or competition scores.",
+    "CPU strict D1 head reload succeeded; CPU FP32 output differed by up to 0.0742 g from the saved GPU FP8/BF16 sample, so exact cross-precision output equality is not asserted.",
+    "Original example photograph bytes were verified during Kaggle execution and recorded by hash; this local P1 review checked its figure manifest and deterministic permutation, not local source pixels.",
+    "Scientific Reports novelty and redistribution permissions require separate manuscript and license review."
+  ]
+}

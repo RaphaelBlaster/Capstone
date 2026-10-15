@@ -1,0 +1,10 @@
+id,requirement,status,evidence_path,independent_evidence
+P1-01,Executed source/package identity,PASS,full_launch/actual_saved_source.json,Saved Version2 cells equal submitted; embedded package SHA aaa06852...
+P1-02,Collected file integrity,PASS,full_results/final_dual_study/VERIFIED_FILES_SHA256.json,"141 of 141 files present, independently SHA256 matched"
+P1-03,Stage1 to J2 to J3 lineage,PASS,"jepa/fold_*/{control,shuffle}/","Four predictor state digests match specialized/latest; all 385/377 updates, frozen student/EMA hashes; caches bind specialized SHA"
+P1-04,Paired materialized masks and leakage,PASS,jepa/fold_*/paired_schedule.pt,"308/301 train parents, 12320/12040 slots, 385/377 steps; per-sample masks disjoint; no validation parent/date"
+P1-05,DINO pretrained and cache lineage,PASS,dinov3/features_manifest.json,"Official B16 hash, 357 complete 8x8x768 two-view features, source signature and cache cursor match"
+P1-06,Selected head endpoints,PASS,*/head_selected.pt and */head_latest.pt,All ten 200 epochs/40 SWA; selected state equals latest SWA tensorwise; optimizer 2000 steps
+P1-07,Matched original labels and predictions,PASS,jepa/paired_oof.csv; dinov3/paired_oof.csv,105 identical unique originals and labels; 49/56 heldout folds; finite nonnegative predictions
+P1-08,Independent pooled metric and uncertainty,PASS,stats/main_results.csv; stats/paired_bootstrap.csv,Fresh standard Python FP64 rescore exact; independent seed9801 date-block CI contains zero for all three deltas
+P1-09,Figure provenance and scientific scope,PASS,figure_data/; FINAL_REPORT.md,"Five 105-row prediction tables, residual/scale data and bijective jigsaw manifest; report labels development limits, omits unsupported heatmaps"

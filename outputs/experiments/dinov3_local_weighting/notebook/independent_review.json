@@ -1,0 +1,35 @@
+{
+  "verdict": "PASS",
+  "phase": "independent D3 pre-dispatch static/CPU review",
+  "notebook_sha256": "bd889c27f4f248eaaa37fb90dadd7d39957a68120566d5e6d67cd980e489a8e9",
+  "package_sha256": "86f51ffe133585593fa285e4625aa412d44225cd5b01d72fc7c8b05d77dbb46b",
+  "source": "meghmayur1186/img2biomass-final-dual-jepa-dino/2",
+  "input_lock_sha256": {
+    "dinov3/features.pt": "c0834e984ff4ce6a70eed1293b184ed4734554f4c26553574e39bf02c04264f6",
+    "dinov3/cache_manifest.json": "39dc89d95f1e7c3b0b6e668df076aba8e0daf9556a163affd1e6d4b30d8d5c58",
+    "provenance/folds.csv": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+    "dinov3/fold_0/D1/metrics.json": "228a671f0b0a4c6b8e41bdc6c42f3069bc389023604178d244c2728d78b74483",
+    "dinov3/fold_1/D1/metrics.json": "52a5ff3114ef4b3f03837a89b9f7708243ff4bc18c42763c75b1f48987cab1fd"
+  },
+  "source2_p1_verdict": "PASS / VALIDATED_EXPLORATORY",
+  "tests": "31 passed, 1 locked builder test deselected; independent D3 CPU checks passed",
+  "evidence": {
+    "same_D1_density_trunk_initial_state": true,
+    "D3_initial_weights_uniform_1_over_128": true,
+    "initial_D1_D3_predictions_exact": true,
+    "D3_weight_head_receives_gradient": true,
+    "D3_whole_image_nonnegative_compositional_outputs": true,
+    "D3_resume_final_SWA_bitwise_equal_CPU": true,
+    "cached_357_originals_and_fold_table_aligned": true,
+    "five_source2_input_hashes_match": true,
+    "notebook_embedded_package_matches_source": true,
+    "offline_private_RTX_PRO6000_settings": true,
+    "actual_GPU_FP8_smoke_and_D1_score_reproduction": "required at runtime; not preclaimed"
+  },
+  "nonblocking_limits": [
+    "D3 adds 98,819 trainable parameters over D1; a score difference would test this specified weighted-pooling architecture, not isolate attention from capacity.",
+    "Both arms use the same 105 reused development originals, nine date groups and one seed; not protected confirmation.",
+    "Actual D3 GPU FP8 smoke, strict reload, D1 score reproduction, full training and independent rescore are pending."
+  ],
+  "blocking_failures": []
+}

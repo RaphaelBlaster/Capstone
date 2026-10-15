@@ -1,0 +1,43 @@
+{
+  "global_weighted_r2_raw": 0.5742249705615904,
+  "weighted_mean_target_r2_raw": 0.38105501312683265,
+  "weighted_mean_target_r2_log1p": 0.5550527465747748,
+  "per_target_r2_raw": {
+    "Dry_Green_g": 0.5841294801806916,
+    "Dry_Dead_g": 0.0028467156462709253,
+    "Dry_Clover_g": 0.20401065267254836,
+    "GDM_g": 0.540644565777479,
+    "Dry_Total_g": 0.3876548302427715
+  },
+  "per_target_rmse_g": {
+    "Dry_Green_g": 20.525710503625945,
+    "Dry_Dead_g": 13.342232913221663,
+    "Dry_Clover_g": 14.600890916894631,
+    "GDM_g": 20.23167738670363,
+    "Dry_Total_g": 28.226660640494707
+  },
+  "status": "completed_fixed_endpoint",
+  "signature": {
+    "feature_manifest_sha256": "a9613cfbfcd09f69ac41af928a15dcae2e2c89cb315b3a59d54faa3d4df5caaf",
+    "fold_table_sha256": "5f00abf385baf2f20ba0a0790f97d1bf0e7349524c233ae39494bad56b254f5b",
+    "folds": [
+      0,
+      1
+    ],
+    "seed": 42,
+    "epochs": 200,
+    "swa_last_epochs": 40,
+    "width": 512,
+    "dropout": 0.2,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "batch_size": 32,
+    "precision": "fp8",
+    "tiny": false,
+    "objective": "raw_global_weighted_mse_one_training_scale",
+    "selection": "fixed_final_swa_endpoint_not_best_validation_epoch"
+  },
+  "completed_epochs": 200,
+  "best_validation_diagnostic": 0.6601116027978626,
+  "primary_selection": "fixed_final_swa_endpoint_not_best_validation_epoch"
+}

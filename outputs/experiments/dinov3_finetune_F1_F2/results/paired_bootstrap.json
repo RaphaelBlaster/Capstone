@@ -1,0 +1,12 @@
+{
+  "difference": -0.0014739625515648447,
+  "ci95": [
+    -0.004675805395274013,
+    4.1195713638034206e-05
+  ],
+  "effective_draws": 10000,
+  "invalid_draws": 0,
+  "date_groups": 9,
+  "seed": 42,
+  "conditional_reused_development_only": true
+}
