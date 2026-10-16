@@ -4,6 +4,9 @@ This is the complete, curated research package for the current revision-10 manus
 
 ## Start here
 
+Saved Kaggle training, smoke-test, and diagnostic stdout logs are in `kaggle_run_logs/`, with kernel/version provenance and SHA-256 values in its manifest. They are separate from the clean `.ipynb` source snapshots; no notebook cells were rewritten to synthesize outputs.
+
+
 - `manuscript/Manuscript_revision10.pdf` — current main manuscript.
 - `manuscript/Supplementary_Material_revision10.pdf` — current supplement.
 - `manuscript/latex/` — editable source and figure assets used for those PDFs.

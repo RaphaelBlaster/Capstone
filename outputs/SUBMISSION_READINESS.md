@@ -5,6 +5,7 @@
 - Revision-10 main manuscript and supplement PDFs plus editable LaTeX, bibliography, Springer Nature class/style files, figure assets, author metadata, and build checks.
 - Exact submitted notebooks and source packages for the DINOv3 dual study, DINOv3 depth study, DINOv3 F1/F2 fine-tuning, DINO local-weighting comparison, and JEPA shuffle experiment.
 - Saved metrics, fold assignments, raw held-out predictions, figure data, plots, hardware/update evidence, and available independent arithmetic/reproducibility checks.
+- Raw saved Kaggle stdout logs for the principal training runs, GPU smoke/resume diagnostics, and three historical comparator notebooks, indexed with source paths, kernel/version identifiers, byte counts, and hashes. The `.ipynb` files remain clean source snapshots without embedded cell outputs.
 - D0/D1/D2 fold-specific regression heads, hashes, DINOv3 metadata, and license copy.
 - JEPA/DINOv3 explainability panels, attribution arrays, and diagnostic reports.
 

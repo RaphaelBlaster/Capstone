@@ -18,5 +18,9 @@
   "selected_final_checkpoints_included": 31,
   "selected_final_checkpoint_bytes": 1326327262,
   "large_checkpoint_storage": "Git LFS for DINOv3 depth-2/4/8 selected checkpoint files",
-  "grass_adapted_ijepa_encoder_included": false
+  "grass_adapted_ijepa_encoder_included": false,
+  "saved_kaggle_stdout_logs_included": 15,
+  "saved_kaggle_stdout_log_bytes": 7222349,
+  "saved_kaggle_stdout_logs_are_separate_from_ipynb_outputs": true,
+  "saved_kaggle_stdout_log_manifest": "kaggle_run_logs/KAGGLE_LOG_MANIFEST.json"
 }

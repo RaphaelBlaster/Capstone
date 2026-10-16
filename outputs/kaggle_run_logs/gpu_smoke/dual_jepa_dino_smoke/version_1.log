@@ -1,0 +1,183 @@
+[{"stream_name":"stderr","time":7.777934255,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.777956765,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":9.045015406,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.045034386,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.045035996,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.045037146,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.583756897,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.583777127,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.583778827,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.583780007,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":23.762609978,"data":"Keeping torch 2.11.0+cu128; installing torchao 0.17.0\n"}
+,{"stream_name":"stdout","time":23.964056325,"data":"Keeping torch 2.11.0+cu128; installing torchao 0.17.0\n"}
+,{"stream_name":"stdout","time":26.591477882,"data":"Looking in links: /kaggle/input/datasets/meghmayur1186/img2biomass-offline-deps\n"}
+,{"stream_name":"stdout","time":26.604881602,"data":"Processing /kaggle/input/datasets/meghmayur1186/img2biomass-offline-deps/timm-1.0.30-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":26.670026101,"data":"Processing /kaggle/input/datasets/meghmayur1186/img2biomass-offline-deps/torchao-0.17.0-cp310-abi3-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":26.73231627,"data":"Processing /kaggle/input/datasets/meghmayur1186/img2biomass-offline-deps/huggingface_hub-0.36.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":26.780098619,"data":"Requirement already satisfied: safetensors in /usr/local/lib/python3.13/dist-packages (0.8.0)\n"}
+,{"stream_name":"stdout","time":26.781494699,"data":"Requirement already satisfied: tqdm in /usr/local/lib/python3.13/dist-packages (4.67.3)\n"}
+,{"stream_name":"stdout","time":26.781900129,"data":"Requirement already satisfied: packaging in /usr/local/lib/python3.13/dist-packages (26.3)\n"}
+,{"stream_name":"stdout","time":26.784493859,"data":"Installing collected packages: torchao, timm, huggingface-hub\n"}
+,{"stream_name":"stdout","time":26.784604549,"data":"  Attempting uninstall: torchao\n"}
+,{"stream_name":"stdout","time":26.792648799,"data":"Looking in links: /kaggle/input/datasets/meghmayur1186/img2biomass-offline-deps\n"}
+,{"stream_name":"stdout","time":26.792650069,"data":"Processing /kaggle/input/datasets/meghmayur1186/img2biomass-offline-deps/timm-1.0.30-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":26.792651028999998,"data":"Processing /kaggle/input/datasets/meghmayur1186/img2biomass-offline-deps/torchao-0.17.0-cp310-abi3-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":26.792651969,"data":"Processing /kaggle/input/datasets/meghmayur1186/img2biomass-offline-deps/huggingface_hub-0.36.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":26.792658019,"data":"Requirement already satisfied: safetensors in /usr/local/lib/python3.13/dist-packages (0.8.0)\n"}
+,{"stream_name":"stdout","time":26.792659009,"data":"Requirement already satisfied: tqdm in /usr/local/lib/python3.13/dist-packages (4.67.3)\n"}
+,{"stream_name":"stdout","time":26.792659799,"data":"Requirement already satisfied: packaging in /usr/local/lib/python3.13/dist-packages (26.3)\n"}
+,{"stream_name":"stdout","time":26.792660609,"data":"Installing collected packages: torchao, timm, huggingface-hub\n"}
+,{"stream_name":"stdout","time":26.792661989,"data":"  Attempting uninstall: torchao\n"}
+,{"stream_name":"stdout","time":26.834956348,"data":"    Found existing installation: torchao 0.10.0\n"}
+,{"stream_name":"stdout","time":26.960879657,"data":"    Uninstalling torchao-0.10.0:\n"}
+,{"stream_name":"stdout","time":27.035802615,"data":"    Found existing installation: torchao 0.10.0\n"}
+,{"stream_name":"stdout","time":27.035805795,"data":"    Uninstalling torchao-0.10.0:\n"}
+,{"stream_name":"stdout","time":27.618090965,"data":"      Successfully uninstalled torchao-0.10.0\n"}
+,{"stream_name":"stdout","time":27.819093222,"data":"      Successfully uninstalled torchao-0.10.0\n"}
+,{"stream_name":"stdout","time":28.080532608,"data":"  Attempting uninstall: timm\n"}
+,{"stream_name":"stdout","time":28.195520736,"data":"    Found existing installation: timm 1.0.29\n"}
+,{"stream_name":"stdout","time":28.227818866,"data":"    Uninstalling timm-1.0.29:\n"}
+,{"stream_name":"stdout","time":28.281561375,"data":"  Attempting uninstall: timm\n"}
+,{"stream_name":"stdout","time":28.281565625,"data":"    Found existing installation: timm 1.0.29\n"}
+,{"stream_name":"stdout","time":28.281566675,"data":"    Uninstalling timm-1.0.29:\n"}
+,{"stream_name":"stdout","time":28.764950227,"data":"      Successfully uninstalled timm-1.0.29\n"}
+,{"stream_name":"stdout","time":28.966006864,"data":"      Successfully uninstalled timm-1.0.29\n"}
+,{"stream_name":"stdout","time":29.288472129,"data":"  Attempting uninstall: huggingface-hub\n"}
+,{"stream_name":"stdout","time":29.426241387,"data":"    Found existing installation: huggingface_hub 1.29.0\n"}
+,{"stream_name":"stdout","time":29.451321236,"data":"    Uninstalling huggingface_hub-1.29.0:\n"}
+,{"stream_name":"stdout","time":29.489444746,"data":"  Attempting uninstall: huggingface-hub\n"}
+,{"stream_name":"stdout","time":29.489451706,"data":"    Found existing installation: huggingface_hub 1.29.0\n"}
+,{"stream_name":"stdout","time":29.489453196,"data":"    Uninstalling huggingface_hub-1.29.0:\n"}
+,{"stream_name":"stdout","time":29.794339151,"data":"      Successfully uninstalled huggingface_hub-1.29.0\n"}
+,{"stream_name":"stdout","time":29.983213838,"data":"Successfully installed huggingface-hub-0.36.2 timm-1.0.30 torchao-0.17.0\n"}
+,{"stream_name":"stdout","time":29.995410158,"data":"      Successfully uninstalled huggingface_hub-1.29.0\n"}
+,{"stream_name":"stdout","time":29.995418908,"data":"Successfully installed huggingface-hub-0.36.2 timm-1.0.30 torchao-0.17.0\n"}
+,{"stream_name":"stderr","time":95.507409697,"data":"/kaggle/working/final_dual_code/biomass_jepa/final_dual_run.py:29: UserWarning: 1 annotation(s) have Total != GDM + Dead by \u003e0.15 g (max 0.3088 g). Keeping original ground truth; discrepancy is recorded in the data audit.\n"}
+,{"stream_name":"stderr","time":95.507427267,"data":"  actual=image_table(Path(args.images)/'train.csv',args.images).sort_values('image_path').reset_index(drop=True)\n"}
+,{"stream_name":"stderr","time":95.507429267,"data":"\n"}
+,{"stream_name":"stderr","time":95.507434187,"data":"/kaggle/working/final_dual_code/biomass_jepa/final_dual_run.py:29: UserWarning: 1 annotation(s) have Total != GDM + Dead by \u003e0.15 g (max 0.3088 g). Keeping original ground truth; discrepancy is recorded in the data audit.\n"}
+,{"stream_name":"stderr","time":95.507435507,"data":"  actual=image_table(Path(args.images)/'train.csv',args.images).sort_values('image_path').reset_index(drop=True)\n"}
+,{"stream_name":"stdout","time":136.728059328,"data":"........................................................................                                    [100%]..                                    [100%]\n"}
+,{"stream_name":"stdout","time":136.728087378,"data":"=============================== warnings summary ===============================\n"}
+,{"stream_name":"stdout","time":136.728089328,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:64\n"}
+,{"stream_name":"stdout","time":136.728090948,"data":"  /usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'\n"}
+,{"stream_name":"stdout","time":136.728092148,"data":"    prop = Group((name + Suppress(\"=\") + comma_separated(value)) | oneOf(_CONSTANTS))\n"}
+,{"stream_name":"stdout","time":136.728093488,"data":"\n"}
+,{"stream_name":"stdout","time":136.728094438,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.728095548,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.728096618,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.728097678,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.728098648,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.728099708,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.728100708,"data":"  /usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'\n"}
+,{"stream_name":"stdout","time":136.728101858,"data":"    parse = parser.parseString(pattern)\n"}
+,{"stream_name":"stdout","time":136.728102798,"data":"\n"}
+,{"stream_name":"stdout","time":136.728103768,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.728104748,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.728105708,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.728106648,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.728107598,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.728108558,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.728110118,"data":"  /usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'\n"}
+,{"stream_name":"stdout","time":136.728111188,"data":"    parser.resetCache()\n"}
+,{"stream_name":"stdout","time":136.728112138,"data":"\n"}
+,{"stream_name":"stdout","time":136.728120428,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_mathtext.py:45\n"}
+,{"stream_name":"stdout","time":136.728122548,"data":"  /usr/local/lib/python3.13/dist-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'\n"}
+,{"stream_name":"stdout","time":136.728124248,"data":"    ParserElement.enablePackrat()\n"}
+,{"stream_name":"stdout","time":136.728125018,"data":"\n"}
+,{"stream_name":"stdout","time":136.728125698,"data":"-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n"}
+,{"stream_name":"stdout","time":136.728126488,"data":"37 passed, 1 deselected, 14 warnings in 7.27s\n"}
+,{"stream_name":"stdout","time":136.928966168,"data":"\n"}
+,{"stream_name":"stdout","time":136.928992348,"data":"=============================== warnings summary ===============================\n"}
+,{"stream_name":"stdout","time":136.928994168,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:64\n"}
+,{"stream_name":"stdout","time":136.928995388,"data":"  /usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'\n"}
+,{"stream_name":"stdout","time":136.928996388,"data":"    prop = Group((name + Suppress(\"=\") + comma_separated(value)) | oneOf(_CONSTANTS))\n"}
+,{"stream_name":"stdout","time":136.928997468,"data":"\n"}
+,{"stream_name":"stdout","time":136.928998148,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.928998958,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.928999808,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.929000688,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.929001598,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.929002328,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85\n"}
+,{"stream_name":"stdout","time":136.929003178,"data":"  /usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'\n"}
+,{"stream_name":"stdout","time":136.929003998,"data":"    parse = parser.parseString(pattern)\n"}
+,{"stream_name":"stdout","time":136.929004828,"data":"\n"}
+,{"stream_name":"stdout","time":136.929005488,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.929006228,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.929006968,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.929007708,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.929008438,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.929009168,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89\n"}
+,{"stream_name":"stdout","time":136.929010328,"data":"  /usr/local/lib/python3.13/dist-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'\n"}
+,{"stream_name":"stdout","time":136.929018078,"data":"    parser.resetCache()\n"}
+,{"stream_name":"stdout","time":136.929018978,"data":"\n"}
+,{"stream_name":"stdout","time":136.929019648,"data":"../../../usr/local/lib/python3.13/dist-packages/matplotlib/_mathtext.py:45\n"}
+,{"stream_name":"stdout","time":136.929020418,"data":"  /usr/local/lib/python3.13/dist-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'\n"}
+,{"stream_name":"stdout","time":136.929021748,"data":"    ParserElement.enablePackrat()\n"}
+,{"stream_name":"stdout","time":136.929022498,"data":"\n"}
+,{"stream_name":"stdout","time":136.929023158,"data":"-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n"}
+,{"stream_name":"stdout","time":136.929023908,"data":"37 passed, 1 deselected, 14 warnings in 7.27s\n"}
+,{"stream_name":"stderr","time":139.523395831,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so\n"}
+,{"stream_name":"stderr","time":139.523461431,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so\n"}
+,{"stream_name":"stderr","time":139.724596292,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so\n"}
+,{"stream_name":"stderr","time":139.724608852,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so\n"}
+,{"stream_name":"stderr","time":139.724610102,"data":"\n"}
+,{"stream_name":"stderr","time":139.724610882,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so\n"}
+,{"stream_name":"stderr","time":139.724611752,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so\n"}
+,{"stream_name":"stdout","time":140.727087546,"data":"{\n"}
+,{"stream_name":"stdout","time":140.727101646,"data":"  \"gpu\": \"NVIDIA RTX PRO 6000 Blackwell Server Edition\",\n"}
+,{"stream_name":"stdout","time":140.727103216,"data":"  \"torch\": \"2.11.0+cu128\",\n"}
+,{"stream_name":"stdout","time":140.727104136,"data":"  \"cuda\": \"12.8\",\n"}
+,{"stream_name":"stdout","time":140.727104986,"data":"  \"fp8_forward_backward\": \"passed\",\n"}
+,{"stream_name":"stdout","time":140.727105916,"data":"  \"requested\": \"fp8\",\n"}
+,{"stream_name":"stdout","time":140.727106716,"data":"  \"active\": \"fp8_linear_bf16_other\",\n"}
+,{"stream_name":"stdout","time":140.727107506,"data":"  \"float8_layers\": 2,\n"}
+,{"stream_name":"stdout","time":140.727108316,"data":"  \"teacher\": \"bf16 autocast; FP32 master weights\"\n"}
+,{"stream_name":"stdout","time":140.727109146,"data":"}\n"}
+,{"stream_name":"stdout","time":140.928393887,"data":"{\n"}
+,{"stream_name":"stdout","time":140.928406837,"data":"  \"gpu\": \"NVIDIA RTX PRO 6000 Blackwell Server Edition\",\n"}
+,{"stream_name":"stdout","time":140.928408967,"data":"  \"torch\": \"2.11.0+cu128\",\n"}
+,{"stream_name":"stdout","time":140.928410407,"data":"  \"cuda\": \"12.8\",\n"}
+,{"stream_name":"stdout","time":140.928416747,"data":"  \"fp8_forward_backward\": \"passed\",\n"}
+,{"stream_name":"stdout","time":140.928417837,"data":"  \"requested\": \"fp8\",\n"}
+,{"stream_name":"stdout","time":140.928418657,"data":"  \"active\": \"fp8_linear_bf16_other\",\n"}
+,{"stream_name":"stdout","time":140.928419467,"data":"  \"float8_layers\": 2,\n"}
+,{"stream_name":"stdout","time":140.928420397,"data":"  \"teacher\": \"bf16 autocast; FP32 master weights\"\n"}
+,{"stream_name":"stdout","time":140.928421277,"data":"}\n"}
+,{"stream_name":"stderr","time":151.70292984,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so\n"}
+,{"stream_name":"stderr","time":151.70295441,"data":"\n"}
+,{"stream_name":"stderr","time":151.7029569,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_cutlass_90a.abi3.so\n"}
+,{"stream_name":"stderr","time":151.70337611,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so\n"}
+,{"stream_name":"stderr","time":151.70338284,"data":"\n"}
+,{"stream_name":"stderr","time":151.7033844,"data":"Failed to load /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /usr/local/lib/python3.13/dist-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so\n"}
+,{"stream_name":"stdout","time":179.043660078,"data":"{'estimated_seconds': 7225.77994136829, 'margin20_percent_seconds': 8670.935929641948, 'remaining_quota_snapshot_seconds': 27000.0, 'session_cap_seconds': 21600, 'passes': True, 'timing': {'j_optimizer_update_seconds_max': 3.295582462999846, 'j_cache_original_allfour_rotations_seconds': 0.1743109807498513, 'dino_cache_image_seconds': 0.07378988025016042, 'dino_head_update_seconds_max': 0.006402659999821481}, 'disk_free_bytes': 20179824640, 'gpu_peak_bytes': 7503024640, 'full_training_not_launched': True}\n"}
+,{"stream_name":"stdout","time":179.099453959,"data":"{\n"}
+,{"stream_name":"stdout","time":179.099463469,"data":"  \"status\": \"smoke_completed_no_full_training\",\n"}
+,{"stream_name":"stdout","time":179.099465469,"data":"  \"P0_review\": \"required\",\n"}
+,{"stream_name":"stdout","time":179.099466859,"data":"  \"resource_gate\": {\n"}
+,{"stream_name":"stdout","time":179.099468079,"data":"    \"estimated_seconds\": 7225.77994136829,\n"}
+,{"stream_name":"stdout","time":179.099469259,"data":"    \"margin20_percent_seconds\": 8670.935929641948,\n"}
+,{"stream_name":"stdout","time":179.099470329,"data":"    \"remaining_quota_snapshot_seconds\": 27000.0,\n"}
+,{"stream_name":"stdout","time":179.099471509,"data":"    \"session_cap_seconds\": 21600,\n"}
+,{"stream_name":"stdout","time":179.099472539,"data":"    \"passes\": true,\n"}
+,{"stream_name":"stdout","time":179.099473629,"data":"    \"timing\": {\n"}
+,{"stream_name":"stdout","time":179.099474609,"data":"      \"j_optimizer_update_seconds_max\": 3.295582462999846,\n"}
+,{"stream_name":"stdout","time":179.099475799,"data":"      \"j_cache_original_allfour_rotations_seconds\": 0.1743109807498513,\n"}
+,{"stream_name":"stdout","time":179.099476899,"data":"      \"dino_cache_image_seconds\": 0.07378988025016042,\n"}
+,{"stream_name":"stdout","time":179.099477999,"data":"      \"dino_head_update_seconds_max\": 0.006402659999821481\n"}
+,{"stream_name":"stdout","time":179.099479029,"data":"    },\n"}
+,{"stream_name":"stdout","time":179.099479989,"data":"    \"disk_free_bytes\": 20179824640,\n"}
+,{"stream_name":"stdout","time":179.099486359,"data":"    \"gpu_peak_bytes\": 7503024640,\n"}
+,{"stream_name":"stdout","time":179.099487289,"data":"    \"full_training_not_launched\": true\n"}
+,{"stream_name":"stdout","time":179.099488119,"data":"  }\n"}
+,{"stream_name":"stdout","time":179.099488809,"data":"}\n"}
+,{"stream_name":"stdout","time":179.099489589,"data":"Saved-run checkpoints must be verified on Kaggle Output. GPU sessions are temporary.\n"}
+,{"stream_name":"stderr","time":182.649454574,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":182.649473424,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":182.793478345,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":182.793493955,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":183.293549667,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":183.338232347,"data":"[NbConvertApp] Writing 784218 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":184.600591063,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":184.885328265,"data":"[NbConvertApp] Writing 1057817 bytes to __results__.html\n"}
+]

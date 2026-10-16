@@ -2,28 +2,23 @@
   "files": [
     {
       "path": "PACKAGE_METADATA.json",
-      "bytes": 1224,
-      "sha256": "f6796660b09ad4b19a0309f7faeb509127f376b43d8530d62d650b5663de5006"
+      "bytes": 1461,
+      "sha256": "3ddee33768acca2b4a828137781622859b6264671c9abc39fe56bf4749d999d5"
     },
     {
       "path": "README.md",
-      "bytes": 4801,
-      "sha256": "922129903fc1e95f7f4945b3edac142ff644bdd2a1254fea2f5a2d0727a8ea40"
+      "bytes": 5075,
+      "sha256": "35e31fc49cc2bdadefb050dda60346e9b2f7e1a0cd20d516cc15b0a38760abd7"
     },
     {
       "path": "SUBMISSION_READINESS.md",
-      "bytes": 3074,
-      "sha256": "2329920b0c483a95c98891618f1b328e984bf2ba8cb85c63752bdb42911b70aa"
+      "bytes": 3371,
+      "sha256": "f9588e012c9c9f37180e184be13b598540fe1b6d7474efd6259a63760d88c6e6"
     },
     {
       "path": "experiments/dinov3_D0_D1_D2/README.md",
       "bytes": 2019,
       "sha256": "506043bbf8cec4385076d95b210b78ef0ace0ab341d808caed7c8e2f5ce33fa5"
-    },
-    {
-      "path": "experiments/dinov3_D0_D1_D2/SHA256SUMS.txt",
-      "bytes": 13652,
-      "sha256": "feb86992f7e4b98c732c562e71de9346cf11fc5541760bd85099fe32cdf5aa3a"
     },
     {
       "path": "experiments/dinov3_D0_D1_D2/figures/depth_and_explainability/best_jepa_xai_triptych.png",
@@ -2664,6 +2659,91 @@
       "path": "explainability/jepa_predictor_three_examples/source_data.csv",
       "bytes": 2265,
       "sha256": "c3e40d82587550d33ccc7c88e920f91774e8a5628de2962ce98679123879cc16"
+    },
+    {
+      "path": "kaggle_run_logs/KAGGLE_LOG_MANIFEST.json",
+      "bytes": 9092,
+      "sha256": "e9b4c85baa590d40a366e5e4531c75782a609e5f69549793e7e7fd1c62c0b5f4"
+    },
+    {
+      "path": "kaggle_run_logs/README.md",
+      "bytes": 1233,
+      "sha256": "5ac47072b8f587d7f08602e43281d9459962e7dfa92784e4899279a39fbb85b7"
+    },
+    {
+      "path": "kaggle_run_logs/gpu_diagnostics/dino_resume_rca/green_version_3.log",
+      "bytes": 39998,
+      "sha256": "a56236f769ea786b816cb919cc8ee1f00306c4dc5fdc79635d8220ae3dcf7e12"
+    },
+    {
+      "path": "kaggle_run_logs/gpu_diagnostics/dino_resume_rca/red_retry_version_2.log",
+      "bytes": 59933,
+      "sha256": "4b26003fe1b62c2a05bd5b27c8749c2810fd3dfe2f1f219c43e46468d52e659f"
+    },
+    {
+      "path": "kaggle_run_logs/gpu_diagnostics/dino_resume_rca/red_version_1.log",
+      "bytes": 16993,
+      "sha256": "16d0f786e47fa49255d4285dcb49f3bdf7d7516142fa642401a8c5fb42b85cff"
+    },
+    {
+      "path": "kaggle_run_logs/gpu_smoke/dino_finetune_smoke/version_1.log",
+      "bytes": 82052,
+      "sha256": "c60c0abd95860380ee6c9539b6f3e6d128bf57502c8a47984c3b86afe7a2036b"
+    },
+    {
+      "path": "kaggle_run_logs/gpu_smoke/dual_jepa_dino_smoke/version_1.log",
+      "bytes": 24088,
+      "sha256": "47c4736ab9523eac28abf4c8ab6b6eefb79bca29f38bb34ffa14cd5155725d2c"
+    },
+    {
+      "path": "kaggle_run_logs/historical_notebooks/notebook1183ece61d_version_2.log",
+      "bytes": 480100,
+      "sha256": "06fa1023152773962db2ca08503bb2b7c44c05bb35335c03c2bd0f3cbb0c9240"
+    },
+    {
+      "path": "kaggle_run_logs/historical_notebooks/notebook4fcab8d8f6_version_1.log",
+      "bytes": 334133,
+      "sha256": "e50eeb02409c3112129be12dce2b6d735d0fe7a3427ce25cff2b0f214ecfaadb"
+    },
+    {
+      "path": "kaggle_run_logs/historical_notebooks/notebookd30ed92708_version_4.log",
+      "bytes": 281638,
+      "sha256": "2b28cb1b2561c2c2929ead80c7d0234c844641b65288946e37e474a86885bef7"
+    },
+    {
+      "path": "kaggle_run_logs/training/dinov3_depth_2_4_8/version_1.log",
+      "bytes": 1943369,
+      "sha256": "7d8e2c3ed077fa8d4778baf1144353c031a267ec53fa28c9f6433b4907c27566"
+    },
+    {
+      "path": "kaggle_run_logs/training/dinov3_finetune_f1_f2/version_1.log",
+      "bytes": 1233950,
+      "sha256": "f329e44b948fa5b6582fcca03fe169c1d942419ffc95bba54120eb020e974ba1"
+    },
+    {
+      "path": "kaggle_run_logs/training/dinov3_local_weighting/version_1.log",
+      "bytes": 339191,
+      "sha256": "e021dbf20700a27103e714cb40baebf1a960b68923d54cc7805d3cbf0ccfc314"
+    },
+    {
+      "path": "kaggle_run_logs/training/dual_jepa_dino/version_2.log",
+      "bytes": 23001,
+      "sha256": "a10d0453bab97fac55ae0ba98f633795a243c343bff9aea44ae1bab02241bc43"
+    },
+    {
+      "path": "kaggle_run_logs/training/ijepa_grass_frozen_heads/version_2.log",
+      "bytes": 1418283,
+      "sha256": "b4f844d68f4903b9473916d217b79924a518b87525ec73e25473871d36c0db2f"
+    },
+    {
+      "path": "kaggle_run_logs/training/ijepa_original_frozen_encoder_head/version_2.log",
+      "bytes": 798,
+      "sha256": "853c6c0c48d8216f51fa1d2a98543e2fd1332fa6f9ea25e83f9391c945b74a7c"
+    },
+    {
+      "path": "kaggle_run_logs/training/jepa_block_shuffle/version_1.log",
+      "bytes": 944822,
+      "sha256": "51237786e7ac0e551517b716416bea200467cf016f8cff4845c9973a64840bd7"
     },
     {
       "path": "manuscript/BUILD_CHECKS.json",
