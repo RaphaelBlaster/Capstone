@@ -1,0 +1,286 @@
+{
+  "selected_checkpoint_count": 31,
+  "total_checkpoint_bytes": 1326327262,
+  "checksums_verified_against_saved_manifests": true,
+  "checkpoints": [
+    {
+      "experiment": "DINOv3 unfreezing depth study",
+      "path": "dinov3_depth_2_4_8/fold_0/depth_2/selected.pt",
+      "source_artifact": "dino_depth_study/watch/results/dino_depth_study/fold_0/depth_2/selected.pt",
+      "bytes": 57527452,
+      "sha256": "add4f786bfb51e9531d49171e0b39ba58ed8c19698c2bcc9c0b91eaa347e6c94",
+      "source_manifest": "dino_depth_study/watch/results/dino_depth_study/FILES_SHA256.json",
+      "source_manifest_key": "fold_0/depth_2/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 unfreezing depth study",
+      "path": "dinov3_depth_2_4_8/fold_0/depth_4/selected.pt",
+      "source_artifact": "dino_depth_study/watch/results/dino_depth_study/fold_0/depth_4/selected.pt",
+      "bytes": 114232438,
+      "sha256": "c859703c4d0dcfcc9ec4efac1f8432a5d80552c2438b6f4204f2d4fe1841be9e",
+      "source_manifest": "dino_depth_study/watch/results/dino_depth_study/FILES_SHA256.json",
+      "source_manifest_key": "fold_0/depth_4/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 unfreezing depth study",
+      "path": "dinov3_depth_2_4_8/fold_0/depth_8/selected.pt",
+      "source_artifact": "dino_depth_study/watch/results/dino_depth_study/fold_0/depth_8/selected.pt",
+      "bytes": 227642485,
+      "sha256": "20ccba6c171eb217a993e532f815f5195de7ba80157c3bed3fe3e072d3b852e3",
+      "source_manifest": "dino_depth_study/watch/results/dino_depth_study/FILES_SHA256.json",
+      "source_manifest_key": "fold_0/depth_8/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 F1/F2 matched fine-tuning",
+      "path": "dinov3_finetune_f1_f2/fold_0/F1/selected.pt",
+      "source_artifact": "dino_resume_rca/full_launch/results/dino_finetune_full/fold_0/F1/selected.pt",
+      "bytes": 815621,
+      "sha256": "1a08d4dc86a6784628fa19b3f67a70364987dcc2b7e8c3759885b67f45744bbb",
+      "source_manifest": "dino_resume_rca/full_launch/results/dino_finetune_full/FILES_SHA256.json",
+      "source_manifest_key": "fold_0/F1/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 F1/F2 matched fine-tuning",
+      "path": "dinov3_finetune_f1_f2/fold_0/F2/selected.pt",
+      "source_artifact": "dino_resume_rca/full_launch/results/dino_finetune_full/fold_0/F2/selected.pt",
+      "bytes": 57527452,
+      "sha256": "7a814a6dc3bd956708eb18d8f891d67a35e1cb6aaa1b058e07a1c9ea7c66f086",
+      "source_manifest": "dino_resume_rca/full_launch/results/dino_finetune_full/FILES_SHA256.json",
+      "source_manifest_key": "fold_0/F2/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 unfreezing depth study",
+      "path": "dinov3_depth_2_4_8/fold_1/depth_2/selected.pt",
+      "source_artifact": "dino_depth_study/watch/results/dino_depth_study/fold_1/depth_2/selected.pt",
+      "bytes": 57527452,
+      "sha256": "ed787cce46811ce4cb605136cd99a32d282ec82f312c3c7cb42438a483225463",
+      "source_manifest": "dino_depth_study/watch/results/dino_depth_study/FILES_SHA256.json",
+      "source_manifest_key": "fold_1/depth_2/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 unfreezing depth study",
+      "path": "dinov3_depth_2_4_8/fold_1/depth_4/selected.pt",
+      "source_artifact": "dino_depth_study/watch/results/dino_depth_study/fold_1/depth_4/selected.pt",
+      "bytes": 114232438,
+      "sha256": "8ee4eb321869157a54ac2bd42210fbd6c3e28b1f3f9a8cb9a4637079b5c3e827",
+      "source_manifest": "dino_depth_study/watch/results/dino_depth_study/FILES_SHA256.json",
+      "source_manifest_key": "fold_1/depth_4/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 unfreezing depth study",
+      "path": "dinov3_depth_2_4_8/fold_1/depth_8/selected.pt",
+      "source_artifact": "dino_depth_study/watch/results/dino_depth_study/fold_1/depth_8/selected.pt",
+      "bytes": 227642485,
+      "sha256": "f67220a600ad1659ce8b4ad6834efbf26e808d16c17c7020ef5885a3e315dc52",
+      "source_manifest": "dino_depth_study/watch/results/dino_depth_study/FILES_SHA256.json",
+      "source_manifest_key": "fold_1/depth_8/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 F1/F2 matched fine-tuning",
+      "path": "dinov3_finetune_f1_f2/fold_1/F1/selected.pt",
+      "source_artifact": "dino_resume_rca/full_launch/results/dino_finetune_full/fold_1/F1/selected.pt",
+      "bytes": 815621,
+      "sha256": "860a9c1c77bca051a0d115620ca73000ef3f272146c48b9f655d277d098eb0b0",
+      "source_manifest": "dino_resume_rca/full_launch/results/dino_finetune_full/FILES_SHA256.json",
+      "source_manifest_key": "fold_1/F1/selected.pt"
+    },
+    {
+      "experiment": "DINOv3 F1/F2 matched fine-tuning",
+      "path": "dinov3_finetune_f1_f2/fold_1/F2/selected.pt",
+      "source_artifact": "dino_resume_rca/full_launch/results/dino_finetune_full/fold_1/F2/selected.pt",
+      "bytes": 57527452,
+      "sha256": "147fbb6449157e6e3075f05411406064968036446ee38ba64e54c0e4c56d339e",
+      "source_manifest": "dino_resume_rca/full_launch/results/dino_finetune_full/FILES_SHA256.json",
+      "source_manifest_key": "fold_1/F2/selected.pt"
+    },
+    {
+      "experiment": "JEPA dual-study predictor specialization",
+      "path": "jepa_dual_study/jepa/fold_0/control/predictor_specialized.pt",
+      "source_artifact": "final_dual_study/full_results/final_dual_study/jepa/fold_0/control/predictor_specialized.pt",
+      "bytes": 89572429,
+      "sha256": "4014212be925afba541ede8595ceafbd3d7595bb2f2b906bd664223d5124c4ab",
+      "source_manifest": "final_dual_study/full_results/final_dual_study/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "jepa/fold_0/control/predictor_specialized.pt"
+    },
+    {
+      "experiment": "JEPA dual-study predictor specialization",
+      "path": "jepa_dual_study/jepa/fold_0/control/head_selected.pt",
+      "source_artifact": "final_dual_study/full_results/final_dual_study/jepa/fold_0/control/head_selected.pt",
+      "bytes": 3711435,
+      "sha256": "5be56b1f14ca1d8b720423cebd833ce12ec93730b7b59fd6465650aa2810d242",
+      "source_manifest": "final_dual_study/full_results/final_dual_study/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "jepa/fold_0/control/head_selected.pt"
+    },
+    {
+      "experiment": "JEPA dual-study predictor specialization",
+      "path": "jepa_dual_study/jepa/fold_0/shuffle/predictor_specialized.pt",
+      "source_artifact": "final_dual_study/full_results/final_dual_study/jepa/fold_0/shuffle/predictor_specialized.pt",
+      "bytes": 89572429,
+      "sha256": "8f704b7af5e466ccbf8d0fc2e649420a0965baf1ae9e629f7211584e4d189159",
+      "source_manifest": "final_dual_study/full_results/final_dual_study/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "jepa/fold_0/shuffle/predictor_specialized.pt"
+    },
+    {
+      "experiment": "JEPA dual-study predictor specialization",
+      "path": "jepa_dual_study/jepa/fold_0/shuffle/head_selected.pt",
+      "source_artifact": "final_dual_study/full_results/final_dual_study/jepa/fold_0/shuffle/head_selected.pt",
+      "bytes": 3711435,
+      "sha256": "8aa3cff73225340af2b9e23c867e602dd115a146986f9a10930368633ddae890",
+      "source_manifest": "final_dual_study/full_results/final_dual_study/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "jepa/fold_0/shuffle/head_selected.pt"
+    },
+    {
+      "experiment": "JEPA dual-study predictor specialization",
+      "path": "jepa_dual_study/jepa/fold_1/control/predictor_specialized.pt",
+      "source_artifact": "final_dual_study/full_results/final_dual_study/jepa/fold_1/control/predictor_specialized.pt",
+      "bytes": 89572429,
+      "sha256": "13b24b80555b64159edfa91913a0eaef7701a14b4059ff6413097bd5dc5e0b7e",
+      "source_manifest": "final_dual_study/full_results/final_dual_study/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "jepa/fold_1/control/predictor_specialized.pt"
+    },
+    {
+      "experiment": "JEPA dual-study predictor specialization",
+      "path": "jepa_dual_study/jepa/fold_1/control/head_selected.pt",
+      "source_artifact": "final_dual_study/full_results/final_dual_study/jepa/fold_1/control/head_selected.pt",
+      "bytes": 3711435,
+      "sha256": "3c50558b93db5ebb307bfb49df8697614d1957f9c09ea0f04efec38bf05a0709",
+      "source_manifest": "final_dual_study/full_results/final_dual_study/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "jepa/fold_1/control/head_selected.pt"
+    },
+    {
+      "experiment": "JEPA dual-study predictor specialization",
+      "path": "jepa_dual_study/jepa/fold_1/shuffle/predictor_specialized.pt",
+      "source_artifact": "final_dual_study/full_results/final_dual_study/jepa/fold_1/shuffle/predictor_specialized.pt",
+      "bytes": 89572429,
+      "sha256": "c5aef1d463edf62f4ab12ba68a4c3a04625305489cfae6f10a3fe781c6233e70",
+      "source_manifest": "final_dual_study/full_results/final_dual_study/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "jepa/fold_1/shuffle/predictor_specialized.pt"
+    },
+    {
+      "experiment": "JEPA dual-study predictor specialization",
+      "path": "jepa_dual_study/jepa/fold_1/shuffle/head_selected.pt",
+      "source_artifact": "final_dual_study/full_results/final_dual_study/jepa/fold_1/shuffle/head_selected.pt",
+      "bytes": 3711435,
+      "sha256": "98795cf6d8a893fd370f4844823bb6b703cf1f9293b54a5eaaf8030ba37a2a53",
+      "source_manifest": "final_dual_study/full_results/final_dual_study/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "jepa/fold_1/shuffle/head_selected.pt"
+    },
+    {
+      "experiment": "DINOv3 local weighting",
+      "path": "dinov3_local_weighting/fold_0/D1/head_selected.pt",
+      "source_artifact": "dino_weighting/results/dino_weighting/fold_0/D1/head_selected.pt",
+      "bytes": 806534,
+      "sha256": "19714d06858d7d6790a3056da41ed7622347eeeb61e244c6f63d4fad8e18579e",
+      "source_manifest": "dino_weighting/results/dino_weighting/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "fold_0/D1/head_selected.pt"
+    },
+    {
+      "experiment": "DINOv3 local weighting",
+      "path": "dinov3_local_weighting/fold_0/D3/head_selected.pt",
+      "source_artifact": "dino_weighting/results/dino_weighting/fold_0/D3/head_selected.pt",
+      "bytes": 1203163,
+      "sha256": "00287a451e0c9b8f23a51817d3379226b582738cec411da0bf20c6c86911b3af",
+      "source_manifest": "dino_weighting/results/dino_weighting/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "fold_0/D3/head_selected.pt"
+    },
+    {
+      "experiment": "DINOv3 local weighting",
+      "path": "dinov3_local_weighting/fold_1/D1/head_selected.pt",
+      "source_artifact": "dino_weighting/results/dino_weighting/fold_1/D1/head_selected.pt",
+      "bytes": 806534,
+      "sha256": "29b52720006fe65949a1e3e806fe6f1c6156895da7c8009dedc838f3f759b088",
+      "source_manifest": "dino_weighting/results/dino_weighting/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "fold_1/D1/head_selected.pt"
+    },
+    {
+      "experiment": "DINOv3 local weighting",
+      "path": "dinov3_local_weighting/fold_1/D3/head_selected.pt",
+      "source_artifact": "dino_weighting/results/dino_weighting/fold_1/D3/head_selected.pt",
+      "bytes": 1203163,
+      "sha256": "dba0c3e65c0d250f655b92186cf88c3e63ca7f823fd7e9c88b8ad8a8b619eb0d",
+      "source_manifest": "dino_weighting/results/dino_weighting/VERIFIED_FILES_SHA256.json",
+      "source_manifest_key": "fold_1/D3/head_selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/control/fold_0/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/control/fold_0/selected.pt",
+      "bytes": 3742220,
+      "sha256": "4fe86669d0a75eef77fcb40d97c582029b25d5f48c62caff4c3cd16386eb9f7c",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/control/fold_0/selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/control/fold_1/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/control/fold_1/selected.pt",
+      "bytes": 3742220,
+      "sha256": "b75c23d8f4375e0dbc4aa976878b47799dd98b5640f33fbe9264f18c9aa16796",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/control/fold_1/selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/control/fold_2/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/control/fold_2/selected.pt",
+      "bytes": 3742220,
+      "sha256": "a8a1413cdc9243db2cd3ee0e84b2701991717efda87207b632d2c418a1d8379f",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/control/fold_2/selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/shuffle_4/fold_0/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/shuffle_4/fold_0/selected.pt",
+      "bytes": 3742476,
+      "sha256": "a29b5ab4b2c9fe2b8663e56e41eddf494de4d29394e86b9b5eaa7f49931044e8",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/shuffle_4/fold_0/selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/shuffle_4/fold_1/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/shuffle_4/fold_1/selected.pt",
+      "bytes": 3742476,
+      "sha256": "0e1207e456fa26d2cfdc4098e707434a3076c06fe8bb11f8e38d048126e11391",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/shuffle_4/fold_1/selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/shuffle_4/fold_2/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/shuffle_4/fold_2/selected.pt",
+      "bytes": 3742476,
+      "sha256": "1b275f99bed8f8f4357cff4d172bee9f596d0b057135451bf2acc95238bbc4d8",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/shuffle_4/fold_2/selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/shuffle_10/fold_0/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/shuffle_10/fold_0/selected.pt",
+      "bytes": 3742476,
+      "sha256": "39ba9fe2bf8de55b612c12f63154bba161e9eac2cbec1905bc8dce9b1ef58197",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/shuffle_10/fold_0/selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/shuffle_10/fold_1/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/shuffle_10/fold_1/selected.pt",
+      "bytes": 3742476,
+      "sha256": "b8130209f1c7ca02c7af89ff92bb3221f6aa720e1d8d744c103e3babb4d42251",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/shuffle_10/fold_1/selected.pt"
+    },
+    {
+      "experiment": "JEPA block-shuffle comparison",
+      "path": "jepa_block_shuffle/arms/shuffle_10/fold_2/selected.pt",
+      "source_artifact": "block_shuffle_launch/results/final_one_run/arms/shuffle_10/fold_2/selected.pt",
+      "bytes": 3742476,
+      "sha256": "20ce4ecc150892312d1f1b469e5fb9da65030b6ed224f39d7d538909437a17aa",
+      "source_manifest": "block_shuffle_launch/results/final_one_run/CHECKPOINT_INVENTORY.json",
+      "source_manifest_key": "arms/shuffle_10/fold_2/selected.pt"
+    }
+  ]
+}

@@ -6,6 +6,6 @@ Start with [`outputs/README.md`](outputs/README.md) and [`outputs/SUBMISSION_REA
 
 ## Scope and reproducibility
 
-The `outputs/` directory is the curated research package, not a copy of every source dataset or every remote Kaggle file. Its inventory and SHA-256 manifest record the included files. Raw CSIRO and GrassClover image datasets, the official DINOv3 base checkpoint, and large trained backbone checkpoints are not included. Selected DINOv3 D0/D1/D2 regression heads are included. See `outputs/README.md` for the exact artifact and licensing limits.
+The `outputs/` directory contains the curated manuscript/reproducibility package, experiment metrics and training histories, plus 31 final selected checkpoints across the completed studies. Larger DINOv3 depth checkpoints are stored with Git LFS. Its inventory and SHA-256 manifests record included artifacts. Raw CSIRO and GrassClover image datasets, the official DINOv3 base checkpoint, the 5.14-GB grass-adapted I-JEPA encoder, and intermediate optimizer/resume checkpoints are not included. See `outputs/README.md` and `outputs/trained_checkpoints/README.md` for artifact scope and licenses.
 
 Reported development metrics have the fold, image-count, seed, and other limitations described in each experiment report. They should not be presented as competition scores or full out-of-fold results unless the relevant report explicitly verifies that status.

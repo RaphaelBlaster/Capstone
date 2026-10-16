@@ -1,0 +1,1 @@
+outputs/trained_checkpoints/dinov3_depth_2_4_8/**/selected.pt filter=lfs diff=lfs merge=lfs -text
