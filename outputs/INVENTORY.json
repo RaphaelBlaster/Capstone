@@ -2,18 +2,18 @@
   "files": [
     {
       "path": "PACKAGE_METADATA.json",
-      "bytes": 823,
-      "sha256": "ab641aa8515006dc03b6a9885efb534c4bc0a20ffb9e6a0c596a55a7b4eaa4fc"
+      "bytes": 991,
+      "sha256": "c4034ae330e843577a1aeaf91bf30d56a661eb311b716336ffd8c1192fe7950e"
     },
     {
       "path": "README.md",
-      "bytes": 4645,
-      "sha256": "938c145bd79901c5102c1d30afe229caa9340af554ef27360a8d2a72a1162bf2"
+      "bytes": 4817,
+      "sha256": "4fcd9e8b9f6f2dab638f5697ca569be965db4ed818f2a235f550525e2d992453"
     },
     {
       "path": "SUBMISSION_READINESS.md",
-      "bytes": 2614,
-      "sha256": "fff1287f8d75b518f43a6277264d057d2fd24a8954f4a9427109efa1fe14a182"
+      "bytes": 2953,
+      "sha256": "5a261eb214f0df2175bfe7981d15d248d6a2b3ee45e20f3e059acdfcd703eba1"
     },
     {
       "path": "experiments/dinov3_D0_D1_D2/README.md",
@@ -3205,6 +3205,5 @@
       "bytes": 6571,
       "sha256": "757fa83d9d8ad05c4ddb3455e918c2f033870282be10075819ff27ff1fcf865c"
     }
-  ],
-  "count": 641
+  ]
 }
